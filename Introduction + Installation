@@ -68,6 +68,15 @@ Portable – Same bytecode runs on any OS.
 
 3. How Java Works (Flow)
 
-<img width="176" height="185" alt="Image" src="https://github.com/user-attachments/assets/dd213df9-5770-4c44-97cf-1d64d1364185" />
+Java Source Code (.java)
+        ↓
+Compiler (javac)
+        ↓
+Bytecode (.class)
+        ↓
+JVM (Java Virtual Machine)
+        ↓
+     Output
+
 
 
