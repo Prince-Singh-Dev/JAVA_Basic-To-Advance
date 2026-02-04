@@ -1,0 +1,71 @@
+Installing JDK & IntelliJ IDEA (Windows)
+
+Step 1: Download JDK (Java Development Kit)
+
+Go to: https://www.oracle.com/java/technologies/downloads/
+Download JDK 17 or JDK 21 (LTS) for Windows x64.
+Run the installer and click Next → Add to Environment Path of the System → Next → Install.
+
+Default install Path : C:\Program Files\Java\jdk-17
+
+Step 2: Download IntelliJ IDEA
+
+Go to: https://www.jetbrains.com/idea/download/
+Download Community Edition (Free).
+Install with default settings.
+
+Step 3: Create First Java Project in IntelliJ
+
+Open IntelliJ → New Project → Enter Project Name
+Select Java
+JDK should be auto-detected
+(If not → Browse to jdk-17 folder)
+Click Create
+
+Step 4: Write & Run Program
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello Java");
+    }
+}
+
+Click Run or press Shift + F10
+
+Common Problems & Fix
+
+1. java is not recognized
+→ PATH not set properly.
+
+2. Red underline on package
+→ Folder structure doesn't match package name.
+
+3. JDK not showing in IntelliJ
+→ File → Project Structure → SDK → Add JDK.
+
+Real-Life Analogy
+
+JDK = Tool factory (compiler, debugger)
+IntelliJ = Smart workshop
+JVM = Machine that runs your product
+
+# JAVA – Introduction
+
+1. What is Java?
+
+Java is a high-level, object-oriented, platform-independent programming language developed by Sun Microsystems (1995) and now maintained by Oracle.
+It is used to build web, desktop, mobile, and enterprise applications.
+
+2. Key Features of Java
+
+Simple – Easy to learn, similar to C/C++.
+Object-Oriented – Everything is based on objects and classes.
+Platform Independent – Write once, run anywhere (WORA).
+Secure – No pointer, strong memory management.
+Robust – Handles errors using exception handling.
+Multithreaded – Can perform multiple tasks at once.
+Portable – Same bytecode runs on any OS.
+
+3. How Java Works (Flow)
+
+
