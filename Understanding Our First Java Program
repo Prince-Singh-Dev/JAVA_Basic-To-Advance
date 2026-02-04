@@ -1,0 +1,53 @@
+👉 Basic Structure of a JAVA Program
+
+1. Functions : Block code that performs a specific task , helps in code reusability and modularity 
+2. Classes   : It is a blueprint or template used to create objects 
+
+👉 CODE :
+
+package com.company; 
+
+public class Main {
+    public static void main(String[] args){
+        System.out.println("Hello World !");
+    }
+}
+
+👉 Breaking down the CODE : 
+
+---- public class Main {
+
+>> Here , we are declaring a class named Main which is publicly accessible.
+
+---- package com.company;  
+
+>> A package in JAVA is used to group related classes. Think of it as a folder in a file directory
+
+---- puclic static void main(String[] args){ 
+
+>> public is the access specifier 
+>> the static keyword here specifies that the code will execute without building its object
+>> the void is return type means the code will not return anything after its execution
+>> the main() method is the entry point into the application ; code snippet inside this will be executed
+
+👉 Naming Conventions
+
+>> For classes we use PascalConvention : Every First letter of the word included in sentence is in capital letters 
+   for example : mynameisprince -- (In PascalConvention) -- MyNameIsPrince
+>> For functions we use camelCaseConvention : First letter is lower else all words coming furthur will have Capital letter
+   for exmaple : mynameisprince -- (In Camel Case Convention ) -- myNameIsPrince
+
+>> Examples : 
+    ____________________________________________________________________
+   |  Normal Sentence  |  Pascal Convention   | Camel Case Convention   |
+    --------------------------------------------------------------------
+   |  add two numbers  |  AddTwoNumbers       | addTwoNumbers           |
+   |  Naming           |  Used in Classes     | Used in Functions       |
+   |___________________|______________________|_________________________|
+
+👉 To comment a JAVA code : Use // double slashes , interpreter will ignore this line while the execution of the code 
+
+>> For example :  //Hii This is a Comment Line.
+
+
+
