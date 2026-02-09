@@ -1,1 +1,14 @@
+👉 How to choose DataTypes for our variables : 
 
+Primitive DataTypes : 
+              (1) Integral : furthur have four type : byte / short / int / long
+              (2) Floats   : furthur have two type  : float / double 
+              (3) Char     : (' ')
+              (4) Boolean  : ( true / false )
+
+In order to choose datatype we first need to find the type of data we want to store . After that we need to analyze the min & max value we might use.
+___________________________________________________________________________________
+
+👉 Literals : 
+
+A constant value which can be assigned to the variable is called a Literals.
