@@ -3,7 +3,7 @@
 A Java program is typically structured into several logical sections.
 Some sections are mandatory, while others are optional depending on the program’s requirements.
 
-____________________________________________________________________________________________________________________________________________________________________________
+__________________________________________________________
 
 1. Documentation Section (Optional but Recommended)
 
@@ -25,7 +25,7 @@ For example :
  Purpose: Demonstrate basic structure of Java program
  Logic: Takes input and prints output
 */
-____________________________________________________________________________________________________________________________________________________________________________
+_________________________________________________________
 
 2. Package Statement (Optional)
 
@@ -39,7 +39,7 @@ Key Points:
 Helps in organizing large projects
 Avoids name conflicts
 Must be the first line of code (after comments)
-____________________________________________________________________________________________________________________________________________________________________________
+_________________________________________________________
 
 3. Import Statements (Optional)
 
@@ -53,7 +53,7 @@ Key Points:
 
 Reduces the need to write fully qualified names
 Improves code clarity and readability
-_____________________________________________________________________________________________________________________________________________________________________________
+__________________________________________________________
 
 4. Interface Statement (Optional)
 
@@ -67,7 +67,7 @@ Example:
 interface Animal {
     void sound();
 }
-______________________________________________________________________________________________________________________________________________________________________________
+___________________________________________________________
 
 5. Class Definition (Mandatory)
 
@@ -87,17 +87,18 @@ Key Points:
 Every Java program must have at least one class
 The class containing main() is the entry point
 File name must match the public class name
-_______________________________________________________________________________________________________________________________________________________________________________
+____________________________________________________________
 
 👉 DataTypes in JAVA
 
 Two types : 
-           (a) Primitive Datatype
-           (b) Non Primitive Datatype
+           (a) Primitive Datatype :  Intrinsic 
+           (b) Non Primitive Datatype : Derived 
 
-_______________________________________________________________________________________________________________________________________________________________________________
+_____________________________________________________________
 
 👉 Primitve Datatypes :
+
 (1) byte   : Size : 1 bytes | Range : -128 to 127 | Used to save memory in large arrays | byte b = 100;
 (2) int    : Size : 4 bytes | Range : -2,147,483,648 to 2,147,483,647 | Stores 32-bit signed integer values | Most commonly used integer type. | int x = 100000;
 (3) float  : Size : 4 bytes | Precision: ~7 decimal digits | Must end with f | Stores 32-bit decimal (floating-point) values. | float f = 10.5f;
@@ -107,6 +108,24 @@ ________________________________________________________________________________
 (7) boolean: Size : JVM dependent (usually 1 bit) | Values : true or false | Stores true or false values. | boolean isJavaFun = true;
 (8) short  : Size : 2 bytes | Range : -32,768 to 32,767 | Stores 16-bit Signed integer values | short s = 2000;
 
-________________________________________________________________________________________________________________________________________________________________________________
+_____________________________________________________________
 
-👉 Non Primitive Datatypes : 
+👉 Non Primitive Datatypes : Will Be discussed Later in the chapters , for now you can think it as , these datatypes are derived from the primitive datatypes
+_____________________________________________________________
+
+👉 Variables : are the containers that stores a value . This value can be changes during the execution of the program 
+   for Example : int number = 8; { int = Datatype , Number = variable name except reserved keywords , = assignment operator , 8 = value to be stored in the variable }
+
+👉 Rules for declaring a variable name : 
+
+1. Must not begin with digit 
+2. Name is case sensitive 
+3. Should not be a keyword
+4. White spaces not allowed
+5. Can contain alphabet  , { $ }{ _ }{ digits } character if the other conditions are followed
+_____________________________________________________________
+
+👉 Quick Quiz : create a program to add three numbers ...
+
+
+
