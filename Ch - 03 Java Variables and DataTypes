@@ -1,3 +1,92 @@
-1. Variables
+👉 Anatomy of a Java Program : 
 
-A variable is a container used to store data values in a program. The value of a variable can change during program execution.
+A Java program is typically structured into several logical sections.
+Some sections are mandatory, while others are optional depending on the program’s requirements.
+
+_____________________________________________________
+
+1. Documentation Section (Optional but Recommended)
+
+This section contains comments that describe the program.
+It improves readability, maintainability, and collaboration.
+
+Usually Includes:
+
+Author name
+Date of creation
+Purpose of the program
+Brief description of the logic
+
+For example : 
+
+/*
+ Author: Prince Singh
+ Date: 05-02-2026
+ Purpose: Demonstrate basic structure of Java program
+ Logic: Takes input and prints output
+*/
+_____________________________________________________
+
+2. Package Statement (Optional)
+
+The package statement defines the namespace of the class.
+It is used to group related classes and interfaces into a single unit.
+
+Foe example : package com.mycompany.project;
+
+Key Points:
+
+Helps in organizing large projects
+Avoids name conflicts
+Must be the first line of code (after comments)
+_____________________________________________________
+
+3. Import Statements (Optional)
+
+Import statements are used to access predefined classes from Java libraries or user-defined packages.
+
+Example: import java.util.Scanner;
+
+This allows the program to use the Scanner class for user input from keyboard.
+
+Key Points:
+
+Reduces the need to write fully qualified names
+Improves code clarity and readability
+_____________________________________________________
+
+4. Interface Statement (Optional)
+
+Interfaces define a contract that classes must follow.
+They are used to achieve abstraction and multiple inheritance.
+
+This will be covered in detail in later chapters.
+
+Example:
+
+interface Animal {
+    void sound();
+}
+_____________________________________________________
+
+5. Class Definition (Mandatory)
+
+The class is the core building block of a Java program.
+All variables and methods are defined inside classes.
+
+Example:
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello Java");
+    }
+}
+
+Key Points:
+
+Every Java program must have at least one class
+The class containing main() is the entry point
+File name must match the public class name
+_____________________________________________________
+
+👉
