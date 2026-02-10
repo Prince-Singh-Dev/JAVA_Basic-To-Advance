@@ -12,3 +12,23 @@ ________________________________________________________________________________
 👉 Literals : 
 
 A constant value which can be assigned to the variable is called a Literals.
+
+public class Main{
+    public static void main(String[] args){
+        int age = 34;
+    }
+}
+
+Here 34 is the literals that is assigned to a variable
+
+For example :
+
+101         : Integer Literal
+10.1f       : Float Literal
+10.1        : Double Literal ( Pre defined / means if you declare num = 10.1 then by default JAVA will consider it as Double literals)
+'A'         : Character Literal
+true        : Boolean Literal
+"Prince"    : String Literal
+____________________________________________________________________________________
+
+👉
