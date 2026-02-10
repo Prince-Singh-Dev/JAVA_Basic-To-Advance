@@ -31,4 +31,7 @@ true        : Boolean Literal
 "Prince"    : String Literal
 ____________________________________________________________________________________
 
-👉
+👉 Keywords : 
+
+Words which are reserved and used by the Java Compiler. They cannot be used as an Identifier => Go to docs.oracle.com for Java Documentations and reserved Keywords.
+
