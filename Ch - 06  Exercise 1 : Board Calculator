@@ -47,3 +47,104 @@ Your Percentage on the basis marks entered are :
 
 Process finished with exit code 0
 __________________________________________________________________________________________
+
+👉 Practice Sets 
+
+1. Write a program to sum three numbers in JAVA
+2. Write a program to calculate CGPA using marks of three subject (on the scale of 10)    
+3. Write Java program which asks the user to enter his/her name and greets them with "Hello <name> , have a good day" text
+4. Write a Java program to convert kilometers to miles {Hint : 1 Miles = KM * 0.621371}
+5. Write a Java program to detect whether a number entered by the user is integer or not
+___________________________________________________________________________________________
+
+( Kindly , try to solve the Practice sets Questions on your own , if face any difficulty then go for the solutions )
+
+___________________________________________________________________________________________
+
+👉 Answers of Practice Sets : 
+
+👉 CODE 1 : 
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args){
+        int num1 = 34;
+        int num2 = 35;
+        int num3 = 36;
+        int sum  = num1+num2+num3;
+        System.out.println(sum);
+    }
+}
+
+👉 Output : 105
+___________________________________________________________________________________________
+
+👉 CODE 2 : 
+
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter Your grades in 3 subjects : ");
+        int grade1 = sc.nextInt();
+        int grade2 = sc.nextInt();
+        int grade3 = sc.nextInt();
+        int sum = grade1+grade2+grade3;
+        float CGPA = sum / 3.0f;
+        System.out.println("CGPA IS "+ CGPA);
+    }
+}
+
+👉 Output : 
+
+Enter Your grades in 3 subjects : 
+6
+4
+9
+CGPA IS 6.3333335
+___________________________________________________________________________________________
+
+👉 CODE 3 : 
+
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args){
+        Scanner sc= new Scanner(System.in);
+        String name = sc.next();
+        System.out.println("Hello "+name+" , Have a good day");
+    }
+}
+
+👉 Output : 
+
+Prince
+Hello Prince , Have a good day
+___________________________________________________________________________________________
+
+👉 CODE 5 : 
+
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args){
+        System.out.println("Enter the Number : ");
+        Scanner sc= new Scanner(System.in);
+        boolean isInt = sc.hasNextInt();
+        System.out.println("If you entered the integer then value is True otherwise False : "+ isInt);
+    }
+}
+
+👉 Output : 
+
+Enter the Number : 
+45
+If you entered the integer then value is True otherwise False : true
+
+Enter the Number : 
+46.5
+If you entered the integer then value is True otherwise False : false
+
+___________________________________________________________________________________________
