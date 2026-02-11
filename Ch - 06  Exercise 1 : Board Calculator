@@ -1,1 +1,49 @@
 👉 Write a Program to calculate percentage of a given student in CBSE board exam. His marks from 5 subjects must be taken as input from the keyboard.(Marks are out of 100)
+
+________________________________________________________________________________________
+
+👉 CODE : I wrote that you can refer 
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args){
+        System.out.println("Welcome to CBSE Board percentage calculator \n");
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the marks of chemistry : ");
+        float chemistry = sc.nextFloat();
+        System.out.println("Enter the marks of physics : ");
+        float physics = sc.nextFloat();
+        System.out.println("Enter the marks of maths : ");
+        float maths = sc.nextFloat();
+        System.out.println("Enter the marks of computer : ");
+        float computer = sc.nextFloat();
+        System.out.println("Enter the marks of english : ");
+        float english = sc.nextFloat();
+        float sum = chemistry+english+maths+physics+computer;
+        float percentage = (sum/500)*100;
+        System.out.println("Your Percentage on the basis marks entered are : ");
+        System.out.println(percentage);
+    }
+}
+_________________________________________________________________________________________
+
+👉 Output : 
+
+Welcome to CBSE Board percentage calculator 
+
+Enter the marks of chemistry : 
+89
+Enter the marks of physics : 
+78
+Enter the marks of maths : 
+90
+Enter the marks of computer : 
+95
+Enter the marks of english : 
+77
+Your Percentage on the basis marks entered are : 
+85.799995
+
+Process finished with exit code 0
+__________________________________________________________________________________________
