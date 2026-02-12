@@ -1,1 +1,43 @@
-👉
+👉 Operators 
+
+They are used to perform operations on variables and values. 
+For Example : 7 + 11 = 18 then '7' & '11' are operand | '18' is the result | '+' as operator.
+
+Types of Operators : 
+____________________________________________________________
+| 1. | Arithmetic Operator | '+'  '-' '*' '/' '%' '++' '--' |
+------------------------------------------------------------
+| 2. | Assignment Operator | '='  '+='                      |
+------------------------------------------------------------
+| 3. | Comparison Operator | '==' '>=' '<='                 |
+------------------------------------------------------------
+| 4. | Logical Operator    | '&&' '||' '!'                  |
+------------------------------------------------------------
+| 5. | Bitwise Operator    | '& ' '| ' (Operates Bitwise)   |
+------------------------------------------------------------
+
+👉 Precedence of Operators 
+
+The operators are applied and evaluated based on precedence. For example (+,-) has less precedence compared to (*,/). Hence * & / are evaluated first.
+
+Example 1:
+
+int result = 10 + 5 * 2;
+
+Evaluation :
+
+5 * 2 = 10 (done first)
+10 + 10 = 20
+
+Output: 20
+
+Example 2 (with brackets):
+
+int result = (10 + 5) * 2;
+
+Evaluation :
+
+(10 + 5) = 15
+15 * 2 = 30
+
+Output: 30
