@@ -14,7 +14,7 @@ ____________________________________________________________
 | 4. | Logical Operator    | '&&' '||' '!'                  |
 ------------------------------------------------------------
 | 5. | Bitwise Operator    | '& ' '| ' (Operates Bitwise)   |
-------------------------------------------------------------
+`````````````````````````````````````````````````````````````
 
 👉 Precedence of Operators 
 
@@ -41,3 +41,42 @@ Evaluation :
 15 * 2 = 30
 
 Output: 30
+
+👉 Precedence Chart
+_________________________________________________________________________________________________
+| Level | Operators                    | Description                   |            |            |
+| ----- | ---------------------------- | ----------------------------- | ---------- | ---------- |
+| 1     | `()`                         | Parentheses                   |            |            |
+| 2     | `++` `--`                    | Increment / Decrement         |            |            |
+| 3     | `*` `/` `%`                  | Multiplication, Division, Mod |            |            |
+| 4     | `+` `-`                      | Addition, Subtraction         |            |            |
+| 5     | `<` `<=` `>` `>=`            | Relational Operators          |            |            |
+| 6     | `==` `!=`                    | Equality Operators            |            |            |
+| 7     | `&`                          | Bitwise AND                   |            |            |
+| 8     | `^`                          | Bitwise XOR                   |            |            |
+| 9     | `                            | `                             | Bitwise OR |            |
+| 10    | `&&`                         | Logical AND                   |            |            |
+| 11    | `                            |                               | `          | Logical OR |
+| 12    | `=` `+=` `-=` `*=` `/=` `%=` | Assignment Operators          |            |            |
+``````````````````````````````````````````````````````````````````````````````````````````````````
+
+One-Line Memory Trick
+
+PEMDAS (Math rule):
+Parentheses → Exponents → Multiplication/Division → Addition/Subtraction
+(Then comparisons, logical, assignment)
+
+Quick Example : 
+
+int x = 5 + 2 * 3 > 10 && 8 > 4;
+
+Order :
+
+2 * 3 = 6
+5 + 6 = 11
+11 > 10 → true
+8 > 4 → true
+true && true → true
+
+Final result: true ✅
+
