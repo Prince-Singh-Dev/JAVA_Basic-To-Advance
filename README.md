@@ -1,4 +1,4 @@
-<p align="center">“The only Java notes you’ll ever need — from zero to confident developer.”</p>
+<p align="center">“The only Java notes you’ll ever need — from zero to confident developer..”</p>
 
 # <p align="center">🚀 Java Notes – From Basics to Advanced</p>
 <p align="center">Master Java step-by-step with clean, structured, real-world notes.</p>
