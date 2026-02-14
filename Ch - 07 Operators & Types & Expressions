@@ -118,6 +118,57 @@ Type Promotion Rules (Important)
 | long (L)  | double (D) | double         |
 | float (F) | double (D) | double         |
 
+👉 Increment and Decrement Operator 
+
+Increment and decrement operators are unary operators used to increase or decrease the value of a variable by 1.
+
+1. Increment Operator (++)
+
+The increment operator increases the value of a variable by 1.
+
+Types of Increment
+
+a) Pre-Increment (++x) : First increments the value, then uses it.
+
+int x = 5;
+int y = ++x;   // x becomes 6, y becomes 6
+
+b) Post-Increment (x++) : First uses the value, then increments it.
+
+int x = 5;
+int y = x++;   // y becomes 5, x becomes 6
+
+2. Decrement Operator (--)
+
+The decrement operator decreases the value of a variable by 1.
+
+Types of Decrement
+
+a) Pre-Decrement (--x)
+
+First decreases the value, then uses it.
+
+int x = 5;
+int y = --x;   // x becomes 4, y becomes 4
+
+b) Post-Decrement (x--)
+
+First uses the value, then decreases it.
+
+int x = 5;
+int y = x--;   // y becomes 5, x becomes 4
+
+| Operator | Name           | Action                    |
+| -------- | -------------- | ------------------------- |
+| `++x`    | Pre-Increment  | Increment first, then use |
+| `x++`    | Post-Increment | Use first, then increment |
+| `--x`    | Pre-Decrement  | Decrement first, then use |
+| `x--`    | Post-Decrement | Use first, then decrement |
+
+
+
+
+
 
 
 
