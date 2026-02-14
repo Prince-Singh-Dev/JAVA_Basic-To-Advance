@@ -126,7 +126,7 @@ Increment and decrement operators are unary operators used to increase or decrea
 
 The increment operator increases the value of a variable by 1.
 
-Types of Increment
+👉 Types of Increment
 
 a) Pre-Increment (++x) : First increments the value, then uses it.
 
@@ -142,7 +142,7 @@ int y = x++;   // y becomes 5, x becomes 6
 
 The decrement operator decreases the value of a variable by 1.
 
-Types of Decrement
+👉 Types of Decrement
 
 a) Pre-Decrement (--x)
 
@@ -165,8 +165,15 @@ int y = x--;   // y becomes 5, x becomes 4
 | `--x`    | Pre-Decrement  | Decrement first, then use |
 | `x--`    | Post-Decrement | Use first, then decrement |
 
+👉 Quick Quiz : What will be the value of the folowwing expression(x)
 
+    int y = 7;
+    int x = ++y * 8;
 
+👉 Quick Quiz : What will be the value of the folowwing expression(b)
+
+    char a = 'B';
+    char b = ++a;
 
 
 
