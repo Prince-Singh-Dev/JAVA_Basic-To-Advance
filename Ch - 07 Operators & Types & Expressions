@@ -83,5 +83,41 @@ true && true → true
 Final result: true
 ____________________________________________________________________________________________________________
 
-👉 Increment / Decrement Operators in JAVA
+Quick Activity : Try and Run following expressions in JAVA
+
+(x-y)/2
+[(b**2)-4ac]/2a
+(v**2)-(u**2)
+(a*b)-d
+____________________________________________________________________________________________________________
+
+
+👉 Resulting Data type after arithmetic operator 
+
+In Java, when arithmetic operations are performed between different data types, the result is automatically promoted to a higher data type based on Java’s type promotion rules.
+This process is known as Type Promotion.
+
+Type Promotion Rules (Important)
+
+1. byte, short, and char are always promoted to int before any arithmetic operation.
+2. If one operand is long, the result is promoted to long.
+3. If one operand is float, the result is promoted to float.
+4. If one operand is double, the result is promoted to double.
+5. The final result is always of the largest data type involved in the expression.
+
+👉 Resulting Data Type Table
+
+| Operand 1 | Operand 2  | Resulting Type |
+| --------- | ---------- | -------------- |
+| byte (B)  | short (S)  | int            |
+| short (S) | int (I)    | int            |
+| long (L)  | float (F)  | float          |
+| int (I)   | float (F)  | float          |
+| char (C)  | int (I)    | int            |
+| char (C)  | short (S)  | int            |
+| long (L)  | double (D) | double         |
+| float (F) | double (D) | double         |
+
+
+
 
