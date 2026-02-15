@@ -1,1 +1,35 @@
 👉 JPQ : Java Practice Questions 
+
+👉 1. What will be the result of the following expression : 
+      float a = 7/4*9/2
+
+OUTPUT : 4.0
+_________________________________________________________________________________________________________
+
+👉 2. Write a java program to encrypt a grade by adding 8 to it . Decrypt it to Show the correct garde.
+
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the Grade : ");
+        float a = sc.nextFloat();
+        float b = a + 8;
+        System.out.println("Your Grades After the Encryption : "+b);
+        float c = b - 8;
+        System.out.println("Your Grades After the Decryption : "+c);
+    }
+}
+
+OUTPUT :
+
+Enter the Grade : 
+45.6
+Your Grades After the Encryption : 53.6
+Your Grades After the Decryption : 45.6
+
+Process finished with exit code 0
+_________________________________________________________________________________________________________
+
+👉
