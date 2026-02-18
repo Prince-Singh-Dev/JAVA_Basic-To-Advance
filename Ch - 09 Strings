@@ -14,7 +14,7 @@ String is a class but can be used like a datatype :
 
 Here name is reference and Prince is Object
 
-Different ways to print in JAVA : We can use the following ways to print in JAVA : 
+👉 Different ways to print in JAVA : We can use the following ways to print in JAVA : 
 
 1. System.out.print() --> No newline at the end
 2. System.out.println() -> Prints a new line at the end
@@ -37,3 +37,5 @@ public class Main{
         System.out.println(name);
     }
 }
+
+👉 String Methods : String Methods operate on JAVA strings. They can be used to find length of the String, convert to lowercase etc.
