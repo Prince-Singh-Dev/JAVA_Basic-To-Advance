@@ -1,3 +1,39 @@
 👉 String in Java 
 
 A String is a sequence of characters. In Java, strings are objects of the String class.
+Strings are immutable and cannot be changed in JAVA.
+
+A string is instantiated as follows : 
+
+String name;
+name = new String("Prince")
+
+String is a class but can be used like a datatype : 
+
+    String name = "Prince";
+
+Here name is reference and Prince is Object
+
+Different ways to print in JAVA : We can use the following ways to print in JAVA : 
+
+1. System.out.print() --> No newline at the end
+2. System.out.println() -> Prints a new line at the end
+3. System.out.printf()
+4. System.out.format()
+
+System.out.printf("%c" , ch)
+
+%c is for character 
+%d is for int
+%s is for string
+
+For example : 
+
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args){
+        String name = new String("Prince");
+        System.out.println(name);
+    }
+}
