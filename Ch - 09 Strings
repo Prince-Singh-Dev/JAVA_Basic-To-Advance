@@ -41,3 +41,41 @@ public class Main{
 👉 String Methods : String Methods operate on JAVA strings. They can be used to find length of the String, convert to lowercase etc.
 
 👉 Various String methods in JAVA : 
+
+1. name.length() -> Returns length of String name (6 in this case)
+
+public class Main{
+    public static void main(String[] args){
+        String name = "Prince";
+        int len = name.length();
+        System.out.println(len);
+    }
+}
+
+Output : 6
+
+2. name.toLowerCase() -> Returns a new String which has all the lowercase characters from the String name.
+
+public class Main{
+    public static void main(String[] args){
+        String name = "Prince";
+        String lower = name.toLowerCase();
+        System.out.println(lower);
+    }
+}
+
+Output : prince
+
+3. name.toUpperCase() -> Returns a new String which has all the uppercase characters from the String name.
+
+public class Main{
+    public static void main(String[] args){
+        String name = "Prince";
+        String upcase = name.toUpperCase();
+        System.out.println(upcase);
+    }
+}
+
+Output : PRINCE
+
+4. 
