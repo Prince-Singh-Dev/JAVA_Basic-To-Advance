@@ -13,6 +13,7 @@ String is a class but can be used like a datatype :
     String name = "Prince";
 
 Here name is reference and Prince is Object
+_______________________________________________________________________________________________
 
 👉 Different ways to print in JAVA : We can use the following ways to print in JAVA : 
 
@@ -37,8 +38,10 @@ public class Main{
         System.out.println(name);
     }
 }
+_______________________________________________________________________________________________
 
 👉 String Methods : String Methods operate on JAVA strings. They can be used to find length of the String, convert to lowercase etc.
+_______________________________________________________________________________________________
 
 👉 Various String methods in JAVA : 
 
@@ -53,6 +56,7 @@ public class Main{
 }
 
 Output : 6
+_______________________________________________________________________________________________
 
 2. name.toLowerCase() -> Returns a new String which has all the lowercase characters from the String name.
 
@@ -65,6 +69,7 @@ public class Main{
 }
 
 Output : prince
+_______________________________________________________________________________________________
 
 3. name.toUpperCase() -> Returns a new String which has all the uppercase characters from the String name.
 
@@ -75,7 +80,46 @@ public class Main{
         System.out.println(upcase);
     }
 }
+_______________________________________________________________________________________________
 
 Output : PRINCE
 
-4. 
+4. name.trim() -> Returns a new string by removing trailing and leading white spaces from the original string.
+
+public class Main{
+    public static void main(String[] args){
+        String name = "   Hii I am Prince   ";
+        String trimmed = name.trim();
+        System.out.println(trimmed);
+    }
+}
+
+Output : Hii I am Prince
+_______________________________________________________________________________________________
+
+5. name.substring(int Start) -> Returns a substring from start of the index you enterned and return to the end . 
+
+"Note : Indexing starts from 0"
+
+public class Main{
+    public static void main(String[] args){
+        String name = "Hii I am Prince";
+        String indexing = name.substring(4);
+        System.out.println(indexing);
+    }
+}
+
+Output : I am Prince
+_______________________________________________________________________________________________
+
+6.  name.substring(int start , int end) -> Returns a substring from start index to the end index. start index is included and end is excluded.
+
+public class Main{
+    public static void main(String[] args){
+        String name = "Hii I am Prince";
+        String indexing = name.substring(4,7);
+        System.out.println(indexing);
+    }
+}
+
+Output : I a
