@@ -136,6 +136,29 @@ public class Main{
 }
 
 Output : Pri&ce
+
+if single quotes changes with double quotes : {''} --> {""}
+
+public class Main{
+    public static void main(String[] args){
+        String name = "Prince";
+        String indexing = name.replace("Pri","Fra");
+        System.out.println(indexing);
+    }
+}
+
+Output : France
 _______________________________________________________________________________________________
 
-8. 
+8. name.startsWith("Pr") -> returns true if name starts with String "Pr".
+
+public class Main{
+    public static void main(String[] args){
+        String name = "Prince";
+        System.out.println(name.startsWith("Pr"));
+    }
+}
+
+Output : true
+_______________________________________________________________________________________________
+
