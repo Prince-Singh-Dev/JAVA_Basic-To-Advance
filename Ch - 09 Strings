@@ -124,3 +124,18 @@ public class Main{
 
 Output : I a
 _______________________________________________________________________________________________
+
+7.  name.replace('r','p') -> Returns a new String after replacing r with p.
+
+public class Main{
+    public static void main(String[] args){
+        String name = "Prince";
+        String indexing = name.replace('n','&');
+        System.out.println(indexing);
+    }
+}
+
+Output : Pri&ce
+_______________________________________________________________________________________________
+
+8. 
