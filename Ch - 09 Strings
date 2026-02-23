@@ -231,4 +231,36 @@ public class Main{
 }
 
 Output : 4
+_______________________________________________________________________________________________
 
+14. name.equals("Prince") -> returns true if the given string is equal to "Prince" , False otherwise [Case Sensitive]
+
+public class Main{
+    public static void main(String[] args){
+        String name = "NAMAN";
+        System.out.println(name.equals("Prince"));
+    }
+}
+
+Output : false
+
+public class Main{
+    public static void main(String[] args){
+        String name = "Prince";
+        System.out.println(name.equals("Prince"));
+    }
+}
+
+Output : true
+_______________________________________________________________________________________________
+
+15. name.equalsIgnoreCase("PRINCE") -> returns true if two Strings are equal ignoring the case of characters.
+
+public class Main{
+    public static void main(String[] args){
+        String name = "Prince";
+        System.out.println(name.equalsIgnoreCase("PRINCE"));
+    }
+}
+
+Output : true 
