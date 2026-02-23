@@ -264,3 +264,17 @@ public class Main{
 }
 
 Output : true 
+_______________________________________________________________________________________________
+
+👉 Escape Sequence Characters 
+
+Sequence of characters after backslash '\' = Escape sequence characters
+
+Escape sequence characters consist of more than one characters but represents one character when used within the Strings.
+
+Example : \n , \t , \' , \\ , etc.
+
+\n -> newline
+\t -> Tab
+\' -> single quote 
+\\ -> backslash 
