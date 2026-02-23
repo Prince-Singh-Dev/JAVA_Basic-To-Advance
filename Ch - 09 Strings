@@ -162,3 +162,73 @@ public class Main{
 Output : true
 _______________________________________________________________________________________________
 
+9. name.endsWith("Pr") -> returns true if name ends with String "Pr".
+
+public class Main{
+    public static void main(String[] args){
+        String name = "Prince";
+        System.out.println(name.endsWith("Pr"));
+    }
+}
+
+Output : false
+_______________________________________________________________________________________________
+
+10. name.charAt(2) -> returns character at a given index position , "i" in this case.
+
+public class Main{
+    public static void main(String[] args){
+        String name = "Prince";
+        System.out.println(name.charAt(2));
+    }
+}
+
+Output : i
+_______________________________________________________________________________________________
+
+11. name.indexOf(s) -> returns the index of the given string { Here s , is the string }
+
+For example : name.indexOf("ri") returns 1 which is the first occurence of ri in string "Prince" , -1 otherwise.
+
+public class Main{
+    public static void main(String[] args){
+        String name = "Prince";
+        System.out.println(name.indexOf("ri"));
+    }
+}
+
+Output : 1
+
+public class Main{
+    public static void main(String[] args){
+        String name = "Prince";
+        System.out.println(name.indexOf("k"));
+    }
+}
+
+Output : -1
+_______________________________________________________________________________________________
+
+12. name.indexOf("s",3) -> returns the index of the given String starting from the index 3(int). -1 is returned in this case 
+
+public class Main{
+    public static void main(String[] args){
+        String name = "NAMAN";
+        System.out.println(name.indexOf("N",2));
+    }
+}
+
+Output : 4
+_______________________________________________________________________________________________
+
+13. name.lastIndexOf ("r") -> returns the last index of the given string.
+
+public class Main{
+    public static void main(String[] args){
+        String name = "NAMAN";
+        System.out.println(name.lastIndexOf("N"));
+    }
+}
+
+Output : 4
+
