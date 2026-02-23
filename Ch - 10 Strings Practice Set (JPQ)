@@ -1,1 +1,84 @@
-👉
+👉 Practice Set 
+
+PROGRAM 1 : Write a JAVA program to convert a string to lowercase.
+
+public class Main{
+    public static void main(String[] args){
+        String name = "JAKE PARKER";
+        System.out.println(name.toLowerCase());
+    }
+}
+
+OUTPUT 1 : jake parker
+___________________________________________________________________________________________________________________
+
+PROGRAM 2 : Write a JAVA program to replace spaces with underscores.
+
+public class Main{
+    public static void main(String[] args){
+        String name = "Prince Kumar Singh";
+        System.out.println(name.replace(" " , "_"));
+    }
+}
+
+OUTPUT 2 :  Prince_Kumar_Singh
+___________________________________________________________________________________________________________________
+
+PROGRAM 3 : Write a JAVA program to fill in a letter template which looks like below : 
+                        letter = "Dear <|name|>, Thanks a lot"
+                     Replace <|name|> with a String(some name)
+
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the name : ");
+        String name = sc.next();
+        String letter = "Dear "+name+" , Thanks a Lot";
+        System.out.println(letter);
+    }
+}
+
+OUTPUT 3 : 
+
+Enter the name : 
+Prince
+Dear Prince , Thanks a Lot
+
+___________________________________________________________________________________________________________________
+
+PROGRAM 4 : Write a JAVA program to detect double and triple spaces in a string.
+
+public class Main{
+    public static void main(String[] args){
+        String x = "Hello  This   is sample line";
+        System.out.println(" This is the index of double quotes : "+x.indexOf("  "));
+        System.out.println(" This is the index of triple quotes : "+x.indexOf("   "));
+    }
+}
+
+OUTPUT 4 : 
+
+This is the index of double quotes : 5
+This is the index of triple quotes : 11
+___________________________________________________________________________________________________________________
+
+PROGRAM 5 : Write a program to format the following letter using escape sequence characters.
+
+            letter = "Dear Prince, This JAVA Repo is nice , Thanks"
+
+public class Main{
+    public static void main(String[] args){
+        String letter = "Dear Prince, \n\t This JAVA Repo is nice ,\n\t Thanks !";
+        System.out.println(letter);
+    }
+}
+
+
+OUTPUT 5 : 
+
+Dear Prince, 
+	 This JAVA Repo is nice ,
+	 Thanks !
+___________________________________________________________________________________________________________________
