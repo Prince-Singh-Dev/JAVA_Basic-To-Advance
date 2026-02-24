@@ -48,4 +48,90 @@ Enter the Age :
 19
 You Can Vote
 
-👉
+👉 Revising Relational and Logical Operators 
+
+👉 Relational Operators in JAVA :
+
+They are used to evaluate conditions (true or false) inside the if statements.
+Some examples of relational operators are : 
+__________________________________________________________________________________________________
+|  ==    |  >=                        |  >    |  <       |  <=                    |  !=           |
+---------------------------------------------------------------------------------------------------
+| equals |  greater than or equal to  |  less | Greater  | less than or equal to  | Not equal to  |
+```````````````````````````````````````````````````````````````````````````````````````````````````
+
+👉 Logical Operators in JAVA : 
+
+Logical operators are used to combine conditions or change the result of a condition.
+They are mostly used with if statements.
+
+The three most common logical operators in Java are:
+
+&& (AND)
+|| (OR)
+! (NOT)
+
+1. && (Logical AND)
+
+It returns true only if both conditions are true.
+If even one condition is false, the result is false.
+
+Example : 
+
+int age = 20;
+boolean hasID = true;
+
+if (age >= 18 && hasID) {
+    System.out.println("You can enter.");
+}
+
+Output: 
+
+You can enter.
+Because both conditions are true.
+
+2. || (Logical OR)
+
+It returns true if at least one condition is true.
+It becomes false only when both conditions are false.
+
+Example : 
+
+boolean isSunday = false;
+boolean isHoliday = true;
+
+if (isSunday || isHoliday) {
+    System.out.println("You can relax today!");
+}
+
+Output: 
+
+You can relax today!
+Because one condition is true.
+
+3. ! (Logical NOT)
+
+It reverses the result.
+If the condition is true → it becomes false
+If the condition is false → it becomes true
+
+Example :
+
+boolean isRaining = false;
+
+if (!isRaining) {
+    System.out.println("You can go outside.");
+}
+
+Output:
+
+You can go outside.
+Because !false becomes true.
+
+👉 Simple Summary
+
+&& → Both must be true
+|| → At least one must be true
+! → Reverses the condition
+
+These operators help us make better decisions in Java programs.
