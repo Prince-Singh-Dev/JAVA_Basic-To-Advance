@@ -1,1 +1,12 @@
-👉
+👉 Conditionals in JAVA
+
+Sometimes we want to watch comedy videos on Youtube.
+if the day is Sunday.
+Sometimes , we order junk food if it is out friend's birthday in the hostel.
+You might want to buy an umbrella if its raining and you have the money.
+You order the meal if aloo or your favourite bhindi is listed on the menu
+
+All these are decisions which depends on a certain condition being met.
+
+In JAVA, we can execute instructions on a condition being met.
+
