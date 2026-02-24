@@ -10,10 +10,13 @@ All these are decisions which depends on a certain condition being met.
 
 In JAVA, we can execute instructions on a condition being met.
 
+`````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````
 
 👉 Decision making Instructions in JAVA : 
 1. If-Else Statement
 2. Switch Statement
+
+`````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````
 
 👉 If-Else statement : 
 The syntax of an If-Else statement in C looks loke that of C++ and JAVASCRIPT. JAVA has a similar syntax too. It looks like : 
@@ -48,6 +51,8 @@ Enter the Age :
 19
 You Can Vote
 
+`````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````
+
 👉 Revising Relational and Logical Operators 
 
 👉 Relational Operators in JAVA :
@@ -63,6 +68,8 @@ Some examples of relational operators are :
 | `<`      | Less than                | a < b   |
 | `>=`     | Greater than or equal to | a >= b  |
 | `<=`     | Less than or equal to    | a <= b  |
+
+`````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````
 
 👉 Logical Operators in JAVA : 
 
@@ -147,3 +154,7 @@ Because !false becomes true.
 ! → Reverses the condition
 
 These operators help us make better decisions in Java programs.
+
+`````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````
+
+👉 SWITCH CASES
