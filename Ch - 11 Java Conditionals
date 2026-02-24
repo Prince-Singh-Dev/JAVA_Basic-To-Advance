@@ -10,3 +10,42 @@ All these are decisions which depends on a certain condition being met.
 
 In JAVA, we can execute instructions on a condition being met.
 
+
+👉 Decision making Instructions in JAVA : 
+1. If-Else Statement
+2. Switch Statement
+
+👉 If-Else statement : 
+The syntax of an If-Else statement in C looks loke that of C++ and JAVASCRIPT. JAVA has a similar syntax too. It looks like : 
+
+                      if (condition-to-be-checked){
+                          Statements-if-Condition-true;
+                      }
+                      else {
+                          Statement-if-condition-false;
+                      }
+
+SAMPLE PROGRAM : 
+
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the Age : ");
+        int age = sc.nextInt();
+        if(age>18){
+            System.out.println("You Can Vote");
+        }else{
+            System.out.println("You can not Vote");
+        }
+    }
+}
+
+OUTPUT : 
+
+Enter the Age : 
+19
+You Can Vote
+
+👉
