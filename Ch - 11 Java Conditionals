@@ -54,11 +54,15 @@ You Can Vote
 
 They are used to evaluate conditions (true or false) inside the if statements.
 Some examples of relational operators are : 
-__________________________________________________________________________________________________
-|  ==    |  >=                        |  >    |  <       |  <=                    |  !=           |
----------------------------------------------------------------------------------------------------
-| equals |  greater than or equal to  |  less | Greater  | less than or equal to  | Not equal to  |
-```````````````````````````````````````````````````````````````````````````````````````````````````
+
+| Operator | Meaning                  | Example |
+| -------- | ------------------------ | ------- |
+| `==`     | Equal to                 | a == b  |
+| `!=`     | Not equal to             | a != b  |
+| `>`      | Greater than             | a > b   |
+| `<`      | Less than                | a < b   |
+| `>=`     | Greater than or equal to | a >= b  |
+| `<=`     | Less than or equal to    | a <= b  |
 
 👉 Logical Operators in JAVA : 
 
@@ -70,6 +74,14 @@ The three most common logical operators in Java are:
 && (AND)
 || (OR)
 ! (NOT)
+
+| Operator | Name | Condition 1 | Condition 2 | Final Result |
+| -------- | ---- | ----------- | ----------- | ------------ |
+| `&&`     | AND  | True        | True        | True         |
+| `&&`     | AND  | True        | False       | False        |
+| `&&`     | AND  | False       | True        | False        |
+| `&&`     | AND  | False       | False       | False        |
+
 
 1. && (Logical AND)
 
