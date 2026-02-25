@@ -39,8 +39,12 @@ public class Main{
         int age = sc.nextInt();
         if(age>18){
             System.out.println("You Can Vote");
-        }else{
-            System.out.println("You can not Vote");
+        }
+        else if(age < 18 && age > 12){
+            System.out.println("You can Vote in next upcoming years");
+        }
+        else{
+            System.out.println("You can't vote");
         }
     }
 }
@@ -48,8 +52,8 @@ public class Main{
 OUTPUT : 
 
 Enter the Age : 
-19
-You Can Vote
+13
+You can Vote in next upcoming years
 
 `````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````
 
@@ -158,3 +162,96 @@ These operators help us make better decisions in Java programs.
 `````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````
 
 👉 SWITCH CASES
+
+switch case is a decision-making statement used when we need to choose one option out of many alternatives based on the value of a variable.
+
+It is mostly used when:
+
+1.  We have multiple choices
+2.  The variable value is fixed
+3.  It improves readability compared to multiple if-else statements
+
+Syntax : 
+
+switch (variable)
+{
+    case constant1:
+        // Code
+        break;
+
+    case constant2:
+        // Code
+        break;
+
+    case constant3:
+        // Code
+        break;
+
+    default:
+        // Code (if no case matches)
+}
+
+`````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````
+
+👉 Important Points
+
+1.  variable must be of type:
+          int
+          char
+          enum
+2.  Each case must have a constant value.
+3.  break is used to stop execution.
+4.  default runs when no case matches.
+5.  If break is not used, it causes fall-through (next case executes automatically).
+
+`````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````
+
+Example 1: Simple Calculator Using Switch
+
+public class SwitchCalculator {
+
+    public static void main(String[] args) {
+
+        int a = 10, b = 5;
+        char op = '+';
+
+        switch(op) {
+
+            case '+':
+                System.out.println("Addition = " + (a + b));
+                break;
+
+            case '-':
+                System.out.println("Subtraction = " + (a - b));
+                break;
+
+            case '*':
+                System.out.println("Multiplication = " + (a * b));
+                break;
+
+            case '/':
+                System.out.println("Division = " + (a / b));
+                break;
+
+            default:
+                System.out.println("Invalid Operator");
+        }
+    }
+}
+
+Ouptut : Addition = 15
+
+👉 Difference Between if-else and switch
+
+| if-else                             | switch                          |
+| ----------------------------------- | ------------------------------- |
+| Used for range & logical conditions | Used for fixed values           |
+| Can use relational operators        | Cannot use relational operators |
+| Less readable for many options      | More readable for many options  |
+
+When to Use Switch?
+
+✔ When checking a single variable
+✔ When comparing with fixed values
+✔ When there are many options
+
