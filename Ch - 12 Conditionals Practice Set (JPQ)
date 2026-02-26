@@ -1,1 +1,181 @@
-👉
+👉 Practice Set
+
+1. What wil be the output of this program 
+
+    int a = 10;
+    if(a=11){
+            System.out.println("I am 11");
+    }
+    else {
+            System.out.println("I am not 11");
+    }
+
+OUTPUT : Error --> java: incompatible types: int cannot be converted to boolean
+_________________________________________________________________________________________________________________________
+
+2. Write a program to find out whether a student is pass or fail, if requires total 40% and at least 33% in each subject 
+   to pass. Assume 3 subject and take marks as an input from the user . {Assume marks are out of 100}
+
+
+Program 2 :
+
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Passing Criteria Overall 40% and 33% in each subject \n : ");
+        System.out.println("Enter the Marks out of 100 : \n");
+        System.out.println("Enter the English Marks : ");
+        float eng = sc.nextFloat();
+        System.out.println("Enter the Computer Marks : ");
+        float comp = sc.nextFloat();
+        System.out.println("Enter the Maths Marks : ");
+        float maths = sc.nextFloat();
+        float sum = eng + comp + maths;
+        float overall = sum/3;
+        if(eng < 33 || comp < 33 || maths < 33 ) {
+            System.out.println("Your are not passed in one subject ");
+        }
+        if(overall < 40){
+                System.out.println("Your overall marks are not above 40");
+                System.out.println("You are Failed");
+        }
+        else{
+            System.out.println("You are Passed , with Percenatge " + overall);
+        }
+    }
+}
+
+Ouptut 2 : 
+
+Passing Criteria Overall 40% and 33% in each subject :
+Enter the Marks out of 100 : 
+
+Enter the English Marks : 
+33
+Enter the Computer Marks : 
+34
+Enter the Maths Marks : 
+35
+Your overall marks are not above 40
+You are Failed
+_________________________________________________________________________________________________________________________
+
+3. Calculate income tak paid by an employee to the government as per the slabs mentioned below :
+
+_________________________
+|  Income Slab  |  Tax  |  
+|  2.5L - 5.0L  |  5%   |
+|  5.0L - 10.0L |  20%  |
+|  Above 10.0L  |  30%  |
+`````````````````````````
+
+Note : There is no tax below 2.5L . Take input from user.
+
+Program 3 : 
+
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the Salary : ");
+        float salary = sc.nextFloat();
+        if(salary<250000){
+            System.out.println("No need to pay tax");
+        }
+        else if(salary > 500000 & salary < 250000){
+            salary = (salary*5)/100;
+            System.out.println("Income tax you have to pay is : "+salary);
+        }
+        else if(salary > 1000000 & salary < 500000){
+            salary = (salary*20)/100;
+            System.out.println("Income tax you have to pay is : "+salary);
+        }
+        else{
+            salary = (salary*30)/100;
+            System.out.println("Income tax you have to pay is : "+salary);
+        }
+    }
+}
+
+Output :
+
+Enter the Salary : 
+549898
+Income tax you have to pay is : 164969.4
+_________________________________________________________________________________________________________________________
+
+4. Write a given program to find out the day of the week and given the number [1 for Monday , 2 for Tuesday ... and so on]
+
+Program : 
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the day number : ");
+        int day = sc.nextInt();
+        switch(day){
+            case 1 :
+                System.out.println("Day : Monday");
+                break;
+            case 2 :
+                System.out.println("Day : Tuesday");
+                break;
+            case 3 :
+                System.out.println("Day : Wednesday");
+                break;
+            case 4 :
+                System.out.println("Day : Thursday");
+                break;
+            case 5 :
+                System.out.println("Day : Friday");
+                break;
+            case 6 :
+                System.out.println("Day : Saturday");
+                break;
+            case 7 :
+                System.out.println("Day : Sunday ");
+                break;
+            default:
+                System.out.println("Please Enter the number from 1-7 only ");
+        }
+    }
+}
+
+Output : 
+
+Enter the day number : 
+5
+Day : Friday
+_________________________________________________________________________________________________________________________
+
+5. Write a Java program to find whether a year entered by the user is a leap year or not.
+
+Program :
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the year : ");
+        int year = sc.nextInt();
+        if(year%4 == 0 & year%100 != 0 || year%400==0){
+            System.out.println("Entered Year is Leap year : "+year);
+        }
+        else{
+            System.out.println("Not a leap year : "+year);
+        }
+    }
+}
+
+Output :
+
+Enter the year : 
+2000
+Entered Year is Leap year : 2000
+_________________________________________________________________________________________________________________________
