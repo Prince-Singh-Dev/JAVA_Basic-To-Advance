@@ -1,1 +1,147 @@
 👉 Create a ROCK PAPER SCISSORS GAME in JAVA
+
+PROGRAM : 
+
+import java.util.Scanner;
+import java.util.Random;
+
+public class Main{
+    public static void main(String[] args){
+        Random random = new Random();
+        Scanner sc = new Scanner(System.in);
+        int user_p = 0;
+        int bot = 0;
+        System.out.println("Welcoming You in the Rock Paper Scissor Game : ");
+        int i = 1;
+        while(i < 6){
+            int n = random.nextInt(3)+1;
+            System.out.println("Round "+i+" : ");
+            System.out.println("Choose \n\t 1 : for Rock \n\t 2 : for Scissor \n\t 3 : for paper \n ");
+            System.out.println("Enter You option : ");
+            int user = sc.nextInt();
+            if(user==1 && n==1){
+                System.out.println("Match Draw");
+                i=i+1;
+            }
+            else if(user==1 && n==2 ){
+                System.out.println("You won");
+                user_p = user_p+1;
+                i=i+1;
+            }
+            else if(user == 1 && n==3){
+                System.out.println("You loose");
+                bot = bot+1;
+                i=i+1;
+            }
+            else if(user==2 && n==1 ){
+                System.out.println("You loose");
+                bot = bot+1;
+                i=i+1;
+            }
+            else if(user == 2 && n==2){
+                System.out.println("Match Draw");
+                i=i+1;
+            }
+            else if(user==2 && n==3 ){
+                System.out.println("You won");
+                user_p = user_p+1;
+                i=i+1;
+            }
+            else if(user == 3 && n==3){
+                System.out.println("Match Draw");
+                i=i+1;
+            }
+            else if(user==3 && n==2 ){
+                System.out.println("You Loose");
+                bot = bot+1;
+                i=i+1;
+            }
+            else if(user == 3 && n==1) {
+                System.out.println("You won");
+                user_p = user_p + 1;
+                i=i+1;
+            }
+            else{
+                System.out.println("You have choosen out of range value");
+            }
+            System.out.println("\nPoints after the 5 rounds are\n\t User : "+user_p+"\n\tBot : "+bot);
+        }
+    }
+}
+
+OUTPUT :
+
+Welcoming You in the Rock Paper Scissor Game : 
+Round 1 : 
+Choose 
+	 1 : for Rock 
+	 2 : for Scissor 
+	 3 : for paper 
+ 
+Enter You option : 
+2
+Match Draw
+
+Points after the 5 rounds are
+	 User : 0
+	Bot : 0
+Round 2 : 
+Choose 
+	 1 : for Rock 
+	 2 : for Scissor 
+	 3 : for paper 
+ 
+Enter You option : 
+3
+You won
+
+Points after the 5 rounds are
+	 User : 1
+	Bot : 0
+Round 3 : 
+Choose 
+	 1 : for Rock 
+	 2 : for Scissor 
+	 3 : for paper 
+ 
+Enter You option : 
+1
+Match Draw
+
+Points after the 5 rounds are
+	 User : 1
+	Bot : 0
+Round 4 : 
+Choose 
+	 1 : for Rock 
+	 2 : for Scissor 
+	 3 : for paper 
+ 
+Enter You option : 
+3
+Match Draw
+
+Points after the 5 rounds are
+	 User : 1
+	Bot : 0
+Round 5 : 
+Choose 
+	 1 : for Rock 
+	 2 : for Scissor 
+	 3 : for paper 
+ 
+Enter You option : 
+2
+You loose
+
+Points after the 5 rounds are
+	 User : 1
+	Bot : 1
+
+Process finished with exit code 0
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Note : Write the code by creating your own logic , if Feels any issue refer to the above code
+
+THANKS FOR LOOKING SO DEEP IN THESE NOTES
