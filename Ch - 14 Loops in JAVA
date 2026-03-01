@@ -5,6 +5,8 @@ For example : print 1 to 1000 , print multiplication table of 7 , etc.
 
 Loops made it easy for us to tell the computer that a given set of instructions need to be executed repeatedly.
 
+-------------------------------------------------------------------------------------------------------------------------------
+
 👉 Types of Loops : 
 
 Practically there are three types of Loops in JAVA :
@@ -15,11 +17,59 @@ Practically there are three types of Loops in JAVA :
 
 We will look into these one by one 
 
+-------------------------------------------------------------------------------------------------------------------------------
+
 👉 While loops
 
               While(boolean condition)
               {
                   // Statement --> this keeps executing as long as the condition is true.
               }
+
 If the condition never becomes false, the while loop keeps getting executed. Such a loop is known as an infinte loop.
 
+Program example :
+
+public class Loops {
+    public static void main(String[] args){
+        int i = 0;
+        while(i<5){
+            System.out.println(i+1);
+            i++;
+        }
+    }
+}
+
+Output :
+
+1
+2
+3
+4
+5
+
+Quick Ques : Write a program to print natural numbers from 100 to 200 
+
+Soln : 
+
+public class Loops {
+    public static void main(String[] args){
+        int i = 100;
+        while(i<201){
+            System.out.println(i);
+            i++;
+        }
+    }
+}
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+👉 do-while loop 
+
+              do {
+                  //Code 
+              } while(condition);   --> Note this semicolon
+
+This loop is similar to a while loop except the fact that it is guaranteed to execute at least once.
+
+while -> check the condition & execute the code
