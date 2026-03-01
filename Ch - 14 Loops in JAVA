@@ -1,1 +1,25 @@
 👉 Loop Control Instruction
+
+Sometimes we want our progress to execute a few set of instructions over and over again.
+For example : print 1 to 1000 , print multiplication table of 7 , etc.
+
+Loops made it easy for us to tell the computer that a given set of instructions need to be executed repeatedly.
+
+👉 Types of Loops : 
+
+Practically there are three types of Loops in JAVA :
+
+1. While loop
+2. do-while loop
+3. for loop 
+
+We will look into these one by one 
+
+👉 While loops
+
+              While(boolean condition)
+              {
+                  // Statement --> this keeps executing as long as the condition is true.
+              }
+If the condition never becomes false, the while loop keeps getting executed. Such a loop is known as an infinte loop.
+
