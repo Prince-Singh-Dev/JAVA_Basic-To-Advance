@@ -88,10 +88,59 @@ public class Loops{
         do{
             System.out.println(x);
             x++;
-        }while(x<a);
+        }while(x<=a);
     }
 }
 
 -------------------------------------------------------------------------------------------------------------------------------
 
 👉 For loop
+
+            for (initialize ; check_bool_expression ; update){
+                  // CODE
+            }
+
+A for loop is usually used to execute a piece of code for specific number of times.
+
+Quick Quiz : Write a program to print first n natural numbers using for loop
+
+Soln :
+
+import java.util.Scanner;
+public class Loops{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the value : ");
+        int x = sc.nextInt();
+        for(int i=1 ; i<=x ; i++){
+            System.out.println(i);
+        }
+    }
+}
+
+Decrementing in for loop 
+
+for (i = 7 ; i!=0 ; i--){
+  System.out.println(i);
+}
+
+This for loop keeps running until i becomes 0.
+
+Quick Quiz : Write a Program to print first n natural numbers in reverse order
+
+Soln :
+
+import java.util.Scanner;
+public class Loops{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the value : ");
+        int x = sc.nextInt();
+        for(int i=x; i>0 ; i-- ){
+            System.out.println(i);
+        }
+    }
+}
+
+-------------------------------------------------------------------------------------------------------------------------------
+
