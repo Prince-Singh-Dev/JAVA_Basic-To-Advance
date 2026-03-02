@@ -48,7 +48,7 @@ Output :
 4
 5
 
-Quick Ques : Write a program to print natural numbers from 100 to 200 
+Quick Quiz : Write a program to print natural numbers from 100 to 200 
 
 Soln : 
 
@@ -73,3 +73,25 @@ public class Loops {
 This loop is similar to a while loop except the fact that it is guaranteed to execute at least once.
 
 while -> check the condition & execute the code
+
+Quick Quiz : Write a program to print first n natural numbers using do while loop.
+
+Soln :
+
+import java.util.Scanner;
+public class Loops{
+    public static void main(String[] args){
+        int x = 1;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the value : ");
+        int a = sc.nextInt();
+        do{
+            System.out.println(x);
+            x++;
+        }while(x<a);
+    }
+}
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+👉 For loop
