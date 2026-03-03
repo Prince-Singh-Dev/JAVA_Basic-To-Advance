@@ -1,1 +1,127 @@
-👉 Break Statement : The break statement is used to exit the loop irrespective of whether the condition is true or false.
+👉 Break Statement :
+
+The break statement is used to immediately terminate (exit) a loop,
+regardless of whether the loop condition is true or false.
+
+Whenever the "break" statement is encountered inside the loop,
+the control is transferred outside the loop and the remaining
+iterations are skipped.
+
+It can be used in:
+1) for loop
+2) while loop
+3) do-while loop
+4) switch statement
+
+------------------------------------------------------------
+
+PROGRAM :
+
+import java.util.Scanner;
+
+public class Loops {
+    public static void main(String[] args) {
+
+        for (int i = 0; i < 5; i++) {
+            System.out.println(i);
+
+            if (i == 3) {
+                System.out.println("Loop Ended");
+                break;
+            }
+        }
+    }
+}
+
+------------------------------------------------------------
+
+OUTPUT :
+
+0
+1
+2
+3
+Loop Ended
+
+------------------------------------------------------------
+
+EXPLANATION :
+
+In this program, the loop runs from 0 to 4.
+
+• When i = 0 → prints 0  
+• When i = 1 → prints 1  
+• When i = 2 → prints 2  
+• When i = 3 → prints 3  
+
+At i = 3, the condition (i == 3) becomes true.
+So the break statement is executed immediately,
+and the loop terminates without executing further iterations.
+
+Hence, the value 4 is never printed.
+
+------------------------------------------------------------
+
+
+👉 Continue Statement :
+
+The continue statement is used to skip the current iteration
+of a loop and move to the next iteration.
+
+Whenever the "continue" statement is encountered,
+the remaining statements inside the loop for that iteration
+are skipped, and control goes to the next loop cycle.
+
+It can be used in:
+1) for loop
+2) while loop
+3) do-while loop
+
+------------------------------------------------------------
+
+PROGRAM :
+
+public class Loops {
+    public static void main(String[] args) {
+
+        for (int i = 0; i < 5; i++) {
+
+            if (i == 3) {
+                continue;
+            }
+
+            System.out.println(i);
+        }
+    }
+}
+
+------------------------------------------------------------
+
+OUTPUT :
+
+0
+1
+2
+4
+
+------------------------------------------------------------
+
+EXPLANATION :
+
+In this program, the loop runs from 0 to 4.
+
+• When i = 0 → prints 0  
+• When i = 1 → prints 1  
+• When i = 2 → prints 2  
+• When i = 3 → continue statement executes  
+  → Printing is skipped for this iteration  
+• When i = 4 → prints 4  
+
+So, the value 3 is skipped and not printed.
+
+------------------------------------------------------------
+
+🔹 Key Difference Between break and continue :
+
+break    → Completely terminates the loop.
+continue → Skips only the current iteration and continues the loop.
