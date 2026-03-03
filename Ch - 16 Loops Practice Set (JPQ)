@@ -1,1 +1,280 @@
-Practice Set
+👉 Practice Set
+
+PROGRAM 1 : Write a program to print the following pattern
+
+****
+***
+**
+*
+
+CODE :
+
+import java.util.Scanner;
+public class Loops{
+    public static void main(String[] args) {
+        for(int i=4 ; i>=1 ; i--){
+            for(int j=1;j<=i; j++){
+                System.out.print("*");
+            }
+            System.out.println("\n");
+        }
+    }
+}
+______________________________________________________________________________________________________
+
+PROGRAM 2 : Write a program to sum first n even numbers using while loop
+
+CODE : 
+
+import java.util.Scanner;
+
+public class Loops{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int sum = 0;
+        System.out.println("Enter the number : ");
+        int n = sc.nextInt();
+        for (int i=2 ; i<=n ; i++){
+            if(i%2==0){
+                sum = sum + i;
+            }
+            else {
+                continue;
+            }
+        }
+        System.out.println("Sum of first n even numbers are : "+sum);
+    }
+}
+
+______________________________________________________________________________________________________
+
+PROGRAM 3 : Write a program to print multiplication table of a given number n
+
+CODE : 
+
+import java.util.Scanner;
+
+public class Loops{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the number : ");
+        int n = sc.nextInt();
+        for(int i=1 ; i<=10 ;i++){
+            int value = n*i;
+            System.out.println(n+"X"+i+"="+value);
+        }
+    }
+}
+______________________________________________________________________________________________________
+
+PROGRAM 4 : Write a program to print multiplication table of 10 in reverse order
+
+CODE :
+
+public class Loops{
+    public static void main(String[] args){
+        int n = 10;
+        for(int i=10 ; i>=1 ;i--){
+            int value = n*i;
+            System.out.println(n+"X"+i+"="+value);
+        }
+    }
+}
+______________________________________________________________________________________________________
+
+PROGRAM 5 : Write a program to find factorial of a given number using for loop
+
+CODE : 
+
+import java.util.Scanner;
+
+public class Loops{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int fact = 1;
+        System.out.println("Enter the factorial number : ");
+        int n = sc.nextInt();
+        for(int i = n ; i>0 ; i--){
+            fact = fact * i;
+        }
+        System.out.println("Factorial of "+n+" is "+fact);
+    }
+}
+______________________________________________________________________________________________________
+
+PROGRAM 6 : Repeat 5 using while loop
+
+CODE :
+
+public class Loops{
+    public static void main(String[] args){
+        int i=1 ;
+        while(i<5){
+            System.out.println(5);
+            i++;
+        }
+    }
+}
+______________________________________________________________________________________________________
+
+PROGRAM 7 : What can be done using one type of loop can also be done using the other two types of loops : True / False ? 
+
+ANSWER : TRUE 
+
+------------------------------------------------------------
+
+EXPLANATION :
+
+In Java, there are three main types of loops :
+
+1) for loop
+2) while loop
+3) do-while loop
+
+All three loops are used to perform repetition (iteration).
+
+Any task that can be done using a for loop can also be done 
+using a while loop or a do-while loop.
+
+The difference between them is only in :
+
+• Syntax
+• Readability
+• Condition checking position
+
+------------------------------------------------------------
+
+KEY DIFFERENCE :
+
+1) for loop
+   - Used when number of iterations is known.
+   - Condition is checked before execution.
+
+2) while loop
+   - Used when number of iterations is not known.
+   - Condition is checked before execution.
+
+3) do-while loop
+   - Executes at least one time.
+   - Condition is checked after execution.
+
+------------------------------------------------------------
+
+EXAMPLE :
+
+Print numbers from 1 to 5 using different loops.
+
+Using for loop :
+
+for (int i = 1; i <= 5; i++) {
+    System.out.println(i);
+}
+
+Using while loop :
+
+int i = 1;
+while (i <= 5) {
+    System.out.println(i);
+    i++;
+}
+
+Using do-while loop :
+
+int i = 1;
+do {
+    System.out.println(i);
+    i++;
+} while (i <= 5);
+
+
+CONCLUSION :
+
+All three loops can perform the same logical operations.
+Only the structure and usage style are different.
+______________________________________________________________________________________________________
+
+PROGRAM 8 : Write a program to calculate the sum of the numbers occuring in the multiplication table of 8
+
+CODE :
+
+public class Loops{
+    public static void main(String[] args){
+        int sum = 0;
+        int n = 8;
+        System.out.println("Multiplication of table 8 with sum of the products is : ");
+        for (int i=1 ; i<=10 ; i++){
+            int product = n*i;
+            sum = sum + product;
+            System.out.println(n+"X"+i+"="+product);
+        }
+        System.out.println("\nSum = "+ sum);
+    }
+}
+
+______________________________________________________________________________________________________
+
+PROGRAM 9 : A do while loop is executed : 
+            a) At least once
+            b) At least twice
+            c) At most once
+
+ANSWER : a) At least once ✅
+
+------------------------------------------------------------
+
+EXPLANATION :
+
+A do-while loop executes the loop body first,
+and then checks the condition.
+
+This means the statements inside the loop
+are executed at least one time,
+even if the condition is false.
+
+------------------------------------------------------------
+
+SYNTAX :
+
+do {
+    // statements
+} while (condition);
+
+------------------------------------------------------------
+
+EXAMPLE :
+
+public class Loops {
+    public static void main(String[] args) {
+
+        int i = 10;
+
+        do {
+            System.out.println("Hello");
+        } while (i < 5);
+    }
+}
+
+------------------------------------------------------------
+
+OUTPUT :
+
+Hello
+
+------------------------------------------------------------
+
+WHY ?
+
+In this example, the condition (i < 5) is false
+because 10 is not less than 5.
+
+But still, "Hello" is printed once
+because the do-while loop checks
+the condition after executing the loop body.
+
+------------------------------------------------------------
+
+CONCLUSION :
+
+A do-while loop is always executed at least once,
+regardless of whether the condition is true or false.
+______________________________________________________________________________________________________
