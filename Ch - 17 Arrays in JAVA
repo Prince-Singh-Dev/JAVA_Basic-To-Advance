@@ -1,1 +1,73 @@
-Arrays
+👉 ARRAYS IN JAVA
+
+👉 Definition:
+
+Array is a collection of similar types of data stored in contiguous memory locations.
+All elements in an array must be of the same data type.
+
+👉 Use Case:
+Arrays are used when we want to store multiple values of the same type using a single variable name.
+Example: Storing marks of 5 students.
+
+👉 Instead of writing:
+int m1 = 85;
+int m2 = 90;
+int m3 = 78;
+int m4 = 88;
+int m5 = 92;
+
+👉 We use an array:
+int[] marks = new int[5];
+
+👉 Syntax:
+datatype[] arrayName = new datatype[size];
+
+OR
+
+👉 datatype arrayName[] = new datatype[size];
+
+Example:
+int[] marks = new int[5];
+
+Indexing:
+Array index starts from 0.
+Last index = size - 1.
+
+For an array of size 5:
+Indexes are 0, 1, 2, 3, 4.
+
+Assigning Values:
+marks[0] = 85;
+marks[1] = 90;
+marks[2] = 78;
+marks[3] = 88;
+marks[4] = 92;
+
+👉 Printing Array Elements using loop:
+
+for(int i = 0; i < 5; i++)
+{
+System.out.println(marks[i]);
+}
+
+👉 Direct Initialization:
+int[] marks = {85, 90, 78, 88, 92};
+
+👉 Important Points:
+
+1. Arrays store homogeneous (same type) data.
+2. Size must be defined at the time of creation.
+3. Array index always starts from 0.
+4. Array length can be accessed using arrayName.length
+5. Example: marks.length
+
+👉 Three Ways to create an array : 
+
+1.  int[] marks;  --> declaration
+    marks = new int[5]; --> memory allocation
+
+2.  int [] marks = new int[5]; --> Declaration + Memory Allocation
+
+3.  int [] marks = {100,45,27,46,89}; --> Declare + initialize
+
+Arrays indices starts from 0 and goes till (n-1) where n is the size of the array
