@@ -1,73 +1,196 @@
-👉 ARRAYS IN JAVA
+👉  ARRAYS IN JAVA
 
-👉 Definition:
+👉  Definition
 
-Array is a collection of similar types of data stored in contiguous memory locations.
+An array is a collection of similar types of data stored in contiguous memory locations.
 All elements in an array must be of the same data type.
+Arrays are used to store multiple values using a single variable name.
 
-👉 Use Case:
-Arrays are used when we want to store multiple values of the same type using a single variable name.
-Example: Storing marks of 5 students.
+````````````````````````````````````````````````````````````````````````````````````````````````````````````````
+👉 Need of Array
 
-👉 Instead of writing:
+If we want to store marks of 5 students, instead of creating 5 different variables like:
+
 int m1 = 85;
 int m2 = 90;
 int m3 = 78;
 int m4 = 88;
 int m5 = 92;
 
-👉 We use an array:
-int[] marks = new int[5];
+We can use an array to store all marks together.
 
-👉 Syntax:
+````````````````````````````````````````````````````````````````````````````````````````````````````````````````
+👉 Declaration and Creation of Array
+
+Syntax:
+
 datatype[] arrayName = new datatype[size];
-
 OR
+datatype arrayName[] = new datatype[size];
 
-👉 datatype arrayName[] = new datatype[size];
+Example: int[] marks = new int[5];
 
-Example:
-int[] marks = new int[5];
+Here,
+int → data type
+marks → array name
+5 → size of array
 
-Indexing:
-Array index starts from 0.
-Last index = size - 1.
+````````````````````````````````````````````````````````````````````````````````````````````````````````````````
+👉 Indexing in Array
+
+• Array index starts from 0.
+• Last index = size − 1.
 
 For an array of size 5:
-Indexes are 0, 1, 2, 3, 4.
 
-Assigning Values:
+Index: 0 1 2 3 4
+
+````````````````````````````````````````````````````````````````````````````````````````````````````````````````
+👉 Assigning Values to Array
+
 marks[0] = 85;
 marks[1] = 90;
 marks[2] = 78;
 marks[3] = 88;
 marks[4] = 92;
 
-👉 Printing Array Elements using loop:
+````````````````````````````````````````````````````````````````````````````````````````````````````````````````
+👉 Accessing / Printing Array Elements
 
-for(int i = 0; i < 5; i++)
-{
-System.out.println(marks[i]);
+Using for loop:
+
+for(int i = 0; i < 5; i++){
+    System.out.println(marks[i]);
 }
 
-👉 Direct Initialization:
+````````````````````````````````````````````````````````````````````````````````````````````````````````````````
+👉 Direct Initialization of Array
+
+We can also initialize array at the time of declaration:
 int[] marks = {85, 90, 78, 88, 92};
 
-👉 Important Points:
+````````````````````````````````````````````````````````````````````````````````````````````````````````````````
+👉 Length of Array
 
-1. Arrays store homogeneous (same type) data.
-2. Size must be defined at the time of creation.
-3. Array index always starts from 0.
-4. Array length can be accessed using arrayName.length
-5. Example: marks.length
+The length of an array can be found using:
 
-👉 Three Ways to create an array : 
+arrayName.length
 
-1.  int[] marks;  --> declaration
-    marks = new int[5]; --> memory allocation
+Example:
 
-2.  int [] marks = new int[5]; --> Declaration + Memory Allocation
+public class Arrays{
+    public static void main(String[] args){
+        int marks []={34,45,56,67,89};
+        System.out.println(marks.length);
+    }
+}
 
-3.  int [] marks = {100,45,27,46,89}; --> Declare + initialize
+OUTPUT : 5
 
-Arrays indices starts from 0 and goes till (n-1) where n is the size of the array
+````````````````````````````````````````````````````````````````````````````````````````````````````````````````
+👉 Important Points
+
+1.    Arrays store homogeneous (same type) data.
+2.    Array size must be specified at the time of creation.
+3.    Memory is allocated in contiguous locations.
+4.    Index always starts from 0.
+5.    Once created, array size cannot be changed.
+
+````````````````````````````````````````````````````````````````````````````````````````````````````````````````
+👉 Sample Code :
+
+import java.util.Scanner;
+public class Arrays{
+    public static void main(String[] args){
+        int [] marks = new int[5];
+        Scanner sc = new Scanner(System.in);
+        for (int i=0 ; i<5 ; i++){
+            System.out.println("enter the value  "+i+" : ");
+            marks[i] = sc.nextInt();
+        }
+        System.out.println("Array you entered : ");
+        for(int j=0 ; j<5 ; j++){
+            System.out.println(marks[j]);
+        }
+    }
+}
+
+OUTPUT : 
+
+enter the value  0 : 
+34
+enter the value  1 : 
+45
+enter the value  2 : 
+65
+enter the value  3 : 
+3
+enter the value  4 : 
+98
+Array you entered : 
+34
+45
+65
+3
+98
+
+````````````````````````````````````````````````````````````````````````````````````````````````````````````````
+
+👉 Quick Quiz : Write a JAVA program to print the elements of an array in reverse order.
+
+CODE : 
+
+public class Arrays {
+    public static void main(String[] args) {
+        int marks[] = {34, 45, 56, 67, 89};
+        int x = marks.length;
+        for (int i = x-1; i >= 0; i--) {
+            System.out.println(marks[i]);
+        }
+    }
+}
+
+OUTPUT :
+
+89
+67
+56
+45
+34
+
+````````````````````````````````````````````````````````````````````````````````````````````````````````````````
+👉 for-each loop in JAVA
+
+Array elements can also be traversed as follow : 
+
+for(int elements : Arr){
+    sout(elements);            -----> Prints all elements
+}
+
+Code :
+
+public class Arrays {
+    public static void main(String[] args) {
+        int marks[] = {34, 45, 56, 67, 89};
+        int x = marks.length;
+        for(int element : marks){
+            System.out.println(element);
+        }
+    }
+}
+
+Output : 
+34
+45
+56
+67
+89
+
+````````````````````````````````````````````````````````````````````````````````````````````````````````````````
+👉 Multi Dimensional Array : 
+
+A multi dimensional array is an array of arrays.
+It is used to store data in tabular form (rows and columns).
+
+Example:
+Storing marks of students in different subjects.
