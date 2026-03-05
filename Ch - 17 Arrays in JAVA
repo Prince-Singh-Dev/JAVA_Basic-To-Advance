@@ -194,3 +194,19 @@ It is used to store data in tabular form (rows and columns).
 
 Example:
 Storing marks of students in different subjects.
+
+👉 Creating a MultiDimensional 2D array :
+
+A 2D array can be created as follows : 
+
+int[][] flats = new int [2][3] ----> A 2d Array of 2 rows and 3 columns
+
+We can add elements to this array as follows :
+flats[0][0] = 100
+flats[0][1] = 101
+flats[0][2] = 102
+.    .    .    .
+.    .    .    .
+and So on!
+
+
