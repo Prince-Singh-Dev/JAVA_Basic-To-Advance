@@ -237,4 +237,29 @@ Entered 2D arrays :
 103
 104
 
+````````````````````````````````````````````````````````````````````````````````````````````````````````````````
+👉 Taking input from user and printing it in JAVA for 2D arrays.
 
+import java.util.Scanner;
+public class Arrays{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        // 2D array
+        int [][] flats;
+        flats = new int[2][2];
+        for(int i=0 ; i<2 ; i++){
+            for(int j=0 ; j<2 ; j++){
+                System.out.println("Enter the Element for the position : ["+i+"]"+"["+j+"]");
+                flats[i][j] = sc.nextInt();
+            }
+        }
+
+        System.out.println("Entered 2D arrays : ");
+        for(int i=0 ; i<2 ; i++){
+            for(int j=0 ; j<2 ; j++){
+                System.out.println(flats[i][j]);
+            }
+        }
+    }
+}
+````````````````````````````````````````````````````````````````````````````````````````````````````````````````
