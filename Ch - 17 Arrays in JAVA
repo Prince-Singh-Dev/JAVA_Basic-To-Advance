@@ -209,4 +209,32 @@ flats[0][2] = 102
 .    .    .    .
 and So on!
 
+Example CODE: 
+
+public class Arrays{
+    public static void main(String[] args){
+        // 2D array
+        int [][] flats;
+        flats = new int[2][2];
+        flats[0][0] = 101;
+        flats[0][1] = 102;
+        flats[1][0] = 103;
+        flats[1][1] = 104;
+        System.out.println("Entered 2D arrays : ");
+        for(int i=0 ; i<2 ; i++){
+            for(int j=0 ; j<2 ; j++){
+                System.out.println(flats[i][j]);
+            }
+        }
+    }
+}
+
+Output : 
+
+Entered 2D arrays : 
+101
+102
+103
+104
+
 
