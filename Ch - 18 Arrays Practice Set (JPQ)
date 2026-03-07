@@ -82,7 +82,18 @@ public class Arrays{
 _________________________________________________________________________________________________________________________
 5. Write a JAVA program to reverse an array
 
+public class Arrays {
+    public static void main(String[] args){
+        int [] arr = {10,20,30,40,60};
+        System.out.println("Reversed array : ");
+        for(int i=(arr.length-1); i>=0 ; i--){
+            System.out.println(arr[i]);
+        }
+    }
+}
 _________________________________________________________________________________________________________________________
 6. Write a JAVA program to find the maximum element in an array
+
+_________________________________________________________________________________________________________________________
 7. Write a JAVA program to find the minimum element in an array
 8. Write a JAVA program to find whether an array is sortes or not
