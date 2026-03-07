@@ -1,6 +1,23 @@
 👉 Practice Set of Arrays 
 
 1. Create an array of 5 Floats and calculate thier sum
+
+import java.util.Scanner;
+public class Arrays{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        float [] marks = new float[5];
+        for(int i=0 ; i<5 ; i++){
+            System.out.println("Enter the Element for the index "+i+" : ");
+               marks[i] = sc.nextFloat();
+        }
+        System.out.println("Entered Elements : ");
+        for(int i = 0;i<5;i++){
+            System.out.println(marks[i]);
+        }
+    }
+}
+_________________________________________________________________________________________________________________________
 2. Write a program to find out whether a given integer is present in an array or not
 3. Calculate the average marks from an array containing marks of all students in Physics using for each loop.
 4. Create a program to add 2 matrices of size 2 x 3
