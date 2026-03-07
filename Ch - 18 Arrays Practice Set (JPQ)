@@ -94,6 +94,21 @@ public class Arrays {
 _________________________________________________________________________________________________________________________
 6. Write a JAVA program to find the maximum element in an array
 
+public class Arrays {
+    public static void main(String[] args){
+        int [] arr = {10,20,30,40,60};
+        int max = arr[1];
+        for(int i=0 ; i<5 ; i++){
+            if(arr[i]>max){
+                max = arr[i];
+            }
+            else{
+                continue;
+            }
+        }
+        System.out.println("Max element : "+max);
+    }
+}
 _________________________________________________________________________________________________________________________
 7. Write a JAVA program to find the minimum element in an array
 8. Write a JAVA program to find whether an array is sortes or not
