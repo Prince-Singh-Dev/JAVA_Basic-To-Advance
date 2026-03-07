@@ -59,8 +59,30 @@ public class Arrays{
 _________________________________________________________________________________________________________________________
 4. Create a program to add 2 matrices of size 2 x 3
 
+import java.util.Scanner;
+public class Arrays{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int [][] mat = new int[2][3];
+        for(int i = 0; i<2 ; i++){
+            for(int j=0 ; j<3 ; j++){
+                System.out.println("Enter the Element for the matrix for the position : ("+i+","+j+")");
+                mat[i][j]=sc.nextInt();
+            }
+        }
+        System.out.println("Entered Matrix : ");
+        for(int i = 0; i<2 ; i++){
+            for(int j=0 ; j<3 ; j++){
+                System.out.println("Entered Element at index : ("+i+","+j+")");
+                System.out.println(mat[i][j]);
+            }
+        }
+    }
+}
 _________________________________________________________________________________________________________________________
 5. Write a JAVA program to reverse an array
+
+_________________________________________________________________________________________________________________________
 6. Write a JAVA program to find the maximum element in an array
 7. Write a JAVA program to find the minimum element in an array
 8. Write a JAVA program to find whether an array is sortes or not
