@@ -46,9 +46,20 @@ ________________________________________________________________________________
 
 3. Calculate the average marks from an array containing marks of all students in Physics using for each loop.
 
-
+public class Arrays{
+    public static void main(String[] args) {
+        int [] marks = {23,45,67,45,34};
+        int sum = 0;
+        for (int mark : marks){
+            sum = sum + mark;
+        }
+        System.out.println("Total marks using for each loop : "+sum);
+    }
+}
 _________________________________________________________________________________________________________________________
 4. Create a program to add 2 matrices of size 2 x 3
+
+_________________________________________________________________________________________________________________________
 5. Write a JAVA program to reverse an array
 6. Write a JAVA program to find the maximum element in an array
 7. Write a JAVA program to find the minimum element in an array
