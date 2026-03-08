@@ -1,1 +1,14 @@
-👉
+👉  Sometimes our program grows in size and we want to seprate the logic of main method to other method.
+For instance - If we are calculating average of a number pair 5 times, we can use methods to avoid repeating the logic.
+refers to : DRY - Don't Repeat Yourself
+
+👉  Syntax of a Method : 
+A method is a function written inside a class . Since JAVA is an OOP Object Oriented Language, we need to write the method inside 
+same class.
+
+access_modifier return_type method_name(parameter_list) {
+    // method body
+    // code to be executed
+}
+
+
