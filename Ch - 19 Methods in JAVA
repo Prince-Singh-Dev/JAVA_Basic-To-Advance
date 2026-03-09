@@ -1,6 +1,7 @@
 👉  Sometimes our program grows in size and we want to seprate the logic of main method to other method.
 For instance - If we are calculating average of a number pair 5 times, we can use methods to avoid repeating the logic.
 refers to : DRY - Don't Repeat Yourself
+____________________________________________________________________________________________________________________________
 
 👉  Syntax of a Method : 
 A method is a function written inside a class . Since JAVA is an OOP Object Oriented Language, we need to write the method inside 
@@ -10,6 +11,7 @@ access_modifier return_type method_name(parameter_list) {
     // method body
     // code to be executed
 }
+____________________________________________________________________________________________________________________________
 
 👉 Sample problem : 
 
@@ -41,4 +43,23 @@ Enter the value of a and b
 3
 4
 Calling methods and the result is : 35
+____________________________________________________________________________________________________________________________
+
+👉 Sample problem for sum of two numbers :
+
+public class Methods{
+    static int add(int a , int b){
+        int c = a+b;
+        return c;
+    }
+    public static void main(String[] args){
+        int a=16;
+        int b=20;
+        System.out.println(add(a,b));
+    }
+}
+____________________________________________________________________________________________________________________________
+
+👉 Calling a Method
+
 
