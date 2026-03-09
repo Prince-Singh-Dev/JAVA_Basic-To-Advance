@@ -60,6 +60,12 @@ public class Methods{
 }
 ____________________________________________________________________________________________________________________________
 
-👉 Calling a Method
+👉 Calling a Method : 
+
+A method can be called by creating an object of the class in which the method exists followed 
+by the method call 
+
+calc obj = new Calc();     --------> Object Creation
+    obj.mySum(a,b);        --------> Method call upon an object
 
 
