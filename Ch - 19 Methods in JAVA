@@ -11,4 +11,34 @@ access_modifier return_type method_name(parameter_list) {
     // code to be executed
 }
 
+👉 Sample problem : 
+
+import java.util.Scanner;
+public class Methods{
+     static int logic(int a , int b){
+        int c;
+        if(a>b){
+            c=a*b;
+        }
+        else{
+            c=(a+b)*5;
+        }
+        return c;
+    }
+    public static void main(String[] args){
+         Scanner sc = new Scanner(System.in);
+         System.out.println("Enter the value of a and b");
+         int a = sc.nextInt();
+         int b = sc.nextInt();
+         int temp = logic(a , b);
+         System.out.println("Calling methods and the result is : "+temp);
+    }
+}
+
+Output :
+
+Enter the value of a and b
+3
+4
+Calling methods and the result is : 35
 
