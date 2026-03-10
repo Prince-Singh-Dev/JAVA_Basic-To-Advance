@@ -68,4 +68,34 @@ by the method call
 calc obj = new Calc();     --------> Object Creation
     obj.mySum(a,b);        --------> Method call upon an object
 
+import java.util.Scanner;
+public class Methods{
+_________________________________________________________________
+|                                                               |
+|    int logic(int a , int b){                                  | ---> Main Frame : We have changed the static method to normal method
+|_______________________________________________________________|
+        int c;
+        if(a>b){
+            c=a*b;
+        }
+        else{
+            c=(a+b)*5;
+        }
+        return c;
+    }
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+_________________________________________________________________
+|                                                               |
+|       Methods obj = new Methods();                            | ---> Main frame : Creating a objectt to call a method in java
+|_______________________________________________________________|
+        System.out.println("Enter the value of a and b");
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int temp = obj.logic(a , b);
+        System.out.println("Calling methods and the result is : "+temp);
+    }
+}
+
+
 
