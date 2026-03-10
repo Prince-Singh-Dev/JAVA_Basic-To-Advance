@@ -128,4 +128,47 @@ Calling : obj.logic(a,b);
 
 Since we removed static, the method logic() now belongs to the instance of the class, not the class itself.
 Therefore Java requires an object to access it.
+
+👉 Throughout the object creation :
+
+The values from the method call (a and b) are copied to the a and b of the function logic. Thus even if we modify the values of a and b
+inside the method, the values in the main method will not change.
+
+____________________________________________________________________________________________________________________________
+
+👉 Void return type 
+
+In Java, void means the method does not return any value.
+When a method is declared with void, it performs some task but does not send any result back to the caller.
+
+Syntax is same as we used earlier for creation of Methods.
+
+Example program for using void return type with object creation
+
+import java.util.Scanner;
+public class Methods{
+    void methods(int a , int b){
+        if(a>b){
+            System.out.println("Entered number : "+a+" is greater than "+b);
+        }
+        else{
+            System.out.println("Entered number : "+a+" is lesser than "+b);
+        }
+    }
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the values of a and b respectively : ");
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        Methods obj = new Methods();
+        obj.methods(a,b);
+    }
+}
+
+Output :
+
+Enter the values of a and b respectively : 
+4
+5
+Entered number : 4 is lesser than 5
 ____________________________________________________________________________________________________________________________
