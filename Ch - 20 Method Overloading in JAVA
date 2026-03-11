@@ -1,3 +1,11 @@
 👉 Method overloading in JAVA
 
-Void return type
+👉 Static Keyword : It is used to associate a method of a given class with the class rather than the objects.
+
+👉 Process of Method invocation in JAVA :
+
+Consider the method Sum
+
+int sum(int a , int b){
+  return a+b;
+}
