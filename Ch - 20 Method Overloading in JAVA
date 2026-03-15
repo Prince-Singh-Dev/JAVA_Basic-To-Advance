@@ -1,5 +1,3 @@
-👉 Method overloading in JAVA
-
 👉 Static Keyword : It is used to associate a method of a given class with the class rather than the objects.
 
 👉 Process of Method invocation in JAVA :
@@ -49,5 +47,17 @@ public class Methods{
 }
 
 Output : After change array function of x is : 98
+
+The value has been changed as we passed the reference of the array not the copy of the array despite of integer case 
+
 --------------------------------------------------------------------------------------------------------------------------------------
 
+👉 Method overloading in JAVA
+
+Two or more methods can have same name but different parameters .Such methods are called Overloaded Methods
+
+void foo()
+void foo(int a)    -------------> Overloaded Function foo
+void foo(int a, int b)
+
+Method Overloading cannot be performed by changing the return type of methods.
