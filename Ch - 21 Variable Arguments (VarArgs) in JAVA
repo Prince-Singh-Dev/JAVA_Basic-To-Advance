@@ -1,1 +1,13 @@
---
+👉 Variable Arguments (VarArgs)
+
+A function with vararg can be created in JAVA using the following syntax : 
+
+        public static void foo(int ... arr){
+            arr is available here as int [] arr
+        }
+
+foo can be called with zero or more arguments like this : 
+
+foo(7) foo(7,8,9) foo(1,2,3,4,5,6,7) 
+
+We can also create a function bar like this
