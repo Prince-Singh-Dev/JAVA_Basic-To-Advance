@@ -14,4 +14,22 @@ The method is called like this :
     Calc obj = new Calc();
     c = obj.sum(2,3)
 
-The values 2 and 3 are copied to a and b and then a+b=2+3=5 is returned in c which is an integer
+The values 2 and 3 are copied to a and b and then a+b=2+3=5 is returned in c which is an integer.
+
+👉 Note : In Case of Arrays, The reference is passed. Same is the case for object passing to mehtods.
+
+public class Methods{
+    static void change(int a){
+        a = 98;
+    }
+    public static void main(String[] args){
+            int [] marks = {23,34,34,56,45};
+            int x = 45;
+            change(x);
+            System.out.println("After change function values of x is : "+ x);
+        }
+    }
+
+Output : After change function values of x is : 45
+--------------------------------------------------------------------------------------------------------------------------------------
+
