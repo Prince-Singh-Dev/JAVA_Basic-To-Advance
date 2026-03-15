@@ -9,3 +9,9 @@ Consider the method Sum
 int sum(int a , int b){
   return a+b;
 }
+
+The method is called like this : 
+    Calc obj = new Calc();
+    c = obj.sum(2,3)
+
+The values 2 and 3 are copied to a and b and then a+b=2+3=5 is returned in c which is an integer
