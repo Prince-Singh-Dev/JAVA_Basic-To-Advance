@@ -1,0 +1,9 @@
+👉 Recursion in JAVA
+
+A function in JAVA can call itself . Such calling of function by itself is called recursion.
+
+Example : Factorial of a number
+
+factorial(n) = n*factorial(n-1)   until n>=1
+
+Quick Quiz : Write a program to calculate ( resursion must be used ) factorial of a number in JAVA.
