@@ -11,3 +11,39 @@ foo can be called with zero or more arguments like this :
 foo(7) foo(7,8,9) foo(1,2,3,4,5,6,7) 
 
 We can also create a function bar like this
+
+Example : 
+
+public class VarArgs {
+    static int sum(int a , int b){
+        return a+b;
+    }
+    static int sum(int a , int b , int c){
+        return a+b;
+    }
+    // Using Varargs to have multiple arguments passed in the function
+    static int sum(int ... arr){
+        int [] a;
+        int count = 0;
+        for (int i=0 ; i<arr.length ; i++){
+            int x = arr[i];
+            count = count + x;
+        }
+        return count;
+    }
+    public static void main(String[] args){
+        System.out.println("Welcome to Varargs");
+        System.out.println("The sum of 4 and 5 is "+sum(4,5));
+        System.out.println("The sum of 4 , 3 and 5 is "+sum(4,5 ,3));
+        // No need to create these number of methods
+        System.out.println("Sum of 6,5,7,4,3,2 is "+sum(6,5,7,4,3,2));
+    }
+}
+
+
+Output :
+
+Welcome to Varargs
+The sum of 4 and 5 is 9
+The sum of 4 , 3 and 5 is 9
+Sum of 6,5,7,4,3,2 is 27
