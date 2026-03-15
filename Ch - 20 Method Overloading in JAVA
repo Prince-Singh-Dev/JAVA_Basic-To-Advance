@@ -85,4 +85,5 @@ public class Methods{
 
 --> Here two methods having same name sum but different parameters int and float ... here sum is the method overloaded.
 
+Notes : Method overloading can not be performed by changing the return type of methods.
 --------------------------------------------------------------------------------------------------------------------------------------
