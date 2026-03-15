@@ -61,3 +61,28 @@ void foo(int a)    -------------> Overloaded Function foo
 void foo(int a, int b)
 
 Method Overloading cannot be performed by changing the return type of methods.
+
+Example : 
+
+public class Methods{
+    static void sum(int a, int b){
+        int sum = a+b;
+        System.out.println("Sum : "+sum);
+    }
+    static void sum(float a, float b){
+        float sum = a+b;
+        System.out.println("Sum : "+sum);
+    }
+    public static void main(String[] args){
+        int a = 34;
+        int b = 45;
+        float c = 32.56f;
+        float d = 34.56f;
+        sum(a,b);
+        sum(c,d);
+    }
+}
+
+--> Here two methods having same name sum but different parameters int and float ... here sum is the method overloaded.
+
+--------------------------------------------------------------------------------------------------------------------------------------
