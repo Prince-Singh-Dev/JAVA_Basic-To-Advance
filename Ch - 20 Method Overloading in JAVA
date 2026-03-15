@@ -18,6 +18,8 @@ The values 2 and 3 are copied to a and b and then a+b=2+3=5 is returned in c whi
 
 👉 Note : In Case of Arrays, The reference is passed. Same is the case for object passing to mehtods.
 
+👉 Integer changing example : 
+
 public class Methods{
     static void change(int a){
         a = 98;
@@ -31,5 +33,21 @@ public class Methods{
     }
 
 Output : After change function values of x is : 45
+
+👉 Array changing example : 
+
+public class Methods{
+    static void change(int [] arr){
+        arr[0] = 98;
+    }
+    public static void main(String[] args){
+        int [] marks = {23,34,34,56,45};
+        // Changing the array
+        change(marks);
+        System.out.println("After change array function of x is : "+ marks[0]);
+    }
+}
+
+Output : After change array function of x is : 98
 --------------------------------------------------------------------------------------------------------------------------------------
 
