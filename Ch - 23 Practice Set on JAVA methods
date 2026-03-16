@@ -154,10 +154,27 @@ AVERAGE OF GIVEN NUMBERS ARE :
 
 -------------------------------------------------------------------------------------------------------------------------------------
 
-7. Repeat 4 using Recursion
-
--------------------------------------------------------------------------------------------------------------------------------------
-
 8. Write a function to convert celsius temperature into farenheit
+
+Formula : (°C × 9/5) + 32
+
+Code :
+
+public class practice{
+    static void temp(float n){
+        float faren = (n * 9/5) + 32;
+        System.out.println(faren);
+    }
+    public static void main(String[] args){
+        float n = 34.3f;
+        System.out.println("Fahrenheit of given celsius : "+n+" temp is : ");
+        temp(n);
+    }
+}
+
+Output : 
+
+Fahrenheit of given celsius : 34.3 temp is : 
+93.74
 
 -------------------------------------------------------------------------------------------------------------------------------------
