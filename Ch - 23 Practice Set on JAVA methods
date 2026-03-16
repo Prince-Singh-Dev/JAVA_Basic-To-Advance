@@ -1,5 +1,35 @@
 1. Write a JAVA method to print multiplication table of a number n
 
+Code : 
+
+public class practice {
+    static void multiply(int n){
+        System.out.println("Multiplication of the number : "+n+"\n");
+        for(int i=1 ; i<11 ; i++){
+            int mul = n*i;
+            System.out.println("\t"+n+"X"+i+"="+mul);
+        }
+    }
+    public static void main(String[] args){
+        multiply(5);
+    }
+}
+
+Output : 
+
+Multiplication of the number : 5
+
+	5X1=5
+	5X2=10
+	5X3=15
+	5X4=20
+	5X5=25
+	5X6=30
+	5X7=35
+	5X8=40
+	5X9=45
+	5X10=50
+
 -------------------------------------------------------------------------------------------------------------------------------------
 2. Write a program using functions to print the following pattern  
     *
