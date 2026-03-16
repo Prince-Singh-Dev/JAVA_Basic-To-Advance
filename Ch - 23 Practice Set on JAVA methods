@@ -128,6 +128,30 @@ The 6th Fibonacci term is: 8
 
 6. Write a function to find average of a set of numbers passed as arguments
 
+Code : 
+
+public class practice{
+    static void avg(int ... a){
+        int [ ] arr;
+        int sum = 0;
+        for(int i=0 ; i<a.length ; i++){
+            sum = sum+a[i];
+        }
+        float average = (float) sum /a.length;
+        System.out.println(average);
+    }
+    public static void main(String[] args){
+        int [] arr = {2,3,4,5,7,10,12};
+        System.out.println("AVERAGE OF GIVEN NUMBERS ARE : ");
+        avg(arr);
+    }
+}
+
+Output : 
+
+AVERAGE OF GIVEN NUMBERS ARE : 
+6.142857
+
 -------------------------------------------------------------------------------------------------------------------------------------
 
 7. Repeat 4 using Recursion
