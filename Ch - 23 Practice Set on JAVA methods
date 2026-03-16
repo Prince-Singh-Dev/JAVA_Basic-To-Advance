@@ -85,6 +85,28 @@ public class practice{
 
 5. Write a function to print nth term of fibannoci series using recursion
 
+Code : 
+
+public class practice {
+    static int fibonacci(int n) {
+        if (n == 0)
+            return 0;
+        else if (n == 1)
+            return 1;
+        else
+            return fibonacci(n - 1) + fibonacci(n - 2);
+    }
+
+    public static void main(String[] args) {
+        int n = 6;
+        System.out.println("The " + n + "th Fibonacci term is: " + fibonacci(n));
+    }
+}
+
+Output : 
+
+The 6th Fibonacci term is: 8
+
 -------------------------------------------------------------------------------------------------------------------------------------
 
 6. Write a function to find average of a set of numbers passed as arguments
