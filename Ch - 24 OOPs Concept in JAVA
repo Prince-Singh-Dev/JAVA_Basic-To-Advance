@@ -6,3 +6,13 @@ It improves code reusability, scalability, and maintainability by following four
 (2) Inheritance, 
 (3) Polymorphism, 
 (4) Abstraction.
+
+It tries to map code instructions with real world making the code short and easier to understand.
+
+What is it ? 
+Solving a problem by creating object is one of the most popular approaches in programming . This is called OOP.
+
+What is DRY ?
+DRY stands for --> Do not repeat yourself 
+                        |
+                        +----> Focus on code reusability.
