@@ -1,4 +1,8 @@
 OOPs in JAVA
 
-
-Object-Oriented Programming (OOP) in Java is a programming paradigm that uses objects and classes to design and structure code. It focuses on organizing data and behavior together, making programs more modular, reusable, and easy to maintain. The four main principles of OOP in Java are Encapsulation (binding data and methods together), Inheritance (acquiring properties from another class), Polymorphism (using one interface with multiple implementations), and Abstraction (hiding complex details and showing only essential features). Java strongly supports OOP concepts, allowing developers to build scalable and efficient applications.
+Java’s Object-Oriented Programming System (OOPs) is a paradigm that organizes software design around objects rather than functions. 
+It improves code reusability, scalability, and maintainability by following four main pillars: 
+(1) Encapsulation,
+(2) Inheritance, 
+(3) Polymorphism, 
+(4) Abstraction.
