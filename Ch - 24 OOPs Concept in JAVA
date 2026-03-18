@@ -1,6 +1,7 @@
-OOPs in JAVA
+👉 OOPs in JAVA
 
-Java’s Object-Oriented Programming System (OOPs) is a paradigm that organizes software design around objects rather than functions. 
+👉 Java’s Object-Oriented Programming System (OOPs) is a paradigm that organizes software design around objects rather than functions. 
+
 It improves code reusability, scalability, and maintainability by following four main pillars: 
 (1) Encapsulation,
 (2) Inheritance, 
@@ -9,10 +10,24 @@ It improves code reusability, scalability, and maintainability by following four
 
 It tries to map code instructions with real world making the code short and easier to understand.
 
-What is it ? 
+👉 What is it ? 
 Solving a problem by creating object is one of the most popular approaches in programming . This is called OOP.
 
-What is DRY ?
+👉 What is DRY ?
 DRY stands for --> Do not repeat yourself 
                         |
                         +----> Focus on code reusability.
+
+👉 Class 
+A class is a blueprint for creating objects.
+
++------------------+                                   +------------------+
+|  JEE Application |------(Filled by student)--------> |  Application for |
+|  form            |                                   |  that Student    |
++------------------+                                   +------------------+
+
++--------+                                   +----------+
+|  Class |------(object instantiation)-----> |  Object  |
++--------+                                   +----------+
+|
++--> contains info to create a valid object
