@@ -31,3 +31,7 @@ A class is a blueprint for creating objects.
 +--------+                                   +----------+
 |
 +--> contains info to create a valid object
+
+👉 Object
+An object is an instantiation of a class . When a class is defined , a template(info) is defined. Memory is allocated only after object 
+instantiation.
