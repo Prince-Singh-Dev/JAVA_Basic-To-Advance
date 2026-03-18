@@ -35,3 +35,18 @@ A class is a blueprint for creating objects.
 👉 Object
 An object is an instantiation of a class . When a class is defined , a template(info) is defined. Memory is allocated only after object 
 instantiation.
+
+👉 How to model a problem in OOPs.
+
+We identify the following:
++---------------+-------------+---------------------------+
+|  1. Noun      |  Class      | Employee                  |
++---------------------------------------------------------+
+|  2. Adjective |  Attributes | name , age , salary       |
++---------------------------------------------------------+
+|  3. Verb      |  Methods    | getSalary() , increment() |
++---------------+-------------+---------------------------+
+
+👉 OOPs Terminology 
+
+1. Abstraction : Hiding internal details [ Show only essential info ! ]
