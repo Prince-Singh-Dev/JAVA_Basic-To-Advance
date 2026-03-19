@@ -41,12 +41,28 @@ instantiation.
 We identify the following:
 +---------------+-------------+---------------------------+
 |  1. Noun      |  Class      | Employee                  |
-+---------------------------------------------------------+
++---------------+-------------+---------------------------+
 |  2. Adjective |  Attributes | name , age , salary       |
-+---------------------------------------------------------+
++---------------+-------------+---------------------------+
 |  3. Verb      |  Methods    | getSalary() , increment() |
 +---------------+-------------+---------------------------+
 
 👉 OOPs Terminology 
 
 1. Abstraction : Hiding internal details [ Show only essential info ! ]
+for example : Using this phone without bothering about how it was made.
+
+2. Encapsulation : The act of putting various components together (in a capsule)
+for example : Laptop is a single entity with wifi+speaker+storage in a single box.
+
+In Java, encapsulation simply means that the sensitive data can be hidden from the users.
+
+3. Inheritance : The act of deriving new things from existing things.
+for example : Rickshaw --> E-Rickshaw 
+              Phone ---> Smart Phone  --> (Implements DRY)
+
+4. Polymorphism : One entity many forms
+for example : Smartphone --> Phone        Smartphone ---> Calculator
+here smartphone is having properties of normal phone and calculator as well
+
+👉 
