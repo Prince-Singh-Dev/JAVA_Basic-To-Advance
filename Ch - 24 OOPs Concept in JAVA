@@ -66,3 +66,33 @@ for example : Smartphone --> Phone        Smartphone ---> Calculator
 here smartphone is having properties of normal phone and calculator as well
 
 👉 Writing a custom class
+
+We can write a custom class as follows : 
+
+--> A Java code can have only one public class , rest will be defined without public access modifier.
+
+class Employee{
+    int id ; --------> Attribute 1
+    string name;  ---------> Attribute 2
+}
+
+Any real world object = Properties + Behaviour
+Object in OOPs = Atrributes + Methods
+
+class Employee{                                                     // Creation of custom class 
+    int id;
+    String name;
+}
+
+public class OOPs {
+    public static void main(String[] args) {
+        System.out.println("This is out custom class");
+        Employee prince = new Employee();                           // Object Creation of Employee Class
+        prince.id = 61;                                             // Setting Attributes of Custom Class
+        prince.name = "Prince";
+        System.out.println(prince.id);                              // Accessing the attributes of custom class
+        System.out.println(prince.name);
+    }
+}
+
+A class with Methods : We can add methods to our class Employee as follows : 
