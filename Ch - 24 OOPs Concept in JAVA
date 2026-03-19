@@ -116,3 +116,43 @@ public class OOPs {
     }
 }
 
+👉  A class with Methods with getter and setter function 
+
+import java.util.Scanner;
+class Employee{                                                    
+    int id;
+    String name;
+    int sal;
+    Scanner sc = new Scanner(System.in);
+    public void getSalary(){
+        System.out.println("Enter the name of employee : ");
+        name = sc.next();
+        System.out.println("Enter the salary of "+name+" : ");
+        sal = sc.nextInt();
+    }
+    public int showSalary(){
+        return sal;
+    }
+}
+
+public class OOPs {
+    public static void main(String[] args) {
+        System.out.println("Class Methods : \n");
+        Employee E = new Employee();
+        E.getSalary();
+        int salary = E.showSalary();
+        System.out.println("Entered Salary of "+E.name+" is "+salary);
+    }
+}
+
+Output : 
+
+Class Methods : 
+
+Enter the name of employee : 
+Harsh
+Enter the salary of Harsh : 
+34000
+Entered Salary of Harsh is 34000
+
+
