@@ -95,4 +95,24 @@ public class OOPs {
     }
 }
 
-A class with Methods : We can add methods to our class Employee as follows : 
+👉 A class with Methods : We can add methods to our class Employee as follows : 
+
+class Employee{                                                     // Creation of custom class
+    int id;
+    String name;
+    public void printdetails(){                                     // Creation of custom methods in custom class
+        System.out.println("My id is "+id);
+        System.out.println("My name is "+name);
+    }
+}
+
+public class OOPs {
+    public static void main(String[] args) {
+        System.out.println("This is out custom class");
+        Employee prince = new Employee();                           // Object Creation of Employee Class
+        prince.id = 61;                                             // Setting Attributes of Custom Class
+        prince.name = "Prince";
+        prince.printdetails();                                      // Accessing the attributes of custom class
+    }
+}
+
