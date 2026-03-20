@@ -1,1 +1,18 @@
+1. Create a class Employee with following properties and method : 
 
+--> Salary (property) int
+--> getSalary (method returning int)
+--> name (property) String
+--> getName (method returning String)
+--> setName (method changing name)
+
+
+2. Create a class cellphone with methods to print "ringing..." , "vibrating..." etc.
+
+3. Create a class Square with a method to initialize its side , calculating area and perimeter etc.
+
+4. Create a class Rectangle and find its area and perimeter by initializing its length and width
+
+5. Create a class TommyVerceti for Rockstar Games , capable of hitting (printing hitting) , running , firing etc.
+
+6. Create Circle class and find circumference and area of it.
