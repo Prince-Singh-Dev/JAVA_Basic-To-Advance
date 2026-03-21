@@ -6,6 +6,39 @@
 --> getName (method returning String)
 --> setName (method changing name)
 
+public class Employee {
+    private int salary;
+    private String name;
+
+    public int getSalary() {
+        return salary;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setSalary(int salary) {
+        this.salary = salary;
+    }
+
+    public static void main(String[] args) {
+        Employee emp = new Employee();
+        emp.setName("John");
+        emp.setSalary(50000);
+
+        System.out.println("Name: " + emp.getName());
+        System.out.println("Salary: " + emp.getSalary());
+
+        emp.setName("Mike");
+        System.out.println("Updated Name: " + emp.getName());
+    }
+}
+
 
 2. Create a class cellphone with methods to print "ringing..." , "vibrating..." etc.
 
