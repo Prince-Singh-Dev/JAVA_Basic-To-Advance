@@ -79,7 +79,7 @@ class square{
         System.out.println("Perimeter of Square : "+4*side);
     }
     void area(int side){
-        System.out.println("Perimeter of Square : "+side*side);
+        System.out.println("Area of Square : "+side*side);
     }
 }
 
