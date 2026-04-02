@@ -65,6 +65,34 @@ ________________________________________________________________________________
 
 3. Create a class Square with a method to initialize its side , calculating area and perimeter etc.
 
+CODE : 
+
+import java.util.Scanner;
+class square{
+    int sides(){
+        System.out.println("enter the side of the square : ");
+        Scanner sc = new Scanner(System.in);
+        int side = sc.nextInt();
+        return side;
+    }
+    void perimeter(int side){
+        System.out.println("Perimeter of Square : "+4*side);
+    }
+    void area(int side){
+        System.out.println("Perimeter of Square : "+side*side);
+    }
+}
+
+public class practice{
+    public static void main(String[] args){
+        square s = new square();
+        int side = s.sides();
+        s.perimeter(side);
+        s.area(side);
+    }
+}
+_____________________________________________________________________________________________________________________________________
+
 4. Create a class Rectangle and find its area and perimeter by initializing its length and width
 
 5. Create a class TommyVerceti for Rockstar Games , capable of hitting (printing hitting) , running , firing etc.
