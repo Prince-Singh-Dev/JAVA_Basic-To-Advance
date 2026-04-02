@@ -95,6 +95,38 @@ ________________________________________________________________________________
 
 4. Create a class Rectangle and find its area and perimeter by initializing its length and width
 
+CODE : 
+
+import java.util.Scanner;
+class rectangle{
+    int [] sides(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the length of the rectangle : ");
+        int length = sc.nextInt();
+        System.out.println("enter the width of the rectangle : ");
+        int width = sc.nextInt();
+        return new int[]{length,width};
+    }
+    void perimeter(int l , int w){
+        System.out.println("Perimeter of Square : "+2*(l+w));
+    }
+    void area(int l , int w){
+        System.out.println("Area of Square : "+l*w);
+    }
+}
+
+public class practice{
+    public static void main(String[] args){
+        rectangle r = new rectangle();
+        int[] values = r.sides();
+        int length = values[0];
+        int width = values[1];
+        r.perimeter(length,width);
+        r.area(length,width);
+    }
+}
+_____________________________________________________________________________________________________________________________________
+
 5. Create a class TommyVerceti for Rockstar Games , capable of hitting (printing hitting) , running , firing etc.
 
 6. Create Circle class and find circumference and area of it.
