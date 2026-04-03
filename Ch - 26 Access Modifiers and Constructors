@@ -1,15 +1,59 @@
-👉 Access Modifiers 
+👉 Access Modifiers
 
-Specific where a property / method is accessible 
+Access Modifiers define where a property (variable) or method is accessible.
 
-There are four types of access modifiers in JAVA : 
-1. Private
-2. Default 
-3. Protected
-4. Public
+There are 4 types of Access Modifiers in Java:
+
+Private → Accessible only within the same class
+Default → Accessible within the same package
+Protected → Accessible within package + subclasses
+Public → Accessible from anywhere
+
+----------------------------------------------------------------------------------------------------------------------------
 
 👉 Getters and Setters
+Getter → Returns the value (Accessor)
+Setter → Sets/Updates the value (Mutator)
 
-Getter -> Return the value [accessors]
-Setter -> Sets/Updates the value [mutators]
+----------------------------------------------------------------------------------------------------------------------------
 
+👉 Exmaple 
+
+class Employee {
+    private int id;      // private variable
+    String name;         // default (package-private) variable
+
+    // Getter for id
+    public int getId() {
+        return id;
+    }
+
+    // Setter for id
+    public void setId(int id) {
+        this.id = id;
+    }
+}
+
+public class OOPs {
+    public static void main(String[] args) {
+        Employee e = new Employee();
+
+        // e.id = 45;  ❌ Error: id is private (cannot access directly)
+        e.setId(45);   // ✅ Correct way using setter
+
+        e.name = "Prince";   // ✅ Accessible (default access)
+
+        // System.out.println(e.id); ❌ Error
+        System.out.println(e.getId());  // ✅ Correct way using getter
+        System.out.println(e.name);
+    }
+}
+
+----------------------------------------------------------------------------------------------------------------------------
+
+👉 Key Points
+
+Private variables cannot be accessed directly outside the class
+Use getters and setters to access/update private data
+Helps in data hiding (Encapsulation)
+Improves security and control over data
