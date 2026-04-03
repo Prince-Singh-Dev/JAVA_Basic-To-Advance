@@ -129,4 +129,38 @@ ________________________________________________________________________________
 
 5. Create a class TommyVerceti for Rockstar Games , capable of hitting (printing hitting) , running , firing etc.
 
+import java.util.Scanner;
+class TommyVerceti{
+    void hit(){
+        System.out.println("hitting...");
+    }
+    void running(){
+        System.out.println("Running...");
+    }
+    void firing(){
+        System.out.println("firing...");
+    }
+}
+public class practice{
+    public static void main(){
+        TommyVerceti GTA = new TommyVerceti();
+        for (int i=0 ; i<5 ; i++){
+            Scanner sc = new Scanner(System.in);
+            System.out.println("choose any one option : \n\t 1. Hit \n\t 2. Run \n\t 3. fire \n\n ");
+            int option = sc.nextInt();
+            if(option == 1){
+                GTA.hit();
+            }
+            if(option == 2){
+                GTA.running();
+            }
+            if(option == 3){
+                GTA.firing();
+            }
+        }
+    }
+}
+
+_____________________________________________________________________________________________________________________________________
+
 6. Create Circle class and find circumference and area of it.
