@@ -57,3 +57,8 @@ Private variables cannot be accessed directly outside the class
 Use getters and setters to access/update private data
 Helps in data hiding (Encapsulation)
 Improves security and control over data
+
+----------------------------------------------------------------------------------------------------------------------------
+
+👉 Constructor in JAVA
+
