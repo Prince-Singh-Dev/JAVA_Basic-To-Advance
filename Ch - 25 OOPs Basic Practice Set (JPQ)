@@ -129,6 +129,8 @@ ________________________________________________________________________________
 
 5. Create a class TommyVerceti for Rockstar Games , capable of hitting (printing hitting) , running , firing etc.
 
+CODE : 
+
 import java.util.Scanner;
 class TommyVerceti{
     void hit(){
@@ -164,3 +166,29 @@ public class practice{
 _____________________________________________________________________________________________________________________________________
 
 6. Create Circle class and find circumference and area of it.
+
+CODE : 
+
+import java.util.Scanner;
+class circle{
+    int radii(){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the radius of circle : ");
+        int radius = sc.nextInt();
+        return radius;
+    }
+    void circumference(int radius){
+        System.out.println("Circumference of Circle : "+2*(22/7)*radius);
+    }
+    void area(int radius){
+        System.out.print("Area of circle : "+(22/7)*radius*radius);
+    }
+}
+public class practice{
+    public static void main(String[] args){
+        circle c = new circle();
+        int radius = c.radii();
+        c.circumference(radius);
+        c.area(radius);
+    }
+}
