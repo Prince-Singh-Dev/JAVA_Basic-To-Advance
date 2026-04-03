@@ -23,14 +23,14 @@ class Employee {
     private int id;      // private variable
     String name;         // default (package-private) variable
 
-    // Getter for id
-    public int getId() {
-        return id;
-    }
-
-    // Setter for id
+    // Setter method
     public void setId(int id) {
         this.id = id;
+    }
+
+    // Getter method
+    public int getId() {
+        return id;
     }
 }
 
@@ -38,13 +38,13 @@ public class OOPs {
     public static void main(String[] args) {
         Employee e = new Employee();
 
-        // e.id = 45;  ❌ Error: id is private (cannot access directly)
-        e.setId(45);   // ✅ Correct way using setter
+        // e.id = 45; ❌ Not allowed (private)
+        e.setId(45);      // ✅ Setting value using setter
 
-        e.name = "Prince";   // ✅ Accessible (default access)
+        e.name = "Prince";   // ✅ Accessible (default)
 
-        // System.out.println(e.id); ❌ Error
-        System.out.println(e.getId());  // ✅ Correct way using getter
+        // System.out.println(e.id); ❌ Not allowed
+        System.out.println(e.getId());   // ✅ Getting value using getter
         System.out.println(e.name);
     }
 }
