@@ -1,0 +1,15 @@
+👉 Access Modifiers 
+
+Specific where a property / method is accessible 
+
+There are four types of access modifiers in JAVA : 
+1. Private
+2. Default 
+3. Protected
+4. Public
+
+👉 Getters and Setters
+
+Getter -> Return the value [accessors]
+Setter -> Sets/Updates the value [mutators]
+
