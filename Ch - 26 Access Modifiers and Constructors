@@ -60,5 +60,16 @@ Improves security and control over data
 
 ----------------------------------------------------------------------------------------------------------------------------
 
-👉 Constructor in JAVA
+👉 Constructors in JAVA
 
+A member function used to initialize an object while creating it.
+
+despite of writing 
+Employee e = new Employee();
+e.setName("Prince");
+
+In order to write over own constructor , we define a method with name same as class name
+
+public Employee(){
+    name = "Prince";
+}
