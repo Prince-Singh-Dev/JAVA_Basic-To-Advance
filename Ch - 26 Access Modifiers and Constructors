@@ -73,3 +73,37 @@ In order to write over own constructor , we define a method with name same as cl
 public Employee(){
     name = "Prince";
 }
+
+Just like this :
+
+CODE 
+
+class myemployee{
+    private int id;
+    private String name;
+
+    public myemployee(){
+        id = 61;
+        name = "Prince";
+    }
+    
+    public String getName() {return name;}
+    public void setName(String n){this.name=n;}
+}
+
+public class constructors{
+    public static void main(String[] args){
+        myemployee e = new myemployee();
+        int n = e.getId();
+        System.out.println("id : "+n);
+        String name = e.getName();
+        System.out.println("Name : "+name);
+    }
+}
+
+Output
+
+id : 61
+Name : Prince
+
+----------------------------------------------------------------------------------------------------------------------------
