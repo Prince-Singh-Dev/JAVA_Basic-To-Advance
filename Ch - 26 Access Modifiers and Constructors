@@ -62,48 +62,120 @@ Improves security and control over data
 
 👉 Constructors in JAVA
 
-A member function used to initialize an object while creating it.
+A constructor is a special method used to initialize objects in Java.
 
-despite of writing 
-Employee e = new Employee();
-e.setName("Prince");
+It is called automatically when an object is created.
+Constructor name must be same as class name.
+It has no return type (not even void).
 
-In order to write over own constructor , we define a method with name same as class name
+👉 Types of Constructors
 
-public Employee(){
-    name = "Prince";
-}
+1. Default Constructor (No-Argument Constructor)
 
-Just like this :
+A constructor without parameters is called a default constructor.
+If you don’t create any constructor, Java provides one automatically.
+Used to assign default values.
 
-CODE 
+Example
 
-class myemployee{
-    private int id;
-    private String name;
+class Student {
+    int id;
+    String name;
 
-    public myemployee(){
-        id = 61;
-        name = "Prince";
+    // Default constructor
+    Student() {
+        id = 0;
+        name = "Unknown";
     }
-    
-    public String getName() {return name;}
-    public void setName(String n){this.name=n;}
-}
 
-public class constructors{
-    public static void main(String[] args){
-        myemployee e = new myemployee();
-        int n = e.getId();
-        System.out.println("id : "+n);
-        String name = e.getName();
-        System.out.println("Name : "+name);
+    void display() {
+        System.out.println(id + " " + name);
+    }
+
+    public static void main(String[] args) {
+        Student s1 = new Student();
+        s1.display();
     }
 }
 
-Output
+Output : 0 Unknown
 
-id : 61
-Name : Prince
+2. Parameterized Constructor
+
+A constructor that accepts parameters to initialize object values.
+Used to assign custom values at runtime
+Helps in creating different objects with different data
+
+Example
+
+class Student {
+    int id;
+    String name;
+
+    // Parameterized constructor
+    Student(int i, String n) {
+        id = i;
+        name = n;
+    }
+
+    void display() {
+        System.out.println(id + " " + name);
+    }
+
+    public static void main(String[] args) {
+        Student s1 = new Student(101, "Rahul");
+        Student s2 = new Student(102, "Aman");
+
+        s1.display();
+        s2.display();
+    }
+}
+
+Output : 
+
+101 Rahul
+102 Aman
+
+3. Copy Constructor
+
+A constructor that copies values from another object.
+Not built-in like C++, we create it manually
+Useful when duplicating objects
+
+Example
+
+class Student {
+    int id;
+    String name;
+
+    // Parameterized constructor
+    Student(int i, String n) {
+        id = i;
+        name = n;
+    }
+
+    // Copy constructor
+    Student(Student s) {
+        id = s.id;
+        name = s.name;
+    }
+
+    void display() {
+        System.out.println(id + " " + name);
+    }
+
+    public static void main(String[] args) {
+        Student s1 = new Student(101, "Rahul");
+        Student s2 = new Student(s1); // Copy
+
+        s1.display();
+        s2.display();
+    }
+}
+
+Output :
+
+101 Rahul
+101 Rahul
 
 ----------------------------------------------------------------------------------------------------------------------------
