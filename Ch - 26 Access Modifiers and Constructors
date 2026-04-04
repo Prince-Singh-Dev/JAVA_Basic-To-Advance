@@ -179,3 +179,12 @@ Output :
 101 Rahul
 
 ----------------------------------------------------------------------------------------------------------------------------
+
+👉 Constructor vs Method
+
+| Feature     | Constructor       | Method                |
+| ----------- | ----------------- | --------------------- |
+| Name        | Same as class     | Any name              |
+| Return Type | No return type    | Must have return type |
+| Call        | Automatic         | Manual                |
+| Purpose     | Initialize object | Perform operations    |
