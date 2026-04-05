@@ -11,3 +11,76 @@ ________________________________________________________________________________
 
 Code : 
 
+import java.util.Random;
+import java.util.Scanner;
+
+class Game {
+    Random r = new Random();
+    int fixedNum = r.nextInt(1, 101); // include 100
+
+    void start() {
+        System.out.println("\t\tWelcome to the Guess Game");
+    }
+
+    int getValue() {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter your guess (1 - 100): ");
+        return sc.nextInt();
+    }
+
+    int checkValue(int num) {
+        int count = 0;
+
+        while (num != fixedNum) {
+            if (num > fixedNum) {
+                System.out.println("Too high...");
+            } else {
+                System.out.println("Too low...");
+            }
+
+            count++;
+            num = getValue();
+        }
+
+        System.out.println("🎉 Correct! You guessed the number.");
+        return count;
+    }
+}
+
+public class GuessGame {
+    public static void main(String[] args) {
+        Game GTA = new Game();
+        GTA.start();
+
+        int x = GTA.getValue();
+        int turns = GTA.checkValue(x);
+
+        System.out.println("Total attempts: " + (turns + 1));
+    }
+}
+
+______________________________________________________________________________________________________________________________________
+
+OUTPUT : 
+
+                                            Welcome to the Guess Game
+
+Enter your guess (1 - 100): 34
+Too low...
+Enter your guess (1 - 100): 56
+Too high...
+Enter your guess (1 - 100): 45
+Too low...
+Enter your guess (1 - 100): 50
+Too low...
+Enter your guess (1 - 100): 55
+Too high...
+Enter your guess (1 - 100): 53
+Too high...
+Enter your guess (1 - 100): 52
+🎉 Correct! You guessed the number.
+Total attempts: 7
+
+Process finished with exit code 0
+
+
