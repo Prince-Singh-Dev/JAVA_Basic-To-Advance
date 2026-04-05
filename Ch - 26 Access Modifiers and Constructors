@@ -234,3 +234,10 @@ public class constructors{
 Flexibility in object creation
 Cleaner code
 Avoids multiple setter calls
+
+👉 Note :
+
+1. Constructors can take parameters without being overloaded
+2. There can be more than two overloaded constructors
+
+
