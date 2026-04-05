@@ -193,6 +193,16 @@ Output :
 
 👉 Constructor Overloading 
 
+Constructor Overloading means having multiple constructors in the same class with:
+
+Different number of parameters OR Different types of parameters
+It is used to initialize objects in different ways
+
+Constructor name = class name
+No return type (not even void)
+Can have multiple constructors
+Compiler decides which constructor to call (compile-time polymorphism)
+
 Code :
 
 class emp{
@@ -212,9 +222,15 @@ class emp{
 }
 public class constructors{
     public static void main(String[] args){
-        emp e = new emp();
-        emp e2 = new emp(45,"Prince");
+        emp e = new emp();                    // calls default
+        emp e2 = new emp(45,"Prince");        // calls 2 parameters
         e.get();
         e2.get();
     }
 }
+
+👉 Why use Constructor Overloading?
+
+Flexibility in object creation
+Cleaner code
+Avoids multiple setter calls
