@@ -151,7 +151,62 @@ ________________________________________________________________________________
 
 4. Overload a constructor used to initialize a rectangle of length 4 and breadth 5 for using custom parameters
 
-👉  Solution Code 1 : 
+👉  Solution : 
+
+// Overload a constructor used to initialize a rectangle of length 4 and breadth 5 for using custom parameters
+
+import java.util.Scanner;
+
+class rectangle{
+    int l;
+    int w;
+    Scanner sc  = new Scanner(System.in);
+    public rectangle(){
+        l = 4;
+        w = 5;
+    }
+    int getlength(){
+        System.out.print("Enter the length : ");
+        return sc.nextInt();
+    }
+    int getwidth(){
+        System.out.print("Enter the width : ");
+        return sc.nextInt();
+    }
+    public rectangle(int length , int width){
+        l = length;
+        w = width;
+    }
+}
+
+public class practice{
+    public static void main(String[] args){
+        rectangle r = new rectangle();
+        System.out.println("Value of default length and width using default constructors : ");
+        System.out.println("Length : "+r.l);
+        System.out.println("Width : "+r.w);
+        System.out.println("Now using parameterized constructor for changing values : ");
+        int len = r.getlength();
+        int wid = r.getwidth();
+        rectangle rc = new rectangle(len,wid);
+        System.out.println("Length : "+rc.l);
+        System.out.println("Width : "+rc.w);
+    }
+}
+
+Output :
+
+Value of default length and width using default constructors : 
+Length : 4
+Width : 5
+Now using parameterized constructor for changing values : 
+Enter the length : 6
+Enter the width : 7
+Length : 6
+Width : 7
+
+Process finished with exit code 0
+
 
 _______________________________________________________________________________________________________________________________
 
