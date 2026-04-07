@@ -42,7 +42,70 @@ ________________________________________________________________________________
 
 2. Use 1 to calculate surface are and volume of the cylinder
 
-👉  Solution Code 1 : 
+👉  Solution
+
+import java.util.Scanner;
+
+class Cylinder {
+    private int r;
+    private int h;
+
+    void setValues(int radius, int height) {
+        r = radius;
+        h = height;
+    }
+
+    int getRadius() {
+        return r;
+    }
+
+    int getHeight() {
+        return h;
+    }
+
+    void surfaceArea() {
+        double sa = 2 * Math.PI * r * (r + h);
+        System.out.println("Surface Area: " + sa);
+    }
+    
+    void volume() {
+        double vol = Math.PI * r * r * h;
+        System.out.println("Volume: " + vol);
+    }
+}
+
+public class practice {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter radius: ");
+        int r = sc.nextInt();
+
+        System.out.print("Enter height: ");
+        int h = sc.nextInt();
+
+        Cylinder c = new Cylinder();
+        c.setValues(r, h);
+
+        System.out.println("Radius: " + c.getRadius());
+        System.out.println("Height: " + c.getHeight());
+
+        c.surfaceArea();
+        c.volume();
+    }
+}
+
+OUTPUT : 
+
+Enter radius: 4
+Enter height: 6
+Radius: 4
+Height: 6
+Surface Area: 251.32741228718345
+Volume: 301.59289474462014
+
+Process finished with exit code 0
+
 
 _______________________________________________________________________________________________________________________________
 
