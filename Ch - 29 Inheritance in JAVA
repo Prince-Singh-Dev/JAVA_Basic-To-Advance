@@ -1,1 +1,9 @@
+👉 What is Inheritance?
 
+Inheritance is a mechanism in Java where one class acquires the properties (variables) and behaviors (methods) of another class.
+
+It helps in:
+
+Code reusability
+Reducing redundancy
+Creating hierarchical relationships
