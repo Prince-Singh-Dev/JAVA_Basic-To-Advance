@@ -1,1 +1,31 @@
+1. Create a class cylinder and use getters and setters to set its radius and height
+
+👉  Solution Code 1 : 
+
+_______________________________________________________________________________________________________________________________
+
+2. Use 1 to calculate surface are and volume of the cylinder
+
+👉  Solution Code 1 : 
+
+_______________________________________________________________________________________________________________________________
+
+3. Use a constructor and repeat 1
+
+👉  Solution Code 1 : 
+
+_______________________________________________________________________________________________________________________________
+
+4. Overload a constructor used to initialize a rectangle of length 4 and breadth 5 for using custom parameters
+
+👉  Solution Code 1 : 
+
+_______________________________________________________________________________________________________________________________
+
+5. Repeat 1 for a sphere
+
+👉  Solution Code 1 : 
+
+
+
 
