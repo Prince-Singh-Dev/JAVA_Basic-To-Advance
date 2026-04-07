@@ -111,7 +111,41 @@ ________________________________________________________________________________
 
 3. Use a constructor and repeat 1
 
-👉  Solution Code 1 : 
+👉  Solution :
+
+import java.util.Scanner;
+
+class Cylinder {
+    private int r;
+    private int h;
+
+    int getRadius() {
+        return r;
+    }
+
+    int getHeight() {
+        return h;
+    }
+
+    public Cylinder(int radius , int height){
+        r = radius ;
+        h = height ;
+    }
+}
+
+public class practice {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter radius: ");
+        int r = sc.nextInt();
+
+        System.out.print("Enter height: ");
+        int h = sc.nextInt();
+
+        Cylinder c = new Cylinder(r,h);
+    }
+}
 
 _______________________________________________________________________________________________________________________________
 
