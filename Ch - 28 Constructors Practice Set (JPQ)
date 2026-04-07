@@ -1,6 +1,42 @@
 1. Create a class cylinder and use getters and setters to set its radius and height
 
-👉  Solution Code 1 : 
+👉  Solution : 
+
+import java.util.Scanner;
+class cylinder{
+    int r ;
+    int h ;
+    int [] getter(){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the radius of cylinder : ");
+        int radius = sc.nextInt();
+        System.out.print("Enter the height of cylinder : ");
+        int height = sc.nextInt();
+        int [] arr = {radius,height};
+        return arr;
+    }
+    void setter(int [] arr){
+        int r = arr[0];
+        int h = arr[1];
+        System.out.println("Height and width of cylinders are : "+h+" & "+r);
+    }
+}
+
+public class practice{
+    public static void main(String[] args){
+        cylinder c = new cylinder();
+        int [] a = c.getter();
+        c.setter(a);
+    }
+}
+
+OUTPUT : 
+
+Enter the radius of cylinder : 4
+Enter the height of cylinder : 6
+Height and width of cylinders are : 6 & 4
+
+Process finished with exit code 0
 
 _______________________________________________________________________________________________________________________________
 
