@@ -17,6 +17,17 @@ Inheritance in JAVA is declared using extends keyword
 | Subclass    |     --> Here subclass extends the superclass / subclass is derived from superclass
 +-------------+
 
+MORE REAL WORLD EXAMPLES : 
+
++---------+--------+--------+---------+
+| Vehicle | Animal | Animal | Vehicle |
++---------+--------+--------+---------+
+| Car     | Dog    | Cat    | Truck   |
++---------+--------+--------+---------+
+
+When a class inherits from a superclass , it inherits parts of superclass methods and fields. Java doesn't support multiple inheritance
+i.e. two classed can't be duperclass for a subclass
+
 For example : 
 
 class Base{
@@ -63,3 +74,8 @@ public class Inheritance {
 2. Access to x, getX(), setX(), and print() from Base.
 
 Key Point : Inheritance allows code reuse — Derived doesn’t need to rewrite x or its methods.
+
+
+👉 Quick Quiz : Create a class Animal and Derive another class Dog from it. 
+
+
