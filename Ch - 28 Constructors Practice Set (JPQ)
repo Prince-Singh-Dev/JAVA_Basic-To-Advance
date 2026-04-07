@@ -212,7 +212,35 @@ ________________________________________________________________________________
 
 5. Repeat 1 for a sphere
 
-👉  Solution Code 1 : 
+👉  Solution :
+
+import java.util.Scanner;
+class sphere{
+    Scanner sc = new Scanner(System.in);
+    int r;
+    int getRadius(){
+        System.out.println("Enter the radius : ");
+        return sc.nextInt();
+    }
+    void setRadius(int radius){
+        r = radius;
+    }
+}
+public class practice{
+    public static void main(String[] args){
+        sphere s = new sphere();
+        int radius = s.getRadius();
+        s.setRadius(radius);
+        System.out.println("Entered radius : "+s.r);
+    }
+}
+
+Output : 
+
+Enter the radius : 
+4
+Entered radius : 4
+
 
 
 
