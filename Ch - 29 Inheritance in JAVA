@@ -78,6 +78,8 @@ Key Point : Inheritance allows code reuse — Derived doesn’t need to rewrite 
 
 👉 Quick Quiz : Create a class Animal and Derive another class Dog from it. 
 
+-------------------------------------------------------------------------------------------------------------------------------------
+
 👉 Constructors in Inheritance
 
 When a Derived class is extended from the Base class the constructor of the Base class is executed first followed by the constructor 
@@ -117,7 +119,14 @@ Constructor of Derived class
 
 Process finished with exit code 0
 
+-------------------------------------------------------------------------------------------------------------------------------------
+
 👉 Overloaded Constructor in Inheritance
+
+When there are multiple constructors in the parent class, the constructor without any parameters is called from the child class. If we
+want to call the constructor with parameters from the parent class . We can use { super } keyword 
+
+super(a,b); --> calls the constructor from the parent class which takes 2 variables
 
 Example 
 
