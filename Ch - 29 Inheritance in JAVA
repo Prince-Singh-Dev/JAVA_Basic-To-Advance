@@ -44,7 +44,7 @@ class Base{
         this.x = x;
     }
 }
-class Derived extends Base{              // extends Base → This means Derived inherits all fields and methods from Base.
+class Derived extends Base{            // extends Base → This means Derived inherits all fields and methods from Base.
     int y;
 
     public int getY() {
