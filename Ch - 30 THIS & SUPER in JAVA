@@ -96,4 +96,15 @@ class B extends A {
     }
 }
 
+---------------------------------------------------------------------------------------------------------------------------------------
+
 👉 Difference Between this and super
+
++-------------+------------------------------+--------------------------+
+| Feature     | `this`                       | `super`                  |
+| ----------- | ---------------------------- | ------------------------ |
+| Refers to   | Current class object         | Parent class object      |
+| Used in     | Same class                   | Inherited class          |
+| Constructor | Calls same class constructor | Calls parent constructor |
+| Variables   | Current class variables      | Parent class variables   |
++-------------+------------------------------+--------------------------+
