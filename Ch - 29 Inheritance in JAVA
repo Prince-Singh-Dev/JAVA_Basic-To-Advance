@@ -12,7 +12,7 @@ Inheritance in JAVA is declared using extends keyword
 +-------------+
 | Superclass  |
 +-------------+
-      |
+      ⬇️
 +-------------+
 | Subclass    |     --> Here subclass extends the superclass / subclass is derived from superclass
 +-------------+
@@ -80,6 +80,17 @@ Key Point : Inheritance allows code reuse — Derived doesn’t need to rewrite 
 
 👉 Constructors in Inheritance
 
+When a Derived class is extended from the Base class the constructor of the Base class is executed first followed by the constructor 
+of the derived class.
+
+For the following Inheritance Hierarchy, the constructors are executed in the order {1}->{2}->{3}
+
+C1 --> Parent
+⬇️
+C2 --> Child                                     ⬇️ Contructors execute in top to bottom order!
+⬇️
+C3 --> Grand Child
+
 class Base{
     Base(){
         System.out.println("Constructor of BASE class");
@@ -103,5 +114,38 @@ Output :
 Constructor of BASE class
 Constructor of BASE class
 Constructor of Derived class
+
+Process finished with exit code 0
+
+👉 Overloaded Constructor in Inheritance
+
+Example 
+
+class Base{
+    Base(){
+        System.out.println("Constructor of BASE class");
+    }
+    Base(int a){
+        System.out.println("Overloaded Constructor with value : "+a);
+    }
+}
+class Derived extends Base{
+    Derived(int x , int y){
+        super(0);
+        System.out.println("Constructor of Derived class with value x: "+x);
+        System.out.println("Constructor of Derived class with value y: "+y);
+    }
+}
+public class Inheritance{
+    public static void main(String[] args){
+        Derived d = new Derived(14,15);
+    }
+}
+
+
+Output : 
+Overloaded Constructor with value : 0
+Constructor of Derived class with value x: 14
+Constructor of Derived class with value y: 15
 
 Process finished with exit code 0
