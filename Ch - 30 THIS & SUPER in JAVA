@@ -1,1 +1,45 @@
-👉 THIS AND SUPER IN JAVA
+👉 this keyword
+
+this refers to the current object of the class.
+
+Main Uses of this
+
+1. To refer current object variables
+Used when local variables and instance variables have same name.
+
+class Student {
+    int id;
+
+    Student(int id) {
+        this.id = id; // this.id = instance variable
+    }
+}
+
+2. To call current class constructor
+
+class Demo {
+    Demo() {
+        this(10); // calls parameterized constructor
+        System.out.println("Default constructor");
+    }
+
+    Demo(int x) {
+        System.out.println("Parameterized constructor");
+    }
+}
+
+3. To pass current object as argument
+
+void display(Demo obj) {
+    System.out.println("Method called");
+}
+
+void show() {
+    display(this);
+}
+
+4. To return current object
+
+Demo getObject() {
+    return this;
+}
