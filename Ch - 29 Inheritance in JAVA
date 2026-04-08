@@ -78,4 +78,30 @@ Key Point : Inheritance allows code reuse — Derived doesn’t need to rewrite 
 
 👉 Quick Quiz : Create a class Animal and Derive another class Dog from it. 
 
+👉 Constructors in Inheritance
 
+class Base{
+    Base(){
+        System.out.println("Constructor of BASE class");
+    }
+}
+class Derived extends Base{
+    Derived(){
+        System.out.println("Constructor of Derived class");
+    }
+}
+public class Inheritance{
+    public static void main(String[] args){
+        Base b = new Base();
+        Derived d = new Derived();
+    }
+}
+
+
+Output : 
+
+Constructor of BASE class
+Constructor of BASE class
+Constructor of Derived class
+
+Process finished with exit code 0
