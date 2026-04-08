@@ -43,3 +43,57 @@ void show() {
 Demo getObject() {
     return this;
 }
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+👉 super keyword in Java
+
+super refers to the parent (superclass) object.
+
+Main Uses of super
+
+1. To access parent class variables
+
+class A {
+    int x = 10;
+}
+
+class B extends A {
+    int x = 20;
+
+    void show() {
+        System.out.println(super.x); // prints 10
+    }
+}
+
+2. To call parent class method
+
+class A {
+    void show() {
+        System.out.println("Class A method");
+    }
+}
+
+class B extends A {
+    void show() {
+        super.show(); // calls parent method
+        System.out.println("Class B method");
+    }
+}
+
+3. To call parent class constructor
+
+class A {
+    A() {
+        System.out.println("Parent constructor");
+    }
+}
+
+class B extends A {
+    B() {
+        super(); // calls parent constructor
+        System.out.println("Child constructor");
+    }
+}
+
+👉 Difference Between this and super
