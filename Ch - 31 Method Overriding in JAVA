@@ -6,6 +6,34 @@ In Simple : Redefining method of super class! (in subclass)
 When an object of subclass is created and the overrided method is called, the method which has been implemented in the subclass is called
 7 its code is executed.
 
+-----------------------------------------------------------------------------------------------------------------------------------
+
+👉 Dynamic Method Dispatch
+
+Consider the following inheritance hierarchy
+
++-------+
+| SUPER | --> meth1 , meth2
++-------+
+    |
++-------+
+|  SUB  | --> meth2 (overridden) , meth3
++-------+
+
+Scenario 1 :
+
+Super obj = new Sub() --> Allowed
+obj.meth2() --> 2 is called (method of object)
+obj.meth3() --> not allowed 
+
+Scenario 2 :
+
+Sub onj = new Super() --> not allowed
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+👉 Example Code :
+
 class A{
     public int a;
     public int prince(){
