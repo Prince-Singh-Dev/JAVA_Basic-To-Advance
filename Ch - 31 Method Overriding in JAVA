@@ -1,5 +1,11 @@
 👉 Method Overriding in JAVA
 
+If the child class implements the same method present int the parent class again, it is known as method overriding.
+In Simple : Redefining method of super class! (in subclass)
+
+When an object of subclass is created and the overrided method is called, the method which has been implemented in the subclass is called
+7 its code is executed.
+
 class A{
     public int a;
     public int prince(){
