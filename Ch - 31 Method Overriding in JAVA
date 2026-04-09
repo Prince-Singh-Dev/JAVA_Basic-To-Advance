@@ -1,1 +1,29 @@
-👉
+👉 Method Overriding in JAVA
+
+class A{
+    public int a;
+    public int prince(){
+        return 4;
+    }
+    public void method2(){
+        System.out.println("I am method 2 of class A");
+    }
+}
+class B extends A{
+    @Override //notation used to define that  the method is being overrides. The code will run as same without using it.
+    public void method2(){
+        System.out.println("I am method 2 called by class B");
+    }
+    public void method3(){
+        System.out.println("I am method 3 of class B");
+    }
+}
+public class MethodOverride {
+    public static void main(String[] args){
+        A a = new A();
+        a.method2();
+        B b = new B();
+        b.method2();
+    }
+}
+
