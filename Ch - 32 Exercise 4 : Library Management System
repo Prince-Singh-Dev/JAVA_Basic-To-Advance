@@ -1,1 +1,12 @@
+Ques : You have to implement a library using Java class Library
+
+Methods    : addBook , issueBook , returnBook , showAvailableBooks
+Properties : Array to store the available books and to issue the available books 
+
+Let the array of max side
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+Code : 
+
 
