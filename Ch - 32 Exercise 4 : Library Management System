@@ -9,4 +9,76 @@ Let the array of max side
 
 Code : 
 
+class javaLibrary{
+    String [] availableBooks = new String[100];
+    String [] issuedBooks = new String [100];
+    int availableCount = 0;
+    int issuedCount = 0;
+
+    void addBook(String book){
+        availableBooks[availableCount]=book;
+        availableCount++;
+        System.out.println(book + " has been added");
+    }
+
+    void showAvailableBooks(){
+        System.out.println("Available Books : ");
+        for(int i=0 ; i<availableCount ; i++){
+            if(availableBooks[i]!=null){
+                System.out.println(" - "+availableBooks[i]);
+            }
+        }
+    }
+
+    void issueBooks(String book){
+        boolean found = false;
+        for(int i=0 ; i<availableCount ;i++){
+            if(book.equals(availableBooks[i])){
+                issuedBooks[issuedCount] = book;
+                issuedCount++ ;
+                availableBooks[i] = null;
+                System.out.println(book + " has been issued");
+                found = true;
+                break;
+            }
+        }
+        if(!found){
+            System.out.println("This book is not available") ;
+        }
+    }
+}
+
+public class LibraryManagmentSystem {
+    public static void main(){
+        javaLibrary JL = new javaLibrary();
+        JL.addBook("Java");
+        JL.addBook("Python");
+        JL.addBook("DSA");
+
+        JL.showAvailableBooks();
+
+        JL.issueBooks("Python");
+        JL.showAvailableBooks();
+        JL.issueBooks("Data Science");
+    }
+}
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+Output : 
+
+Java has been added
+Python has been added
+DSA has been added
+Available Books : 
+ - Java
+ - Python
+ - DSA
+Python has been issued
+Available Books : 
+ - Java
+ - DSA
+This book is not available
+
+Process finished with exit code 0
 
