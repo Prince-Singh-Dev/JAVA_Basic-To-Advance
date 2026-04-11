@@ -39,34 +39,34 @@
 
 A **structured, practical, and powerful Java learning system** designed for:
 
-- 📚 Exams  
-- 💼 Interviews  
-- ⚡ Fast Revision  
-- 🧠 Deep Understanding  
+- 📚 Exams  <br>
+- 💼 Interviews  <br> 
+- ⚡ Fast Revision <br>
+- 🧠 Deep Understanding <br>  
 
 ---
 
 # 🎯 Mission
 
-- Build strong Java fundamentals  
-- Eliminate confusion  
-- Create one ultimate Java resource  
-- Document real learning  
+- Build strong Java fundamentals   <br>
+- Eliminate confusion   <br>
+- Create one ultimate Java resource <br>  
+- Document real learning  <br>
 
 ---
 
 # 🧬 Learning Flow
 
   🟢 BASICS
-       ↓
+       ➝
   🔵 OOP
-       ↓
+       ➝
   🟣 COLLECTIONS
-       ↓
+       ➝
   🔴 MULTITHREADING
-       ↓
+       ➝
   🟡 FILE HANDLING
-       ↓
+       ➝
   ⚫ ADVANCED JAVA
   
 ---
@@ -97,25 +97,25 @@ A **structured, practical, and powerful Java learning system** designed for:
 
 👨‍🎓 Who Is This For?
 
-✔ Students
-✔ Beginners → Advanced
-✔ Placement Prep
-✔ Backend Learners
+✔ Students <br>
+✔ Beginners → Advanced <br>
+✔ Placement Prep <br>
+✔ Backend Learners <br>
 
 # ⚡ How To Use
 
-+ Step 1 → Open topic
-+ Step 2 → Understand
-+ Step 3 → Run code
-+ Step 4 → Revise
++ Step 1 → Open topic <br>
++ Step 2 → Understand <br>
++ Step 3 → Run code <br>
++ Step 4 → Revise <br>
 
 # 🌌 Features
 
-🚀 Clean structure
-🧠 Deep clarity
-💻 Practical code
-🎯 Interview ready
-⚡ Fast revision
+🚀 Clean structure <br>
+🧠 Deep clarity <br>
+💻 Practical code <br>
+🎯 Interview ready <br>
+⚡ Fast revision <br>
 
 # 📊 GitHub Stats
 <p align="center">
@@ -147,14 +147,14 @@ Fork → Improve → Pull Request 🚀
 
 If this helps you:
 
-💙 Star the repo
-📢 Share
-📚 Use
+💙 Star the repo <br>
+📢 Share <br>
+📚 Use <br>
 
 # 📈 Progress
 
-Start Date : 03 Feb 2026
-Goal       : Java Mastery + Backend Development
+Start Date : 03 Feb 2026 <br>
+Goal       : Java Mastery + Backend Development <br>
 
 # 🧑‍💻 Author
 <p align="center"> <img src="https://avatars.githubusercontent.com/u/583231?v=4" width="120" style="border-radius:50%"/> </p> <p align="center"> <b>Prince Singh</b><br> Java Developer | MERN Learner </p>
