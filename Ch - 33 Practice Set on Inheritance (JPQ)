@@ -47,6 +47,70 @@ Process finished with exit code 0
 Ques 2. Create a class Rectangle and use inheritance to create another class cuboid. Try to keep it as close to real world 
 Scenario as possible.
 
+Program : 
+
+class rectangle{
+    int l;
+    int b;
+
+    public void setL(int l) {
+        this.l = l;
+    }
+
+    public int getL() {
+        return l;
+    }
+
+    public void setB(int b) {
+        this.b = b;
+    }
+
+    public int getB() {
+        return b;
+    }
+}
+class cuboid extends rectangle{
+    int h;
+
+    public void setH(int h) {
+        this.h = h;
+    }
+
+    public int getH() {
+        return h;
+    }
+}
+public class practice {
+    public static void main(String[] args){
+        rectangle r = new rectangle();
+        r.setL(4);
+        r.setB(5);
+        System.out.println("Length and breadth of rectangle are : ");
+        System.out.println("\t\t Length : "+r.l);
+        System.out.println("\t\t Breadth: "+r.b);
+
+        cuboid c = new cuboid();
+        c.setL(4);
+        c.setH(3);
+        c.setB(6);
+        System.out.println("Length , height and breadth of cuboid are : ");
+        System.out.println("\t\t Length : "+c.l);
+        System.out.println("\t\t Breadth: "+c.b);
+        System.out.println("\t\t Height : "+c.h);
+    }
+}
+
+Output : 
+
+Length and breadth of rectangle are : 
+		 Length : 4
+		 Breadth: 5
+Length , height and breadth of cuboid are : 
+		 Length : 4
+		 Breadth: 6
+		 Height : 3
+
+Process finished with exit code 0
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
