@@ -53,6 +53,62 @@ Scenario as possible.
 
 Ques 3. Create methods for area and volume for Ques 1
 
+Program :
+
+//  Create a class Circle and use inheritance to create another class cylinder from it
+// Create methods for area and volume
+
+class circle{
+    int r;
+    public int getR(){
+        return r;
+    }
+    public void setR(int r) {
+        this.r = r;
+        System.out.println("This is the radius of circle : "+r);
+    }
+    public void area(int r){
+        System.out.println("Area of circle : "+ 3.14*r*r);
+    }
+}
+class cylinder extends circle{
+    int h;
+    public int getH(){
+        return h;
+    }
+    public void setH(int h){
+        this.h = h;
+        System.out.println("This is height of cylinder : "+h);
+    }
+    public void volume(int r , int h){
+        System.out.println("Volume of cylinder : "+3.14*r*r*h);
+    }
+}
+public class practice {
+    public static void main(String[] args){
+        circle c = new circle();
+        c.setR(4);
+        int Radius = c.getR();
+        c.area(Radius);
+        cylinder cy = new cylinder();
+        cy.setH(5);
+        int height = cy.getH();
+        cy.setR(3);
+        int Radius2 = cy.getR();
+        cy.volume(height,Radius2);
+    }
+}
+
+Output :
+
+This is the radius of circle : 4
+Area of circle : 50.24
+This is height of cylinder : 5
+This is the radius of circle : 3
+Volume of cylinder : 314.0
+
+Process finished with exit code 0
+
 --------------------------------------------------------------------------------------------------------------------------------------
 
 
