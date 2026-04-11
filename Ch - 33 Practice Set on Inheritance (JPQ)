@@ -1,5 +1,46 @@
 Ques 1. Create a class Circle and use inheritance to create another class cylinder from it.
 
+Program :
+
+class circle{
+    int r;
+
+    int getR() {
+        return r;
+    }
+    public void setR(int r) {
+        this.r = r;
+        System.out.println("This is the radius of circle : "+r);
+    }
+}
+class cylinder extends circle{
+    int h;
+    public int getH(){
+        return h;
+    }
+    public void setH(int h){
+        this.h = h;
+        System.out.println("This is height of cylinder : "+h);
+    };
+}
+public class practice {
+    public static void main(String[] args){
+        circle c = new circle();
+        c.setR(4);
+        cylinder cy = new cylinder();
+        cy.setH(5);
+        cy.setR(3);
+    }
+}
+
+Output :
+
+This is the radius of circle : 4
+This is height of cylinder : 5
+This is the radius of circle : 3
+
+Process finished with exit code 0
+
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
