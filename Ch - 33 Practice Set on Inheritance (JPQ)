@@ -175,6 +175,83 @@ Process finished with exit code 0
 
 Ques 4. Create methods for area and volume for Ques 2 . Also create getters and setters
 
+Program : 
+
+class rectangle{
+    int l;
+    int b;
+
+    public void setL(int l) {
+        this.l = l;
+    }
+
+    public int getL() {
+        return l;
+    }
+
+    public void setB(int b) {
+        this.b = b;
+    }
+
+    public int getB() {
+        return b;
+    }
+
+    public void area(int b ,int l){
+        System.out.println("Area of rectangle : "+l*b);
+    }
+}
+class cuboid extends rectangle{
+    int h;
+
+    public void setH(int h) {
+        this.h = h;
+    }
+
+    public int getH() {
+        return h;
+    }
+
+    public void volume(int l, int b , int h){
+        System.out.println("Volume of cuboid : "+l*b*h);
+    }
+}
+public class practice {
+    public static void main(String[] args){
+        rectangle r = new rectangle();
+        r.setL(4);
+        r.setB(5);
+        System.out.println("Length and breadth of rectangle are : ");
+        System.out.println("\t\t Length : "+r.l);
+        System.out.println("\t\t Breadth: "+r.b);
+        r.area(r.l,r.b);
+
+        cuboid c = new cuboid();
+        c.setL(4);
+        c.setH(3);
+        c.setB(6);
+        System.out.println("Length , height and breadth of cuboid are : ");
+        System.out.println("\t\t Length : "+c.l);
+        System.out.println("\t\t Breadth: "+c.b);
+        System.out.println("\t\t Height : "+c.h);
+        c.volume(c.l,c.b ,c.h);
+    }
+}
+
+Output : 
+
+Length and breadth of rectangle are : 
+		 Length : 4
+		 Breadth: 5
+Area of rectangle : 20
+Length , height and breadth of cuboid are : 
+		 Length : 4
+		 Breadth: 6
+		 Height : 3
+Volume of cuboid : 72
+
+Process finished with exit code 0
+
 --------------------------------------------------------------------------------------------------------------------------------------
 
 
