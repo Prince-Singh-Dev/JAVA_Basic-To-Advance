@@ -271,4 +271,35 @@ Ques 5. What is the order of constructor execution for the following inheritance
     Derived2 obj = new Derived2();
     Which constructor(s) will be executed & in what order 
 
+Program : 
 
+class base{
+    base(){
+        System.out.println("Constructor of Base class ");
+    }
+}
+class Derived1 extends base{
+    Derived1(){
+        System.out.println("Constructor of Derived class 1");
+    }
+}
+class Derived2 extends Derived1{
+    Derived2(){
+        System.out.println("Constructor of Derived class 2");
+    }
+}
+public class practice{
+    public static void main(String[] args){
+        Derived2 D = new Derived2();
+    }
+}
+
+Output :
+
+Constructor of Base class 
+Constructor of Derived class 1
+Constructor of Derived class 2
+
+Process finished with exit code 0
+
+Thus constructor will be called in order --> Base class --> Derived1 class --> Derived2 class
