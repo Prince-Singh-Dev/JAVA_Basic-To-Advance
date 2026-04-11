@@ -1,1 +1,39 @@
-Practice Set on Inheritance (JPQ)
+Ques 1. Create a class Circle and use inheritance to create another class cylinder from it.
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+Ques 2. Create a class Rectangle and use inheritance to create another class cuboid. Try to keep it as close to real world 
+Scenario as possible.
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+
+Ques 3. Create methods for area and volume for Ques 1
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+
+Ques 4. Create methods for area and volume for Ques 2 . Also create getters and setters
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+
+Ques 5. What is the order of constructor execution for the following inheritance hierarchy.
+                  +-------+
+                  | Base  |      
+                  +-------+
+                      |
+                  +------------+
+                  | Derived 1  |      
+                  +------------+
+                      |
+                  +------------+
+                  | Derived 2  |      
+                  +------------+
+
+    Derived2 obj = new Derived2();
+    Which constructor(s) will be executed & in what order 
+
+
