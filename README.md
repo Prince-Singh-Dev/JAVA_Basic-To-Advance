@@ -1,163 +1,170 @@
-<p align="center">“The only Java notes you’ll ever need — from zero to confident developer.”</p>
+<!-- ===================== HEADER ===================== -->
+<h1 align="center">⚡ JAVA NOTES – THE ULTIMATE GUIDE ⚡</h1>
 
-<h1 align="center">🚀 Java Notes – From Basics to Advanced</h1>
 <p align="center">
-Master Java step-by-step with clean, structured, real-world focused notes.
+  <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=28&duration=3000&color=00F7FF&center=true&vCenter=true&width=800&lines=From+Zero+to+Java+Mastery;Clean+Notes+%7C+Real+Concepts+%7C+Interview+Ready;Code.+Understand.+Dominate."/>
 </p>
 
 <p align="center">
-  <img src="https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif" width="400"/>
+  <img src="https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif" width="500"/>
 </p>
 
+---
+
+<!-- ===================== BADGES ===================== -->
 <p align="center">
-  <img src="https://img.shields.io/badge/Language-Java-orange?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Java-Learning%20Hub-orange?style=for-the-badge&logo=java"/>
   <img src="https://img.shields.io/badge/JDK-17%20%7C%2021-blue?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/Level-Beginner%20to%20Advanced-success?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/Status-Active%20Learning-brightgreen?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Level-Beginner%20%E2%86%92%20Advanced-success?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Made%20With-Consistency-red?style=for-the-badge"/>
+  <img src="https://komarev.com/ghpvc/?username=Prince-Singh-Dev&style=for-the-badge&color=brightgreen"/>
 </p>
 
 ---
 
-# 📌 About This Repository
+<!-- ===================== TOP WAVE ===================== -->
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=28&duration=2500&color=00F7FF&center=true&vCenter=true&width=900&lines=Welcome+to+Java+Mastery;Code.+Build.+Dominate."/>
+</p>
 
-This repository contains my personal Java learning notes written in simple, practical language for:
-
-- 📚 College & University Exams  
-- 💼 Technical Interviews  
-- 🔁 Quick Revision  
-- 🧠 Deep Conceptual Clarity  
-
-All notes include:
-
-- Clear explanations  
-- Code examples  
-- Real-life analogies  
-- Important exam & interview points  
-
-> “If you can explain it simply, you understand it deeply.”
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:00F7FF,100:8A2BE2&height=6"/>
+</p>
 
 ---
 
-# 🎯 Purpose of This Repository
+# 🧠 About This Repository
 
-This repository exists to:
+> “This is not just notes. This is a complete transformation system.”
 
-- Build a strong Java foundation  
-- Maintain structured, revisable notes  
-- Track my learning journey publicly  
-- Help students avoid scattered resources  
+A **structured, practical, and powerful Java learning system** designed for:
 
-This is not copy-paste theory — it’s structured learning documentation.
+- 📚 Exams  
+- 💼 Interviews  
+- ⚡ Fast Revision  
+- 🧠 Deep Understanding  
 
 ---
 
-# 📁 Folder Structure
+# 🎯 Mission
 
+- Build strong Java fundamentals  
+- Eliminate confusion  
+- Create one ultimate Java resource  
+- Document real learning  
+
+---
+
+# 🧬 Learning Flow
+
+  🟢 BASICS
+       ↓
+  🔵 OOP
+       ↓
+  🟣 COLLECTIONS
+       ↓
+  🔴 MULTITHREADING
+       ↓
+  🟡 FILE HANDLING
+       ↓
+  ⚫ ADVANCED JAVA
+  
+---
+
+# 📂 Repository Structure
+
+```bash
+📦 Java-Notes
+ ┣ 📜 01-introduction.md
+ ┣ 📜 02-jdk-jre-jvm.md
+ ┣ 📜 03-variables-datatypes.md
+ ┣ 📜 04-operators.md
+ ┣ 📜 05-control-statements.md
+ ┣ 📜 06-oops.md
+ ┣ 📜 07-inheritance.md
+ ┣ 📜 08-polymorphism.md
+ ┣ 📜 09-abstraction.md
+ ┣ 📜 10-interfaces.md
+ ┣ 📜 11-exception-handling.md
+ ┣ 📜 12-collections.md
+ ┣ 📜 13-strings.md
+ ┣ 📜 14-multithreading.md
+ ┗ 📜 15-file-handling.md
 ```
-├── 01-introduction.md
-├── 02-jdk-jre-jvm.md
-├── 03-variables-datatypes.md
-├── 04-operators.md
-├── 05-control-statements.md
-├── 06-oops.md
-├── 07-inheritance.md
-├── 08-polymorphism.md
-├── 09-abstraction.md
-├── 10-interfaces.md
-├── 11-exception-handling.md
-├── 12-collections.md
-├── 13-strings.md
-├── 14-multithreading.md
-├── 15-file-handling.md
-```
-
----
-
-# 🧠 Learning Flow
-
-Core Java  
-⬇  
-OOP  
-⬇  
-Collections Framework  
-⬇  
-Multithreading  
-⬇  
-File Handling  
-⬇  
-Advanced Concepts  
-
----
 
 # ⚙️ Tech Stack
+<p align="center"> <img src="https://skillicons.dev/icons?i=java,git,github,vscode"/> </p>
 
-| Tool     | Used |
-|----------|------|
-| Language | Java (JDK 17 / 21) |
-| IDE      | IntelliJ IDEA |
-| Format   | Markdown (.md) |
-| Platform | GitHub |
+👨‍🎓 Who Is This For?
 
----
+✔ Students
+✔ Beginners → Advanced
+✔ Placement Prep
+✔ Backend Learners
 
-# 👨‍🎓 Who Is This For?
+# ⚡ How To Use
 
-- CS / IT Students  
-- Java Beginners  
-- Backend Learners  
-- Placement Preparation  
-- Interview Revision  
++ Step 1 → Open topic
++ Step 2 → Understand
++ Step 3 → Run code
++ Step 4 → Revise
 
-If you're preparing for:
-SDE roles • Internships • GATE • Campus placements — this repository is for you.
+# 🌌 Features
 
----
+🚀 Clean structure
+🧠 Deep clarity
+💻 Practical code
+🎯 Interview ready
+⚡ Fast revision
 
-# 🛠️ How To Use
+# 📊 GitHub Stats
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Prince-Singh-Dev&theme=tokyonight&hide_border=true" width="48%"/>
+</p>
 
-1. Open any `.md` file  
-2. Study topic-wise  
-3. Run examples locally  
-4. Revise before exams/interviews  
+<!-- ===================== ACTIVITY GRAPH ===================== -->
 
-💡 Tip: Use this repository like your personal Java handbook.
+<h2 align="center">📈 Coding Activity</h2>
 
----
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Prince-Singh-Dev&theme=tokyo-night&hide_border=true&area=true&custom_title=My%20Coding%20Journey&cache_seconds=1800"/>
+</p>
 
-# 🌱 Contribution
+# 🚀 Live Coding Energy
 
-Contributions are welcome:
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=20&duration=3500&color=00F7FF&center=true&vCenter=true&width=600&lines=Building+Logic...;Writing+Clean+Code...;Becoming+Better+Everyday..."/>
+</p>
 
-- 🐞 Report mistakes  
-- ✨ Improve explanations  
-- 📚 Add advanced topics  
-- 🔥 Optimize examples  
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/212750051-3c5b8e5f-2a7f-4c1b-9e6c-3d5a7d9e2b5f.gif" width="100%"/>
+</p>
 
-Open an Issue or create a Pull Request.
-
----
+# 🧑‍💻 Contribution
+Fork → Improve → Pull Request 🚀
 
 # ⭐ Support
 
-If this repository helps you:
+If this helps you:
 
-- Consider giving it a ⭐  
-- Share with classmates  
-- Use it in your study group  
+💙 Star the repo
+📢 Share
+📚 Use
 
----
+# 📈 Progress
 
-# 📅 Learning Journey
-
-Started: 3 Feb 2026  
-Status: 🚧 Actively Learning  
-Goal: Java Mastery + Backend Development  
-
----
+Start Date : 03 Feb 2026
+Goal       : Java Mastery + Backend Development
 
 # 🧑‍💻 Author
+<p align="center"> <img src="https://avatars.githubusercontent.com/u/583231?v=4" width="120" style="border-radius:50%"/> </p> <p align="center"> <b>Prince Singh</b><br> Java Developer | MERN Learner </p>
 
-Prince Singh  
-Computer Science Student  
-Java & Backend Developer  
-Full Stack (MERN) Learner  
+<!-- ===================== FOOTER ===================== -->
+
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=20&duration=4000&color=8A2BE2&center=true&vCenter=true&width=600&lines=Keep+Building+%F0%9F%9A%80;Consistency+Beats+Talent;Java+Today+%E2%86%92+Backend+Tomorrow"/>
+</p>
+
+<h3 align="center">
+  ⚡ <i>“Code like an artist. Think like an engineer.”</i> ⚡
+</h3>
