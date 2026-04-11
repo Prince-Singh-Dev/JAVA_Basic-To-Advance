@@ -55,9 +55,6 @@ Ques 3. Create methods for area and volume for Ques 1
 
 Program :
 
-//  Create a class Circle and use inheritance to create another class cylinder from it
-// Create methods for area and volume
-
 class circle{
     int r;
     public int getR(){
