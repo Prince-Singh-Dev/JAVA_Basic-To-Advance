@@ -23,7 +23,12 @@ An Example :
                              +----------+    +-----------+   +-----------+
                              | Circle   |    |  Rhombus  |   | Rectangle |
                              +----------+    +-----------+   +-----------+
+
+Note : It is possible to create refernce of an abstract class . 
+       It is not possible to create an object of an abstract class
+
 ------------------------------------------------------------------------------------------------------------------------------------
+
 CODE :
 
 abstract class Base1{
@@ -51,3 +56,5 @@ public class Abstract {
         d.greet();
     }
 }
+
+You can't create the object of the abstract classes
