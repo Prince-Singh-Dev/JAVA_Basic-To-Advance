@@ -1,1 +1,13 @@
-👉 
+👉 What does Abstract (class) mean 
+Abstract in english means -> existing in thought or as an idea without physical or concrete existance
+
+👉 Abstract Method
+A method that is declared without an implementation 
+                                            abstract void moveTo(double X , double Y)
+
+👉 Abstract Class
+If a class includes abstract methods , then the class itself must be declared abstract , as in :
+                                            public abstract class PhoneModel{
+                                                abstract void Switchoff();
+                                            }
+When an abstract class is subclassed , the subclass usually provides implementations for all of the methods
