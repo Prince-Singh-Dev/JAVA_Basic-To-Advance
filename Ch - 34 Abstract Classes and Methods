@@ -11,3 +11,31 @@ If a class includes abstract methods , then the class itself must be declared ab
                                                 abstract void Switchoff();
                                             }
 When an abstract class is subclassed , the subclass usually provides implementations for all of the methods
+------------------------------------------------------------------------------------------------------------------------------------
+CODE :
+
+abstract class Base1{
+    public Base1(){
+        System.out.println("Constructor of Base class");
+    }
+    public void sayHello(){
+        System.out.println("Hello");
+    }
+    abstract public void greet();
+}
+class Derived3 extends Base1{
+    public Derived3(){
+        System.out.println("Constructor of Derived 3 class");
+    }
+    @Override
+    public void greet(){
+        System.out.println("Good Morning!");
+    }
+
+}
+public class Abstract {
+    public static void main(String [] args){
+        Derived3 d = new Derived3();
+        d.greet();
+    }
+}
