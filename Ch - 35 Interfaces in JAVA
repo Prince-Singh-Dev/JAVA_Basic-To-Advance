@@ -26,3 +26,7 @@ class AvonCycle implements Bicycle{
 
 We can't extend multiple abstract classes but we can implement multiple interfaces at a time.
 
+👉 Note :
+
+You can create properties in Interfaces.
+You cannot modify the properties in Interfaces as they are fixed.
