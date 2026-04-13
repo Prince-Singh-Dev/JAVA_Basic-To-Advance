@@ -53,3 +53,97 @@ Similar to Dynamic method Dispatch in Inheritance
                                            SmartPhone S = new SmartPhone(); --> Can only use SmartPhone methods
 
 Implementing an Interface forces methods implementation.
+
+
+Example Code :
+
+// Interface 1
+interface GPS {
+    void getLocation();
+
+    // Default method
+    default void showMap() {
+        System.out.println("Showing map using GPS...");
+    }
+}
+
+//  Interface 2
+interface Camera {
+    void takePhoto();
+
+    default void recordVideo() {
+        System.out.println("Recording video...");
+    }
+}
+
+//  Interface 3
+interface MediaPlayer {
+    void playMusic();
+
+    default void stopMusic() {
+        System.out.println("Stopping music...");
+    }
+}
+
+//  Base Class
+class CellPhone {
+    void call() {
+        System.out.println("Calling...");
+    }
+
+    void pickCall() {
+        System.out.println("Picking call...");
+    }
+}
+
+//  Child Class (Multiple Inheritance using Interfaces)
+class SmartPhone extends CellPhone implements GPS, Camera, MediaPlayer {
+
+    // Implementing all interface methods
+    public void getLocation() {
+        System.out.println("Getting current location...");
+    }
+
+    public void takePhoto() {
+        System.out.println("Taking photo...");
+    }
+
+    public void playMusic() {
+        System.out.println("Playing music...");
+    }
+
+    // Own method
+    void browseInternet() {
+        System.out.println("Browsing internet...");
+    }
+}
+
+// Main Class
+public class Main {
+    public static void main(String[] args) {
+
+        // Polymorphism using Interface
+        GPS g = new SmartPhone();
+        g.getLocation();     // Allowed
+        g.showMap();         // Default method
+
+        // g.takePhoto();  Not allowed (reference type is GPS)
+
+        System.out.println();
+
+        // Full access using class reference
+        SmartPhone s = new SmartPhone();
+        s.call();            // From CellPhone
+        s.getLocation();     // From GPS
+        s.takePhoto();       // From Camera
+        s.playMusic();       // From MediaPlayer
+        s.browseInternet();  // Own method
+
+        System.out.println();
+
+        // Another interface reference
+        Camera c = new SmartPhone();
+        c.takePhoto();
+        c.recordVideo();
+    }
+}
