@@ -1,1 +1,18 @@
+👉 Is multiple inheritance allowed in JAVA ?
 
+Multiple Inheritance face problems when there exist methods with same signature in both the super classes.
+Due to such problems , JAVA does not support multiple inheritance directly but the similar concept can be achieved using interfaces.
+A class can implement multiple interfaces and extend a class at the same time.
+
+Note : 
+
+1. Interfaces in JAVA is a bit like the class but with a significant difference.
+2. An interface can only have method signatures, fields and defualt methods.
+3. The class implementing an interface needs to on declare the methods ( not fields ).
+4. You can create a reference of Interfaces but not the object.
+5. Interfaces methods are public by default.
+
+👉 Default Methods : 
+
+An interface can have static and default methods 
+Default methods enables us to add new functionality to 
