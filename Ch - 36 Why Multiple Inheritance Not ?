@@ -15,4 +15,22 @@ Note :
 👉 Default Methods : 
 
 An interface can have static and default methods 
-Default methods enables us to add new functionality to 
+Default methods enables us to add new functionality to existing Interfaces.
+This feature was introduced in JAVA 8 to ensure backward compatibility while updating an interface.
+classes implementing the interface need not implemented the default methods.
+Interfaces can also include private methods for default methods to use.
+
+👉 Inheritance in Interfaces
+
+Interfaces can extend another interfaces : 
+
+public interface Interface1{
+  void meth1();
+}
+public interface Interface2 extends Interface1{
+  void meth2();
+}
+
+Remember that Interface cannot implement another interface, only classes can do that!
+
+👉 Polymorphism using Interfaces
