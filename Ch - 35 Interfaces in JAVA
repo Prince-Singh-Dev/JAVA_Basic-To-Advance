@@ -1,7 +1,28 @@
 👉 Interfaces in JAVA
 In english , it is a point where two systems met and interact
 
-                              +----+         +-------+
-                              | TV |    ⇌   | Human |
-                              +----+ Buttons +-------+
+                              +----+         +--------+
+                              [ TV ]    ⇌    [ Human ]
+                              +----+ Buttons +--------+
+
+In JAVA interface is a group of related methods with empty bodies.
+
+Example :
+interface Bicycle{
+  void applyBrake(int decrement);
+  void speedUp (int increment );
+}
+class AvonCycle implements Bicycle{
+  int speed = 7;
+  void applyBrake(int decrement){
+    speed = speed - decrement;
+  }
+  void speedUp(int increment){
+    speed = speed + increment;
+  }
+}
+
+👉Abstract Class vs Interfaces
+
+We can't extend multiple abstract classes but we can implement multiple interfaces at a time.
 
