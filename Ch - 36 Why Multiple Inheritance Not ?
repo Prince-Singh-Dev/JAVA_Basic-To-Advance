@@ -34,3 +34,22 @@ public interface Interface2 extends Interface1{
 Remember that Interface cannot implement another interface, only classes can do that!
 
 👉 Polymorphism using Interfaces
+
+ⓒ Class  
+ⓘ Interface  
+   +------------+       +----+        +--------+        +--------------+
+ⓒ | Cell Phone |    ⓘ | GPS |     ⓘ | Camera |     ⓘ | Media Player |
+   +------------+       +----+        +--------+        +--------------+
+        |                  |               |                    |
+        +------------------+---------------+--------------------+
+                                  ↓
+                           +---------------+
+                           | Smart Phone   |
+                           +---------------+
+
+Similar to Dynamic method Dispatch in Inheritance 
+                                                  ⤵️
+                                                  GPS g = new SmartPhone(); --> Can only use GPS methods
+                                           SmartPhone S = new SmartPhone(); --> Can only use SmartPhone methods
+
+Implementing an Interface forces methods implementation.
