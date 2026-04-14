@@ -1,1 +1,14 @@
-Inheritance in Interfaces
+👉 Inheritance in Interfaces
+
+Interfaces can extend another interfaces :
+
+public interface Interface1{
+  void meth1();
+}
+public interface Interface2 extends Interface1{
+  void meth2();
+}
+
+Remember that interfaces cannot implement another interface , only classes can do that!
+
+👉 Polymorphism using Interfaces
