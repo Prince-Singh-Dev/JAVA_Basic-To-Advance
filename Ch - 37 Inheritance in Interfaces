@@ -32,3 +32,62 @@ Similar to Dynamic method Dispatch in Inheritance
                                            SmartPhone S = new SmartPhone(); --> Can only use SmartPhone methods
 
 Implementing an Interface forces methods implementation.
+
+Example :
+
+// Base interface
+interface sampleInterface {
+    // Abstract methods (by default public and abstract)
+    void meth1();
+    void meth2();
+}
+
+// Child interface inheriting from sampleInterface
+// It will inherit meth1() and meth2()
+interface childSampleInterface extends sampleInterface {
+    // Additional methods in child interface
+    void meth3();
+    void meth4();
+}
+
+// Class implementing child interface
+// Must implement ALL methods:
+// - meth1(), meth2() (from parent interface)
+// - meth3(), meth4() (from child interface)
+class mySample implements childSampleInterface {
+
+    // Implementation of method from sampleInterface
+    public void meth1() {
+        System.out.println("Method 1");
+    }
+
+    // Implementation of method from sampleInterface
+    public void meth2() {
+        System.out.println("Method 2");
+    }
+
+    // Implementation of method from childSampleInterface
+    public void meth3() {
+        System.out.println("Method 3");
+    }
+
+    // Implementation of method from childSampleInterface
+    public void meth4() {
+        System.out.println("Method 4");
+    }
+}
+
+// Main class
+public class Inheritance_Interfaces {
+    public static void main(String[] args) {
+
+        // Creating object of class mySample
+        mySample ms = new mySample();
+
+        // Calling all implemented methods
+        ms.meth1();  // from parent interface
+        ms.meth2();  // from parent interface
+        ms.meth3();  // from child interface
+        ms.meth4();  // from child interface
+    }
+}
