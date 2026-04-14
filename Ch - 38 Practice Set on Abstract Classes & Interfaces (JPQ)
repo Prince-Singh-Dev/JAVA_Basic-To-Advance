@@ -1,1 +1,27 @@
+Program 1 : Create an abstract class Pen with methods Write() and refill() an abstract methods
 
+----------------------------------------------------------------------------------------------------------------------------------------
+
+Program 2 : Use the Pen class from Program1 to Create a concrete class Fountain Pen with additional method changeNib()
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+Program 3 : Create a class Monkey with jump() and bite() methods. Create a class Human which inherits this Monkey class and implements 
+            BasicAnimal interface with eat() and sleep methods.
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+Program 4 : Create a class TelePhone with ring() , lift() and disconnect() methods as abstract methods. Create another class SmartTelephone
+            and demonstrate polymorphism.
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+Program 5 : Demonstrate polymorphism using monkey class from Program 3.
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+Program 6 : Create an Interface TVRemote and use it to inherit another Interface SmartTVRemote
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+Program 7 : Create a class TV which Implements TVremote interface from Program 6
