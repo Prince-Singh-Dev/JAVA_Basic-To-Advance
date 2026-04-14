@@ -25,4 +25,6 @@ Java is a hybrid language --> both compiled as well as interpreted
 +------------+                             +-------------+
                                               Byte Code
 
-👉 
+👉 A HVM can be cused to interprete this bytecode.
+👉 This bytecode can be taken to any platform ( Win / Mac / Linux ) for execution
+👉 Hence JAVA is platform independent ( write once run everywhere )
