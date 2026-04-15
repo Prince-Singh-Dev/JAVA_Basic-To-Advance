@@ -39,4 +39,13 @@ public class Test {
     }
 }
 
+👉 Creating a Package 
 
+Javac prince.java ==> Creates prince.class
+javac -d . prince.java ==> Create a package folder
+                                +-=> We can keep adding classes to a package like this
+
+We can also create inner packages by adding "package.inner" as package name
+These packages once created can be used by other classes.
+
+👉 Access Modifier in JAVA
