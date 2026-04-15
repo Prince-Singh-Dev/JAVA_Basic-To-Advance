@@ -7,8 +7,8 @@ Can be public , private or default (No modifier)
 | Modifiers | Class | Package  |  Subclass | World |
 +-----------+-------+----------+-----------+-------+
 | Public    |  Yes  |  Yes     |  Yes      | Yes   |
-| Protected |  Yes  |  Yes     |  Yes      | Yes   |
-| Default   |  Yes  |  Yes     |  Yes      | Yes   |
-| Private   |  Yes  |  Yes     |  Yes      | Yes   |
+| Protected |  Yes  |  Yes     |  Yes      | No    |
+| Default   |  Yes  |  Yes     |  No       | No    |
+| Private   |  Yes  |  No      |  No       | No    |
 +-----------+-------+----------+-----------+-------+
 
