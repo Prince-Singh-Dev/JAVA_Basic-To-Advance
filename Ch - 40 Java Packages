@@ -1,1 +1,18 @@
 👉 Packages in JAVA
+
+A package is used to group related classes. 
+Packages help in avoiding name conflicts.
+
+There are two types of packages : 
+
++ Built in packages --> JAVA API
++ User defined Packages --> Custom Packages
+
++--------------------------------+          +----------------+
+| Song.mp3 photo.jpg  photo2.jpg |   ===>   | Songs , Videos |
+| song3.mp3 video.mp4 video2.mp4 |   ===>   | Photos         |
++--------------------------------+          +----------------+
+
+1.class this.java my.mp3 song.Java Harry.java  ==> organised as packages
+
+Using a JAVA package 
