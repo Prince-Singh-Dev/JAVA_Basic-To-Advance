@@ -15,4 +15,20 @@ There are two types of packages :
 
 1.class this.java my.mp3 song.Java Harry.java  ==> organised as packages
 
-Using a JAVA package 
+👉 Creating & using a JAVA package 
+
+import java.lang.*  ==> import everything from java.lang
+
+import java.util.*;
+public class packages {
+    public static void main(String[] args){
+        Scanner sc = new Scanner (System.in);
+        String n = sc.next();
+        System.out.println(n);
+    }
+}
+
+import java.lang.String ==> import String from java.lang
+s = new Java.lang.String("Harry") ==> use without importing
+
+
