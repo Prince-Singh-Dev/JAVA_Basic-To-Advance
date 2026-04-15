@@ -28,3 +28,11 @@ Java is a hybrid language --> both compiled as well as interpreted
 👉 A HVM can be cused to interprete this bytecode.
 👉 This bytecode can be taken to any platform ( Win / Mac / Linux ) for execution
 👉 Hence JAVA is platform independent ( write once run everywhere )
+
+👉 Executing a JAVA program
+
+javac Harry.Java --> Compiled 
+java Harry.class --> Interpreted
+
+So far , the execution of program was being managed by IntelliJ Idea.
+We can download a scource code editor like VS Code to compile and execute our Java Program.
