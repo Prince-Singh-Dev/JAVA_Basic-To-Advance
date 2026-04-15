@@ -29,6 +29,14 @@ public class packages {
 }
 
 import java.lang.String ==> import String from java.lang
+
 s = new Java.lang.String("Harry") ==> use without importing
+
+public class Test {
+    public static void main(String[] args) {
+        java.lang.String s = new java.lang.String("Harry");
+        System.out.println(s);
+    }
+}
 
 
