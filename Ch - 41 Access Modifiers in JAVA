@@ -1,1 +1,14 @@
-Access Modifiers in JAVA
+👉 Access Modifiers in JAVA
+
+Access Modifiers determine whether other classes can use a particular field or invoke a particular method.
+Can be public , private or default (No modifier)
+
++-----------+-------+----------+-----------+-------+
+| Modifiers | Class | Package  |  Subclass | World |
++-----------+-------+----------+-----------+-------+
+| Public    |  Yes  |  Yes     |  Yes      | Yes   |
+| Protected |  Yes  |  Yes     |  Yes      | Yes   |
+| Default   |  Yes  |  Yes     |  Yes      | Yes   |
+| Private   |  Yes  |  Yes     |  Yes      | Yes   |
++-----------+-------+----------+-----------+-------+
+
