@@ -52,3 +52,40 @@ public class AccessModifiers {
         // System.out.println(c.a);  private not accessible
     }
 }
+
+👉 Subclass (Different Package)
+
+package package1;
+
+public class C1 {
+    public int x = 5;
+    protected int y = 45;
+    int z = 6;
+    private int a = 78;
+}
+
+package package2;
+import package1.C1;
+
+class C2 extends C1 {
+    public void show() {
+        System.out.println(x); //  public
+        System.out.println(y); //  protected (via inheritance)
+        // System.out.println(z);  default not accessible
+        // System.out.println(a);  private not accessible
+    }
+}
+
+public class Test {
+    public static void main(String[] args) {
+        C2 obj = new C2();
+        obj.show();
+    }
+}
+
+👉 Key Takeaways (Quick Revision)
+
+private → only inside class
+default → same package only
+protected → same package + subclass (even outside package)
+public → everywhere
