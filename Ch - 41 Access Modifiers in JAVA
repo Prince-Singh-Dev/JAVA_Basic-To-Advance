@@ -33,4 +33,26 @@ public class AccessModifiers {
     }
 }
 
-👉
+👉 Within the package all variables are accessible except the one which is defined privately 
+
+class C1{
+    public int x = 5;
+    protected int y = 45;
+    int z = 6;
+    private int a =78;
+    public void meth1(){
+        System.out.println(x);
+        System.out.println(y);
+        System.out.println(a);
+        System.out.println(z);
+    }
+}
+public class AccessModifiers {
+    public static void main(String[] args){
+        C1 c = new C1();
+        System.out.println(c.x);
+        System.out.println(c.y);
+        System.out.println(c.z); // Except "a" all are accessible within the package
+    }
+}
+
