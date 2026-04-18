@@ -37,5 +37,12 @@ Flow of Control in JAVA :
                                 +---------+      |
                                 | Func(2) |------+
                                 +---------+
-            
+
+👉 Creating a Threads
+There are two ways to create a Thread in JAVA
+
+1. By extending Thread Class
+2. By implementing Runnable interface
+
+👉 Life Cycle of a Thread
 
