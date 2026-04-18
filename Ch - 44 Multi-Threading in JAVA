@@ -95,6 +95,64 @@ I am Happy
 
 2. By implementing Runnable interface
 
+Example :
+
+class MyThreadRunnable1 implements Runnable{
+    public void run () {
+        for (int i = 0; i < 4; i++) {
+            System.out.println("I am a Thread1 not a Threat1");
+        }
+    }
+}
+class MyThreadRunnable2 implements Runnable{
+    public void run () {
+        for (int i = 0; i < 4; i++) {
+            System.out.println("I am a Thread2 not a Threat2");
+        }
+    }
+}
+public class ThreadsRunnableInterface {
+    public static void main() {
+        MyThreadRunnable1 bullet1 = new MyThreadRunnable1();
+        Thread gun1 = new Thread(bullet1);
+        MyThreadRunnable2 bullet2 = new MyThreadRunnable2();
+        Thread gun2 = new Thread(bullet2);
+        gun1.start();
+        gun2.start();
+    }
+}
+
+Key Take Aways : 
+
+1. Final Summary
+2. Runnable → defines task
+3. Thread → executes task
+4. start() → begins execution
+5. Output is parallel + unordered
+
+Output :
+
+I am a Thread1 not a Threat1
+I am a Thread2 not a Threat2
+I am a Thread2 not a Threat2
+I am a Thread2 not a Threat2
+I am a Thread2 not a Threat2
+I am a Thread1 not a Threat1
+I am a Thread1 not a Threat1
+I am a Thread1 not a Threat1
+
+Process finished with exit code 0
+
+--------------------------------------------------------------------------------------------------------------------------------
+👉 Why use Runnable instead of Thread?
++---------------------------+-----------------------------+
+| Runnable                  | Thread                      |
+| ------------------------- | --------------------------- |
+| Better design             | Less flexible               |
+| Can extend another class  | Cannot extend another class |
+| Separate task & execution | Mixed together              |
++---------------------------+-----------------------------+
+
 --------------------------------------------------------------------------------------------------------------------------------
 
 👉 UseFull Terms
