@@ -4,10 +4,38 @@ Multiprocessing and Multithreading both are used to achieve multitasking
 
 +-----------+    +-----------+    +-----------+
 | Process 1 |    | Process 2 |    | Process 3 |
-+-----------+    +-----------+    +-----------+
-      |                 |                |
-      +-----------------+----------------+  
-                        |
++-----------+    +-----------+    +-----------+                                
+      ⇩                 ⇩                ⇩                                     
+      +-----------------+----------------+                                     
+                        ⇩                                                      
                     +------+
                     |  OS  |
                     +------+
+👉 In a nut shell ...
+
+➜ Threads use shared memory area
+➜ Threads => Faster Content Switching
+➜ A Thread is light-weight where as a process is heavy weight
+
+For Example : A word processor can have one thread running in foreground as an editor and another in the background auto saving the 
+document.
+
+Flow of Control in JAVA :
+
+1. Without Threading :
+            +---------+    +---------+    +---------+
+            | main()  | ➜ | Func(1) | ➜ | Func(2) | ➜ END     
+            +---------+    +---------+    +---------+
+
+2. With Threading :
+            +---------+
+            | main()  |--------------------------+
+            +---------+                          |
+                      +---------+                |
+                      | Func(1) |----------------+---➜ END
+                      +---------+                |
+                                +---------+      |
+                                | Func(2) |------+
+                                +---------+
+            
+
