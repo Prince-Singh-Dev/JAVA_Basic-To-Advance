@@ -1,1 +1,13 @@
-Multi-Threading in JAVA
+👉 Multi-Threading
+
+Multiprocessing and Multithreading both are used to achieve multitasking
+
++-----------+    +-----------+    +-----------+
+| Process 1 |    | Process 2 |    | Process 3 |
++-----------+    +-----------+    +-----------+
+      |                 |                |
+      +-----------------+----------------+  
+                        |
+                    +------+
+                    |  OS  |
+                    +------+
