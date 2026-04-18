@@ -38,11 +38,72 @@ Flow of Control in JAVA :
                                 | Func(2) |------+
                                 +---------+
 
+--------------------------------------------------------------------------------------------------------------------------------
+
 👉 Creating a Threads
+
 There are two ways to create a Thread in JAVA
 
 1. By extending Thread Class
+
+Example :
+
+class MyThreads1 extends Thread{
+    @Override
+    public void run(){
+        while (true) {
+            System.out.println("My Thread is Running");
+            System.out.println("I am Happy");
+        }
+    }
+}
+class MyThreads2 extends Thread{
+    @Override
+    public void run(){
+        while (true) {
+            System.out.println("My Thread2 is Running");
+            System.out.println("I am Sad");
+        }
+    }
+}
+public class ThreadsUsingClass {
+    public static void main(String[] args){
+        MyThreads1 t1 = new MyThreads1();
+        MyThreads2 t2 = new MyThreads2();
+        t1.start();
+        t2.start();
+    }
+}
+
+Key Take Aways :
+
+1. created 2 threads using class inheritance
+2. Each thread overrides run() method
+3. start() runs them concurrently
+4. Output is continuous and unordered
+
+Output 
+
+My Thread is Running
+I am Happy
+My Thread2 is Running
+I am Sad
+My Thread is Running
+I am Happy
+...
+----------------------------------------------------------------------------------------------------------------------------
+
 2. By implementing Runnable interface
 
+--------------------------------------------------------------------------------------------------------------------------------
+
+👉 UseFull Terms
+
+1. Concurrency ➜ It is the task of running and mpping the multiple computations at the same time. It can be done using a
+                  single processing unit
+2. Parllelism  ➜ It is the task of running multiple computations simultaneously 
+
 👉 Life Cycle of a Thread
+
+
 
