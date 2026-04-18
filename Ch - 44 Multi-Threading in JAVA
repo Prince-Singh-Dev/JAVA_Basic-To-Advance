@@ -105,5 +105,61 @@ I am Happy
 
 👉 Life Cycle of a Thread
 
++-----------+      
+| New       |
++-----------+
+      ⇩ 
++-----------+-----------+
+| Runnable  |           ⇩
++-----------+    +------------------------+
+      ⇩          | Non Runnable (Blocked) |  
++-----------+    +------------------------+
+| Running   |           ⇧
++-----------+-----------+
+      ⇩ 
++------------+      
+| Terminated |
++------------+
 
+1. New State : Thread t = new Thread();
 
+Thread object is created using new
+But it has not started yet
+It’s just ready to be started
+
+2. Runnable State : t.start();
+
+When you call start(), thread enters Runnable
+It is ready to run, waiting for CPU
+Important:
+Runnable ≠ Running
+It means “eligible to run”
+
+3. Running State : public void run() {// code executes here}
+
+Thread gets CPU and starts executing run()
+Only one thread runs at a time per CPU core
+
+4. Non-Runnable (Blocked State) : Thread.sleep(1000);
+
+Thread temporarily stops running
+Reasons:
+            sleep()
+            wait()
+            Waiting for I/O
+            Waiting for a lock
+After condition is satisfied → goes back to Runnable
+
+5. Terminated State :
+
+Thread finishes execution
+run() method ends
+Thread is now dead and cannot restart
+
+👉 Real-Life Analogy 🚦
+
+New → You bought a car
+Runnable → Waiting at signal
+Running → Driving
+Blocked → Traffic jam / red light
+Terminated → Reached destination
