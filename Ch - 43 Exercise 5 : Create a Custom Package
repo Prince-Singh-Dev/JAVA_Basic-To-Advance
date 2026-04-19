@@ -4,3 +4,118 @@ You have to create a package name com.prince.shape
 This package should have individual classes for rectangle , Square , Circle , Cylinder , Sphere
 These classes should use inheritance to properly manage the code!
 Include methods like volume, surface area and getters/setters for dimensions
+
+
+Solution : 
+
+package com.prince.shape;
+
+// Base abstract class abstract class Shape { public abstract double surfaceArea(); }
+
+// 2D base class abstract class TwoDShape extends Shape { public abstract double area(); }
+
+// 3D base class abstract class ThreeDShape extends Shape { public abstract double volume(); }
+
+// Rectangle Class class Rectangle extends TwoDShape { private double length; private double width;
+
+public Rectangle(double length, double width) {
+    this.length = length;
+    this.width = width;
+}
+
+public double getLength() { return length; }
+public void setLength(double length) { this.length = length; }
+
+public double getWidth() { return width; }
+public void setWidth(double width) { this.width = width; }
+
+@Override
+public double area() {
+    return length * width;
+}
+
+@Override
+public double surfaceArea() {
+    return area(); // same as area for 2D
+}
+
+}
+
+// Square Class class Square extends Rectangle { public Square(double side) { super(side, side); }
+
+public double getSide() {
+    return getLength();
+}
+
+public void setSide(double side) {
+    setLength(side);
+    setWidth(side);
+}
+
+}
+
+// Circle Class class Circle extends TwoDShape { private double radius;
+
+public Circle(double radius) {
+    this.radius = radius;
+}
+
+public double getRadius() { return radius; }
+public void setRadius(double radius) { this.radius = radius; }
+
+@Override
+public double area() {
+    return Math.PI * radius * radius;
+}
+
+@Override
+public double surfaceArea() {
+    return area();
+}
+
+}
+
+// Cylinder Class class Cylinder extends ThreeDShape { private double radius; private double height;
+
+public Cylinder(double radius, double height) {
+    this.radius = radius;
+    this.height = height;
+}
+
+public double getRadius() { return radius; }
+public void setRadius(double radius) { this.radius = radius; }
+
+public double getHeight() { return height; }
+public void setHeight(double height) { this.height = height; }
+
+@Override
+public double volume() {
+    return Math.PI * radius * radius * height;
+}
+
+@Override
+public double surfaceArea() {
+    return 2 * Math.PI * radius * (radius + height);
+}
+
+}
+
+// Sphere Class class Sphere extends ThreeDShape { private double radius;
+
+public Sphere(double radius) {
+    this.radius = radius;
+}
+
+public double getRadius() { return radius; }
+public void setRadius(double radius) { this.radius = radius; }
+
+@Override
+public double volume() {
+    return (4.0 / 3.0) * Math.PI * Math.pow(radius, 3);
+}
+
+@Override
+public double surfaceArea() {
+    return 4 * Math.PI * radius * radius;
+  }
+}
