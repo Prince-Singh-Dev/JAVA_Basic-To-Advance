@@ -1,5 +1,5 @@
 <!-- ===================== HEADER ===================== -->
-<h1 align="center">⚡ JAVA NOTES – THE ULTIMATE GUIDE ⚡</h1>
+<h1 align="center">⚡ JAVA NOTES – THE ULTIMATE GUIDE ... ⚡</h1>
 
 <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=28&duration=3000&color=00F7FF&center=true&vCenter=true&width=800&lines=From+Zero+to+Java+Mastery;Clean+Notes+%7C+Real+Concepts+%7C+Interview+Ready;Code.+Understand.+Dominate."/>
