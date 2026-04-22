@@ -1,1 +1,8 @@
+👉 The Thread Class
 
+Below are the commonly used constructors of Thread class :
+
+1. Thread
+2. Thread (String name)
+3. Thread (Runnable r)
+4. Thread (Runnable r , String name)
