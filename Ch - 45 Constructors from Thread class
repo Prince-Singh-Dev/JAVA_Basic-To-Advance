@@ -113,3 +113,35 @@ I am a Thread...
 I am a Thread...
 Thread ID: 12
 Thread Name: Prince
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+👉 Thread Group in Java
+
+A Thread Group is a way to group multiple threads into a single unit so you can manage them together.
+
+Think of it like:
+
+Classroom → Thread Group
+Students → Threads
+
+You can control all students (threads) through the classroom (group).
+
+👉 Why Use Thread Group?
+
+To manage multiple threads together
+
+To perform operations like:
+                           1. Stop all threads (deprecated now ⚠️)
+                           2. Interrupt all threads
+                           3. Get active thread count
+                           4. Helps in organizing threads logically
+
+👉 Important Methods
+
+| Method          | Description                     |
+| --------------- | ------------------------------- |
+| `getName()`     | Returns group name              |
+| `activeCount()` | Number of active threads        |
+| `list()`        | Displays info about group       |
+| `interrupt()`   | Interrupts all threads in group |
