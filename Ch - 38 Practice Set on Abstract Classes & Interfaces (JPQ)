@@ -34,6 +34,30 @@ Refilling fountain pen ink
 
 Program 2 : Use the Pen class from Program1 to Create a concrete class Fountain Pen with additional method changeNib()
 
+abstract class Pen {
+    abstract void write();
+    abstract void refill();
+}
+class FountainPen extends Pen {
+    void write() {
+        System.out.println("Writing with fountain pen");
+    }
+    void refill() {
+        System.out.println("Refilling ink");
+    }
+    void changeNib() {
+        System.out.println("Changing the nib");
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        FountainPen f = new FountainPen();
+        f.write();
+        f.refill();
+        f.changeNib();
+    }
+}
+
 ----------------------------------------------------------------------------------------------------------------------------------------
 
 Program 3 : Create a class Monkey with jump() and bite() methods. Create a class Human which inherits this Monkey class and implements 
