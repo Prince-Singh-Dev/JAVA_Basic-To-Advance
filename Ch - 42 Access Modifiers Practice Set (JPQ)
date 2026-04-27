@@ -92,11 +92,52 @@ public class UserMessage {
     }
 }
 
+Output :
+
+Enter your name: Prince
+Hello Prince! Welcome to Java.
+
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Program 3  : Create a package in class with three packages levels folder1,folder2,folder3
                           | folder1
                           |   |______ folder2
                           |   |        |_______folder 3
 
+Step 1: Create Packages
+                Right click src
+                New → Package
+                                Type:
+                                folder1.folder2.folder3
+IntelliJ will automatically create all nested folders.
+
++--------------+
+| MyClass.java |
++--------------+
+
+package folder1.folder2.folder3;
+public class MyClass {
+    public void display() {
+        System.out.println("Hello from folder3 package!");
+    }
+}
+
++-----------+
+| Main.java |
++-----------+
+
+import folder1.folder2.folder3.MyClass;
+public class Main {
+    public static void main(String[] args) {
+        MyClass obj = new MyClass();
+        obj.display();
+    }
+}
+
+Output : 
+
+Hello from folder3 package!
+
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Program 4 : Prove that you cannot access default property but can access protected property from the subclass.
