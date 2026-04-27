@@ -5,8 +5,9 @@ Step 1: Create Package and Classes
                         Calculator → Basic operations
                         ScCalculator → Scientific operations
                         HybridCalculator → Combination of both
-
-Calculator.java
++-----------------+
+| Calculator.java |
++-----------------+
 
 package mypackage;
 public class Calculator {
@@ -29,7 +30,9 @@ public class Calculator {
     }
 }
 
-ScCalculator.java
++-------------------+
+| ScCalculator.java |
++-------------------+
 
 package mypackage;
 public class ScCalculator {
@@ -44,7 +47,9 @@ public class ScCalculator {
     }
 }
 
-HybridCalculator.java
++-----------------------+
+| HybridCalculator.java |
++-----------------------+
 
 package mypackage;
 public class HybridCalculator extends Calculator {
@@ -73,8 +78,11 @@ public class Main {
         System.out.println("Hybrid Cube: " + hc.cube(3));
     }
 }
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Program 2  : Use a built-in package in Java to write a class which displays a message (by using sout) after taking input from the user.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Program 3  : Create a package in class with three packages levels folder1,folder2,folder3
                           | folder1
                           |   |______ folder2
