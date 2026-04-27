@@ -1,4 +1,79 @@
 Program 1  : Create three classes Calculator , ScCalculator and Hybrid Calculator and group them into a package.
+
+Step 1: Create Package and Classes
+        We will create:
+                        Calculator → Basic operations
+                        ScCalculator → Scientific operations
+                        HybridCalculator → Combination of both
+
+Calculator.java
+
+package mypackage;
+public class Calculator {
+    public int add(int a, int b) {
+        return a + b;
+    }
+    public int subtract(int a, int b) {
+        return a - b;
+    }
+    public int multiply(int a, int b) {
+        return a * b;
+    }
+    public int divide(int a, int b) {
+        if(b != 0)
+            return a / b;
+        else {
+            System.out.println("Cannot divide by zero");
+            return 0;
+        }
+    }
+}
+
+ScCalculator.java
+
+package mypackage;
+public class ScCalculator {
+    public double square(int a) {
+        return a * a;
+    }
+    public double cube(int a) {
+        return a * a * a;
+    }
+    public double sqrt(int a) {
+        return Math.sqrt(a);
+    }
+}
+
+HybridCalculator.java
+
+package mypackage;
+public class HybridCalculator extends Calculator {
+    public double square(int a) {
+        return a * a;
+    }
+    public double cube(int a) {
+        return a * a * a;
+    }
+}
+
+Main.java
+
+import mypackage.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Calculator c = new Calculator();
+        ScCalculator sc = new ScCalculator();
+        HybridCalculator hc = new HybridCalculator();
+        System.out.println("Addition: " + c.add(5, 3));
+        System.out.println("Subtraction: " + c.subtract(10, 4));
+        System.out.println("Square (SC): " + sc.square(4));
+        System.out.println("Square Root (SC): " + sc.sqrt(16));
+        System.out.println("Hybrid Add: " + hc.add(7, 2));
+        System.out.println("Hybrid Cube: " + hc.cube(3));
+    }
+}
+
 Program 2  : Use a built-in package in Java to write a class which displays a message (by using sout) after taking input from the user.
 Program 3  : Create a package in class with three packages levels folder1,folder2,folder3
                           | folder1
