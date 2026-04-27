@@ -141,3 +141,47 @@ Hello from folder3 package!
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Program 4 : Prove that you cannot access default property but can access protected property from the subclass.
+
+STEP 1 : Create Package pack1
+
++-----------+
+| Base.java |
++-----------+
+
+package pack1;
+public class Base {
+    int defaultVar = 10;        // default access
+    protected int protectedVar = 20;  // protected access
+}
+
+STEP 2 : Create Package pack2
+
++--------------+
+| Derived.java |
++--------------+
+
+package pack2;
+import pack1.Base;
+
+public class Derived extends Base {
+    public void show() {
+        // System.out.println(defaultVar); ERROR (cannot access)
+        System.out.println(protectedVar); //Accessible
+    }
+}
+
+STEP 3 : Main Class
+
++-----------+
+| Main.java |
++-----------+
+
+import pack2.Derived;
+public class Main {
+    public static void main(String[] args) {
+        Derived obj = new Derived();
+        obj.show();
+    }
+}
+
+Output 20
