@@ -1,5 +1,35 @@
 Program 1 : Create an abstract class Pen with methods Write() and refill() an abstract methods
 
+abstract class Pen {
+    // Abstract methods
+    abstract void write();
+    abstract void refill();
+}
+
+// Subclass
+class FountainPen extends Pen {
+    void write() {
+        System.out.println("Writing with fountain pen");
+    }
+    void refill() {
+        System.out.println("Refilling fountain pen ink");
+    }
+}
+
+// Main class
+public class Main {
+    public static void main(String[] args) {
+        FountainPen p = new FountainPen();
+        p.write();
+        p.refill();
+    }
+}
+
+Output :
+
+Writing with fountain pen
+Refilling fountain pen ink
+
 ----------------------------------------------------------------------------------------------------------------------------------------
 
 Program 2 : Use the Pen class from Program1 to Create a concrete class Fountain Pen with additional method changeNib()
