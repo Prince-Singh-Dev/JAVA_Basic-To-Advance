@@ -100,14 +100,85 @@ public class Main {
 Program 4 : Create a class TelePhone with ring() , lift() and disconnect() methods as abstract methods. Create another class SmartTelephone
             and demonstrate polymorphism.
 
+abstract class Telephone {
+    abstract void ring();
+    abstract void lift();
+    abstract void disconnect();
+}
+
+class SmartTelephone extends Telephone {
+    void ring() {
+        System.out.println("Phone is ringing");
+    }
+    void lift() {
+        System.out.println("Call received");
+    }
+    void disconnect() {
+        System.out.println("Call disconnected");
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        Telephone t = new SmartTelephone(); // Polymorphism
+        t.ring();
+        t.lift();
+        t.disconnect();
+    }
+}
 ----------------------------------------------------------------------------------------------------------------------------------------
 
 Program 5 : Demonstrate polymorphism using monkey class from Program 3.
+
+class Monkey {
+    void jump() {
+        System.out.println("Monkey jumping");
+    }
+}
+class Human extends Monkey {
+    void jump() {
+        System.out.println("Human jumping");
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        Monkey m = new Human(); // Polymorphism
+        m.jump();  // Calls Human version
+    }
+}
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 
 Program 6 : Create an Interface TVRemote and use it to inherit another Interface SmartTVRemote
 
+interface TVRemote {
+    void volumeUp();
+    void volumeDown();
+}
+interface SmartTVRemote extends TVRemote {
+    void netflix();
+}
+
 ----------------------------------------------------------------------------------------------------------------------------------------
 
 Program 7 : Create a class TV which Implements TVremote interface from Program 6
+
+interface TVRemote {
+    void volumeUp();
+    void volumeDown();
+}
+class TV implements TVRemote {
+    public void volumeUp() {
+        System.out.println("Volume Increased");
+    }
+
+    public void volumeDown() {
+        System.out.println("Volume Decreased");
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        TV t = new TV();
+        t.volumeUp();
+        t.volumeDown();
+    }
+}
