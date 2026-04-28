@@ -1,1 +1,48 @@
+👉 Join Method in Threads
+
+class myThrz extends Thread{
+    public void run(){
+        for (int j = 0; j<5 ; j++){
+            System.out.println("Mythr1");
+        }
+    }
+}
+
+class myThr extends Thread{
+    public void run(){
+        for (int j = 0; j<5 ; j++){
+            System.out.println("Mythr2");
+        }
+    }
+}
+
+public class Thread_Priorities {
+    public static void main(String[] args) {
+        myThr t1 = new myThr();
+        myThrz t2 = new myThrz();
+        t1.start();
+        try{
+            t1.join(); /* used to run t1 completely before t2 ,
+            It needs an exception handling because there are chances that while execution t1 thread might killed earlier */
+        } catch(Exception e){
+            System.out.println(e);
+        }
+        t2.start();
+    }
+}
+
+Output :
+
+Mythr2
+Mythr2
+Mythr2
+Mythr2
+Mythr2
+Mythr1
+Mythr1
+Mythr1
+Mythr1
+Mythr1
+
+Process finished with exit code 0
 
