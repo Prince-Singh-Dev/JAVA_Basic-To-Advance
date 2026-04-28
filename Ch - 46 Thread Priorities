@@ -14,7 +14,7 @@ public class Thread_Priorities {
 }
 
 +-------------------+
-| Before Priorities |
+| Before Priorities | --- Given as MAX to t1 thread , by default JAVA has normal priorities
 +-------------------+
 
 CODE :
