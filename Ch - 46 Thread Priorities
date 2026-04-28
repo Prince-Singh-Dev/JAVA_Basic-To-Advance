@@ -1,0 +1,14 @@
+👉 Thread Priorities
+
+public class Thread_Priorities {
+    public static void main(String[] args) {
+        /* working of JVM : it holds a ready queue containing multiple threads 
+                                        JVM manage this Threads
+                                        Now , We can arrange the priorities of Threads
+                                        We can give three types of priority to Threads in JAVA
+        *               1. java.lang.Thread.MIN_PRIORITY = 1
+        *               2. java.lang.Thread.NORM_PRIORITY = 5
+        *               3. java.lang.Thread.MAX_PRIORITY = 10
+        * These values are passed into Thread.setPriority(int) to assign priority to JAVA threads. */
+    }
+}
