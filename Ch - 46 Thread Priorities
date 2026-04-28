@@ -12,3 +12,57 @@ public class Thread_Priorities {
         * These values are passed into Thread.setPriority(int) to assign priority to JAVA threads. */
     }
 }
+
++-------------------+
+| Before Priorities |
++-------------------+
+
+CODE :
+
+class myThrz extends Thread{
+    public myThrz(String name){
+        super(name);
+    }
+    public void run(){
+        int i = 34;
+        System.out.println("Thank You " + this.getName());
+    }
+}
+
+public class Thread_Priorities {
+    public static void main(String[] args) {
+        /* working of JVM : it holds a ready queue containing multiple threads
+                                        JVM manage this Threads
+                                        Now , We can arrange the priorities of Threads
+                                        We can give three types of priority to Threads in JAVA
+        *               1. java.lang.Thread.MIN_PRIORITY = 1
+        *               2. java.lang.Thread.NORM_PRIORITY = 5
+        *               3. java.lang.Thread.MAX_PRIORITY = 10
+        * These values are passed into Thread.setPriority(int) to assign priority to JAVA threads. */
+        myThrz t1 = new myThrz("Prince");
+        myThrz t2 = new myThrz("Harry");
+        myThrz t3 = new myThrz("Ram ");
+        myThrz t4 = new myThrz("Candre");
+        myThrz t5 = new myThrz("Hensie");
+        t1.start();
+        t2.start();
+        t3.start();
+        t4.start();
+        t5.start();
+    }
+}
+
+OUTPUT :
+
+Thank You Harry
+Thank You Prince
+Thank You Ram 
+Thank You Candre
+Thank You Hensie
+
+Process finished with exit code 0
+
+
++------------------+
+| After Priorities |
++------------------+
