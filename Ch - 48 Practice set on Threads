@@ -1,1 +1,9 @@
-👉
+👉 Program 1 : Write a Program to print "good morning" and "welcome" continuously on the screen in Java using Threads
+
+👉 Program 2 : Add a sleep method in welcome thread of question1 to delay its execution for 200ms
+
+👉 Program 3 : Demonstrate getPriority() and setPriority() methods in Java Threads
+
+👉 Program 4 : How do you get state of a given thread in Java
+
+👉 Program 5 : How do you get reference to the current thread in Java
