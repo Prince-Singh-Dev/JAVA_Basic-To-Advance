@@ -1,5 +1,49 @@
 👉 Program 1 : Write a Program to print "good morning" and "welcome" continuously on the screen in Java using Threads
 
+CODE :
+
+class Threads extends Thread{
+    public void run(){
+        for(int i=0 ; i<5 ; i++){
+            System.out.println("Good Morning");
+        }
+    }
+}
+class Threads2 extends Thread{
+    public void run(){
+        for(int i=0 ; i<5 ; i++){
+            System.out.println("Welcome");
+        }
+    }
+}
+public class ThreadPractice {
+    public static void main() {
+        Threads t1 = new Threads();
+        Threads2 t2 = new Threads2();
+        t1.start();
+        t2.start();
+    }
+}
+
+OUTPUT :
+
+Good Morning
+Welcome
+Welcome
+Welcome
+Welcome
+Welcome
+Good Morning
+Good Morning
+Good Morning
+Good Morning
+
+Process finished with exit code 0
+
+NOTE : FOR INFINITE PRINT , USE WHILE LOOP IN PLACE OF FOR LOOP...
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
 👉 Program 2 : Add a sleep method in welcome thread of question1 to delay its execution for 200ms
 
 👉 Program 3 : Demonstrate getPriority() and setPriority() methods in Java Threads
