@@ -1,16 +1,36 @@
-👉 Join Method in Threads
+👉 Java Multithreading: Join & Sleep (Interrupt Handling)
 
-class myThrz extends Thread{
-    public void run(){
-        for (int j = 0; j<5 ; j++){
+This project demonstrates two important concepts of **multithreading in Java**:
+
+* `join()` method
+* `sleep()` method with `InterruptedException`
+
+---
+
+1. Join Method in Threads
+
+👉 Description
+
+The `join()` method is used to ensure that one thread completes its execution before another thread starts.
+* When `t1.join()` is called:
+  * The main thread waits for `t1` to finish.
+  * Only after `t1` completes, the next thread (`t2`) starts execution.
+* It requires **exception handling** because:
+  * The thread may be interrupted while waiting.
+
+👉Code
+
+class myThrz extends Thread {
+    public void run() {
+        for (int j = 0; j < 5; j++) {
             System.out.println("Mythr1");
         }
     }
 }
 
-class myThr extends Thread{
-    public void run(){
-        for (int j = 0; j<5 ; j++){
+class myThr extends Thread {
+    public void run() {
+        for (int j = 0; j < 5; j++) {
             System.out.println("Mythr2");
         }
     }
@@ -20,19 +40,23 @@ public class Thread_Priorities {
     public static void main(String[] args) {
         myThr t1 = new myThr();
         myThrz t2 = new myThrz();
+
         t1.start();
-        try{
-            t1.join(); /* used to run t1 completely before t2 ,
-            It needs an exception handling because there are chances that while execution t1 thread might killed earlier */
-        } catch(Exception e){
+
+        try {
+            // Ensures t1 completes before t2 starts
+            t1.join();
+        } catch (Exception e) {
             System.out.println(e);
         }
+
         t2.start();
     }
 }
 
-Output :
+Output (Expected Behavior)
 
+```
 Mythr2
 Mythr2
 Mythr2
@@ -43,29 +67,58 @@ Mythr1
 Mythr1
 Mythr1
 Mythr1
+```
 
-Process finished with exit code 0
+👉 Important Note
 
-------------------------------------------------------------------------------------------------------------------------------------
+Ideally, since `join()` is used:
 
-👉 Interrupt Method in Threads (Sleep)
+* `t1` should complete **before** `t2` starts.
 
-class myThrz extends Thread{
-    public void run(){
-        for (int j = 0; j<5 ; j++){
+However, your output shows `Mythr2` first.
+This may happen due to:
+
+* Thread scheduling differences
+* Output buffering in the console
+
+👉Key Points
+
+* `join()` enforces **execution order**
+* Helps in **thread synchronization**
+* Must be used inside a `try-catch` block
+
+2. Sleep Method (Interrupt Handling)
+
+👉 Description
+
+The `sleep()` method pauses the execution of a thread for a specified time.
+
+* Syntax:
+
+  ```java
+  Thread.sleep(milliseconds);
+  ```
+
+* It throws `InterruptedException`, so it must be handled.
+
+Code
+
+class myThrz extends Thread {
+    public void run() {
+        for (int j = 0; j < 5; j++) {
             System.out.println("Mythr1");
-            try{
+            try {
                 Thread.sleep(455);
-            }catch(InterruptedException e){
+            } catch (InterruptedException e) {
                 e.printStackTrace();
             }
         }
     }
 }
 
-class myThr extends Thread{
-    public void run(){
-        for (int j = 0; j<5 ; j++){
+class myThr extends Thread {
+    public void run() {
+        for (int j = 0; j < 5; j++) {
             System.out.println("Mythr2");
         }
     }
@@ -75,23 +128,56 @@ public class Thread_Priorities {
     public static void main(String[] args) {
         myThr t1 = new myThr();
         myThrz t2 = new myThrz();
+
         t1.start();
         t2.start();
     }
 }
+Output (Sample)
 
-Output :
+```
+Mythr2
+Mythr2
+Mythr1
+Mythr2
+Mythr2
+Mythr2
+Mythr1
+Mythr1
+Mythr1
+Mythr1
+```
 
-Mythr2
-Mythr2
-Mythr1
-Mythr2
-Mythr2
-Mythr2
-Mythr1
-Mythr1
-Mythr1
-Mythr1
+👉Explanation of Output
 
-Process finished with exit code 0
+* `t1` runs fast (no delay)
+* `t2` pauses for **455 ms** after each print
+* This causes **mixed/interleaved output**
 
+👉About Interrupt
+
+* If a thread is sleeping and gets interrupted:
+
+  * `InterruptedException` is thrown
+  * Execution jumps to the `catch` block
+
+👉Key Points
+
+* `sleep()` pauses thread execution
+* Helps simulate **real-time delays**
+* Requires handling `InterruptedException`
+
+👉Conclusion
+
+| Concept            | Purpose                              |
+| ------------------ | ------------------------------------ |
+| `join()`           | Controls execution order of threads  |
+| `sleep()`          | Introduces delay in thread execution |
+| Exception Handling | Ensures safe thread execution        |
+
+👉When to Use
+
+* Use `join()` when:
+  * One task depends on another
+* Use `sleep()` when:
+  * You need delays (e.g., animations, simulations)
