@@ -1,1 +1,10 @@
+Errors & Exceptions
 
+No matter how smart we are, errors are our constant companions. With practice, we keep getting better at finding & correcting them.
+
+There are three types of errors in Java : 
+1. Syntax errors
+2. Logical errors
+3. Runtime errors --> Also called Exceptions!
+
+Synatx errors :
