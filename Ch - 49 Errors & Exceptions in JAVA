@@ -7,6 +7,8 @@ No matter how smart we are, errors are our constant companions. With practice, w
 2. Logical errors
 3. Runtime errors --> Also called Exceptions!
 
+----------------------------------------------------------------------------------------------------------------------------------------
+
 👉 Synatx errors :
 
 When computer finds something wrong with our program it throws a syntax error.
@@ -31,6 +33,7 @@ SyntaxErrorDemo.java:6: error: cannot find symbol
         ^
   symbol:   variable d
 
+----------------------------------------------------------------------------------------------------------------------------------------
 
 👉 Logical errors :
 
@@ -55,4 +58,34 @@ class LogicalErrorDemo {
 OUTPUT          : Sum is : 5
 EXPECTED OUTPUT : Sum is : 15
 
+----------------------------------------------------------------------------------------------------------------------------------------
+
 👉 Runtime errors :
+
+Program compiles fine, but crashes while running.
+
+CODE SNIPPET 1 : Division by Zero
+
+class RuntimeErrorDemo {
+    public static void main(String[] args) {
+        int a = 10;
+        int b = 0;
+
+        int result = a / b;  // runtime error
+        System.out.println(result);
+    }
+}
+
+OUTPUT : Exception in thread "main" java.lang.ArithmeticException: / by zero
+
+CODE SNIPPET 2 : Array Index Out of Bounds
+
+class RuntimeErrorDemo2 {
+    public static void main(String[] args) {
+        int arr[] = {1, 2, 3};
+
+        System.out.println(arr[5]); // invalid index
+    }
+}
+
+OUTPUT : Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 5
