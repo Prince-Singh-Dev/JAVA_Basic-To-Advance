@@ -11,9 +11,26 @@ No matter how smart we are, errors are our constant companions. With practice, w
 
 When computer finds something wrong with our program it throws a syntax error.
 
-int a=9;  --> No similar , syntax error!
-a=a+3;
-d=4; --> Variable not declared, syntax error!
+CODE SNIPPET :
+
+class SyntaxErrorDemo {
+    public static void main(String[] args) {
+        int a = 9
+        a = a + 3;
+        d = 4;   // variable not declared
+    }
+}
+
+OUTPUT COMPILATION ERROR :
+
+SyntaxErrorDemo.java:4: error: ';' expected
+        int a = 9
+                 ^
+SyntaxErrorDemo.java:6: error: cannot find symbol
+        d = 4;
+        ^
+  symbol:   variable d
+
 
 👉 Logical errors :
 
