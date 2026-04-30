@@ -40,4 +40,19 @@ A logical error or a bug occurs when a program compiles and runs but dows the wr
 --> Wrong time of chats being displayed
 --> incorrect redirects!
 
+CODE SNIPPET :
+
+class LogicalErrorDemo {
+    public static void main(String[] args) {
+        int a = 10;
+        int b = 5;
+
+        int sum = a - b; // mistake (should be +)
+        System.out.println("Sum is: " + sum);
+    }
+}
+
+OUTPUT          : Sum is : 5
+EXPECTED OUTPUT : Sum is : 15
+
 👉 Runtime errors :
