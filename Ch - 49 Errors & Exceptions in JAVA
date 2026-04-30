@@ -62,7 +62,8 @@ EXPECTED OUTPUT : Sum is : 15
 
 👉 Runtime errors :
 
-Program compiles fine, but crashes while running.
+Java may sometimes enocounter an error while the program is running. These are also called exception! These are encountered due to 
+circumstances like bad input or resource constraints.
 
 CODE SNIPPET 1 : Division by Zero
 
@@ -89,3 +90,14 @@ class RuntimeErrorDemo2 {
 }
 
 OUTPUT : Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 5
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+SUMMARY :
++---------------+--------------------+---------------+---------------+
+| Error Type    | When it happens    | Program runs? | Example       |
++ ------------- + ------------------ + ------------- + ------------- +
+| Syntax Error  | During compilation |  No           | Missing `;`   |
+| Logical Error | After execution    |  Yes          | Wrong formula |
+| Runtime Error | During execution   |  Crashes      | Divide by 0   |
++---------------+--------------------+---------------+---------------+
