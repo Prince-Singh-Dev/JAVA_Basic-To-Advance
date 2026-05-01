@@ -101,3 +101,31 @@ SUMMARY :
 | Logical Error | After execution    |  Yes          | Wrong formula |
 | Runtime Error | During execution   |  Crashes      | Divide by 0   |
 +---------------+--------------------+---------------+---------------+
+
+
+In Java, a try-catch (exception handling) block is used to handle runtime errors (exceptions) so that your program doesn’t crash abruptly.
+
+Basic Syntax 
+
+try {
+    // Code that may cause an exception
+} catch (ExceptionType e) {
+    // Code to handle the exception
+}
+
+
+Sample Code : 
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            int a = 10;
+            int b = 0;
+            int result = a / b;   // This will cause an exception
+            System.out.println(result);
+        } catch (ArithmeticException e) {
+            System.out.println("Cannot divide by zero!");
+        }
+    }
+}
+
