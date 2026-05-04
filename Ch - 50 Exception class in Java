@@ -65,6 +65,8 @@ public class ExceptionClass {
     }
 }
 
+-------------------------------------------------------------------------------------------------------------------------------------
+
 👉 The throw Keyword
 
 The throw Keyword is used to throw an exception explicitly by the programmer
@@ -77,3 +79,83 @@ if(b==0){
 
 In a Similar manner, we can throw user defined exceptions :
                                                             throw new MyException("Exception thrown");
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+👉 Throw v/s Throws in JAVA
+
+throw (Used to actually throw an exception)
+Used inside a method
+Throws one exception at a time
+Followed by an object (new keyword)
+Used when you want to manually create an exception
+
+throws (Used to declare exceptions)
+Used in method declaration
+Can declare multiple exceptions
+Tells compiler:
+                “This method might throw these exceptions”
+Does not throw, just informs
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+Sample code :
+
+class NegativeRadiusException extends Exception{
+    @Override
+    public String toString() {
+        return "Radius cannot be negative !";
+    }
+
+    @Override
+    public String getMessage() {
+        return "Radius can't be negative";
+    }
+}
+public class throw_vs_throws {
+    public static double area(int r) throws NegativeRadiusException{
+        if(r<0){
+            throw new NegativeRadiusException();
+        }
+        double result = Math.PI*r*r;
+        return result;
+    }
+    public static int divide(int a, int b) throws ArithmeticException{
+        int result = a/b;
+        return result;
+    }
+    public static void main() {
+        // now using that divide function
+        try{
+            int c = divide(6,0);
+            System.out.println(c);
+        }catch(Exception e){
+            System.out.println(e);
+        }
+        // double ar = area(6); Will get a warning to add try catch block for this
+        try{
+            double ar = area(6);
+            System.out.println(ar);
+        }catch(Exception e){
+            System.out.println(e);
+        }
+    }
+}
+
+
+Output :
+
+java.lang.ArithmeticException: / by zero
+113.09733552923255
+
+Process finished with exit code 0
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+| Feature      | `throw`                   | `throws`               |
+| ------------ | ------------------------- | ---------------------- |
+| Purpose      | Actually throws exception | Declares exception     |
+| Used in      | Inside method             | Method signature       |
+| Type         | Followed by object        | Followed by class name |
+| Number       | One exception at a time   | Multiple allowed       |
+| Keyword role | Action                    | Information            |
