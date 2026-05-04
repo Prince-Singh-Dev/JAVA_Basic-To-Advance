@@ -12,4 +12,57 @@ The Exception class has following important methods :
 2. void printStackTrace() -> prints stack trace
 3. String getMessage() -> prints the exception message
 
+Example Code :
+
+import java.util.Scanner;
+
+// Custom Exception Class
+class MyException extends Exception {
+
+    // Override toString() method
+    @Override
+    public String toString() {
+        return "I am toString() method";
+    }
+
+    // Override getMessage() method
+    @Override
+    public String getMessage() {
+        return "I am getMessage() method";
+    }
+}
+
+public class ExceptionClass {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter a number: ");
+        int a = sc.nextInt();
+
+        // Condition check
+        if (a < 99) {
+            try {
+                // Throw custom exception
+                throw new MyException();
+            } catch (Exception e) {
+
+                // Prints message from getMessage()
+                System.out.println("Using getMessage(): " + e.getMessage());
+
+                // Prints message from toString()
+                System.out.println("Using toString(): " + e.toString());
+
+                // Prints full error details (class + line number)
+                System.out.println("Using printStackTrace():");
+                e.printStackTrace();
+            }
+        } else {
+            System.out.println("Number is valid (>= 99)");
+        }
+
+        sc.close();
+    }
+}
+
 👉 The throw Keyword
