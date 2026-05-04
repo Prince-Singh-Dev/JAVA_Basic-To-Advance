@@ -1,6 +1,68 @@
 👉 Java Finally Block
 
-Finally block contains the code which is always executed whether the exception is handled or not.
-It is used to execute code containing instructions to release the system resources  , close a connection etc.
+The finally block is used with try-catch and it always executes, no matter what happens.
+
+Whether:
+
+Exception occurs 
+Exception does NOT occur
+
+Syntax :
+
+try {
+    // risky code
+} catch (Exception e) {
+    // handle exception
+} finally {
+    // always runs
+}
+
+1. finally always executes
+2. Used for cleanup work
+3. Runs even if:
+   (a) return is used
+   (b) exception occurs or not
+4. Common uses:
+   (a) Closing files 
+   (b) Closing database connections 
+   (c) Releasing resources
+
+👉 Sample Code :
+
+class TestFinally {
+    public static void main(String[] args) {
+        try {
+            int a = 10 / 0;   // Exception
+        } catch (ArithmeticException e) {
+            System.out.println("Exception caught");
+        } finally {
+            System.out.println("This always runs");
+        }
+    }
+}
+
+Output :
+
+Exception caught
+This always runs
+
+👉 Example WITHOUT Exception
+
+try {
+    int a = 10 / 2;   // No exception
+    System.out.println(a);
+} finally {
+    System.out.println("This still runs");
+}
+
+Output :
+
+5
+This still runs
 
 
+👉 When finally may NOT run
+
+Very rare cases:
+                System crash
+                System.exit() is called
