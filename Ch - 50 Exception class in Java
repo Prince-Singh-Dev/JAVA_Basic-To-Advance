@@ -1,1 +1,15 @@
+👉 Exception class in Java
 
+We can write our custom Exceptions using Exception class in Java.
+
+public class My Exception extends Exception{
+    // override methods
+}
+
+The Exception class has following important methods :
+
+1. String toString() -> executed when sout(e) is ran
+2. void printStackTrace() -> prints stack trace
+3. String getMessage() -> prints the exception message
+
+👉 The throw Keyword
