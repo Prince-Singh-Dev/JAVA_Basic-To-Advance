@@ -1,1 +1,5 @@
-👉 
+👉 Write a JAVA program to demonstrate syntax, logical & runtime errors
+👉 WAP that prints "HaHa" during Arithmetic Expression and "HeHe" during an Illegal argument exception
+👉 WAP that allows you to keep accessing an array until a valid index is given. If max retries exceed 5 print "Error".
+👉 Modify program 3 to throw a custom exception if max retries are reached.
+👉 Wrap the program 3 inside a method which throws your custom Exception.
