@@ -214,4 +214,71 @@ Process finished with exit code 0
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 
-👉 
+👉 Nested try-catch
+
+Nested try-catch in Java simply means placing one try-catch block inside another. This is useful when different parts of your code may throw different types of exceptions and you want to handle them separately.
+
+Basic Idea
+Inner try-catch → handles specific exceptions locally
+Outer try-catch → acts as a backup (handles exceptions not caught inside)
+
+Syntax :
+
+try{
+    try{
+        }catch(Exp e){
+        }
+    }
+catch(Exp e){
+        }
+
+Similarly , we can furthur nest try catch blocks inside the nested try catch blocks.
+
+Sample Code :
+
+public class NestedTryExample {
+    public static void main(String[] args) {
+        try {
+            // Outer try block
+
+            int arr[] = {1, 2, 3};
+
+            try {
+                // Inner try block
+                System.out.println(arr[5]); // ArrayIndexOutOfBoundsException
+            } catch (ArrayIndexOutOfBoundsException e) {
+                System.out.println("Inner catch: Array index is out of bounds");
+            }
+
+            try {
+                int result = 10 / 0; // ArithmeticException
+            } catch (ArithmeticException e) {
+                System.out.println("Inner catch: Cannot divide by zero");
+            }
+
+        } catch (Exception e) {
+            System.out.println("Outer catch: Some exception occurred");
+        }
+
+        System.out.println("Program continues...");
+    }
+}
+
+👉 How it works
+
+1. Java first executes the inner try block
+2. If an exception occurs:
+    It checks the nearest catch (inner one)
+    If matched → handled there
+3. If not handled inside:
+    It goes to the outer catch block
+4. Program continues after handling
+
+👉 Key Points
+
+1. Inner try-catch is used for fine-grained error handling
+2. Outer try-catch is used for general or fallback handling
+3. You can nest multiple levels, but too much nesting makes code messy
+4. Always catch specific exceptions first, then general ones
+
+----------------------------------------------------------------------------------------------------------------------------------------
