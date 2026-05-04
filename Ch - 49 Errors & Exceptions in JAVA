@@ -147,3 +147,22 @@ public class Main {
     }
 }
 
+----------------------------------------------------------------------------------------------------------------------------------------
+
+👉 Handling Specific Exception in JAVA
+
+In Java , We can handle specific exceptions by typing mulitple catch blocks
+
+try{
+    // code
+}catch(I/O Exception e){
+    // code
+}catch(Arithmetic Exception e){
+    // code
+}catch(Exception e){
+    // code
+}
+
+Sample Code :
+
+
