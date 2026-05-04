@@ -102,8 +102,26 @@ SUMMARY :
 | Runtime Error | During execution   |  Crashes      | Divide by 0   |
 +---------------+--------------------+---------------+---------------+
 
+👉 Exceptions in JAVA
 
-In Java, a try-catch (exception handling) block is used to handle runtime errors (exceptions) so that your program doesn’t crash abruptly.
+An Exception is an event that occurs when a program is executed disrupting the normal flow of instructions.
+There are mainly two types of exceptions in Java :
+
+1. Checked Exception -> Compile the exceptions (Handled by compiler)
+2. Unchecked Exception -> Runtime exceptions
+
+Commonly occuring Exceptions :
+
+following are few commonly occuring exceptions in JAVA :
+1. Null Pointers Exception
+2. Arithmetic Exception
+3. Array Index Out of Bound Exception
+4. Illegal Argument Exception
+5. Number format Exception
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+👉 In Java, a try-catch (exception handling) block is used to handle runtime errors (exceptions) so that your program doesn’t crash abruptly.
 
 Basic Syntax 
 
