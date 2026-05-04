@@ -66,3 +66,14 @@ public class ExceptionClass {
 }
 
 👉 The throw Keyword
+
+The throw Keyword is used to throw an exception explicitly by the programmer
+
+if(b==0){
+    throw new ArithmeticException("Div By 0");
+}else{
+    return a/b;
+}
+
+In a Similar manner, we can throw user defined exceptions :
+                                                            throw new MyException("Exception thrown");
