@@ -1,0 +1,15 @@
+PROGRAM : 
+
+You have to create a custom calculator with following operations :
+
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+
+which throws the following exceptions
+
+1. Invalid Input Exception 
+2. Cannot Divide by 0 exception
+3. Max Input Exception if any of the inputs is greater than 100000
+4. Max Multiplier reached exception - don't allow any multiplication input to be greater then 7000
