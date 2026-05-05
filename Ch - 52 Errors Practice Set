@@ -37,6 +37,8 @@ public class error_PracticeSet {
 
 👉 WAP that allows you to keep accessing an array until a valid index is given. If max retries exceed 5 print "Error".
 
+CODE :
+
 import java.util.Scanner;
 
 public class error_PracticeSet {
@@ -67,6 +69,50 @@ public class error_PracticeSet {
 
 👉 Modify program 3 to throw a custom exception if max retries are reached.
 
+CODE :
+
+class MaxRetriesException extends Exception {
+    @Override
+    public String getMessage() {
+        return "Maximum retries reached. Please try again later.";
+    }
+}
+
+WRAPPING LOGIC INSIDE THIS :
+
+import java.util.Scanner;
+
+public class error_PracticeSet {
+
+    // Method that throws custom exception
+    public static void accessMarks() throws MaxRetriesException {
+        int[] marks = {7, 56, 6};
+        Scanner sc = new Scanner(System.in);
+
+        int i = 0;
+        while (i < 5) {
+            try {
+                int index = sc.nextInt();
+                System.out.println("The value of marks[index] is " + marks[index]);
+                return;  // exit method if successful
+            } catch (Exception e) {
+                System.out.println("Invalid Index");
+                i++;
+            }
+        }
+
+        // Throw custom exception after max retries
+        throw new MaxRetriesException();
+    }
+
+    public static void main(String[] args) {
+        try {
+            accessMarks();
+        } catch (MaxRetriesException e) {
+            System.out.println(e.getMessage());
+        }
+    }
+}
 ---------------------------------------------------------------------------------------------------------------------------------------
 
 👉 Wrap the program 3 inside a method which throws your custom Exception.
