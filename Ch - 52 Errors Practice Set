@@ -78,7 +78,11 @@ class MaxRetriesException extends Exception {
     }
 }
 
-WRAPPING LOGIC INSIDE THIS :
+---------------------------------------------------------------------------------------------------------------------------------------
+
+👉 Wrap the program 3 inside a method which throws your custom Exception.
+
+CODE :
 
 import java.util.Scanner;
 
@@ -113,8 +117,4 @@ public class error_PracticeSet {
         }
     }
 }
----------------------------------------------------------------------------------------------------------------------------------------
-
-👉 Wrap the program 3 inside a method which throws your custom Exception.
-
 ---------------------------------------------------------------------------------------------------------------------------------------
