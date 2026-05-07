@@ -12,4 +12,14 @@ For ex : We use arrays to store integers but what if we want to
 (3)Delete an element in Array
 (14)Apply certain operations to change this array
 
-👉 
+👉 How are collections available
+
+Collections in Java are available as classes and interfaces.
+Following are few commonly used Collections in Java :
+
+* ArrayList - For variable size collection
+* Set - For distinct Collection
+* Stack - A LIFO data structure
+* HashMap - For storing key-value pairs
+
+Collection class is available in java.util package collection class also provides static method for sorting , searching etc.
