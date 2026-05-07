@@ -1,0 +1,107 @@
+👉 Collections Framework
+
+A collection represents a group of object Java Collections provide classes and interfaces for us to be able to write code 
+quickly and efficiently.
+
+👉 Why do we need Collections ?
+
+We need Collections for effiecient storage and better manipulation of data in Java. 
+For ex : We use arrays to store integers but what if we want to
+(1)Resize the array
+(2)Insert an element in between
+(3)Delete an element in Array
+(14)Apply certain operations to change this array
+
+👉 How are collections available
+
+Collections in Java are available as classes and interfaces.
+Following are few commonly used Collections in Java :
+
+* ArrayList - For variable size collection
+* Set - For distinct Collection
+* Stack - A LIFO data structure
+* HashMap - For storing key-value pairs
+
+Collection class is available in java.util package collection class also provides static method for sorting , searching etc.
+
+👉 Collection Hierarchy 
+
+                                 JAVA COLLECTION FRAMEWORK
+
+                                      java.lang.Iterable
+                                              │
+                                ┌─────────────┴─────────────┐
+                                │                           │
+                     java.util.Collection            java.util.Map
+                          (Interface)               (Separate Hierarchy)
+                                │                           │
+        ┌───────────────────────┼───────────────────────────┘
+        │                       │
+   ┌────┴────┐             ┌────┴────┐
+   │  List   │             │   Set   │
+   │Interface│             │Interface│
+   └────┬────┘             └────┬────┘
+        │                       │
+   ┌────┼──────────────┐    ┌───┼───────────────┐
+   │    │              │    │   │               │
+ArrayList LinkedList Vector HashSet LinkedHashSet TreeSet
+                              │
+                            Stack
+                            
+                    
+                     ┌────────────────────┐
+                     │      Queue         │
+                     │    (Interface)     │
+                     └─────────┬──────────┘
+                               │
+                 ┌─────────────┼─────────────┐
+                 │             │             │
+           PriorityQueue   ArrayDeque    LinkedList
+
+
+────────────────────────────────────────────────────────────────────────────
+
+                              MAP HIERARCHY
+                         (Not part of Collection)
+
+                              java.util.Map
+                                 (Interface)
+                                       │
+            ┌──────────────────────────┼──────────────────────────┐
+            │                          │                          │
+         HashMap                    TreeMap                  Hashtable
+            │                                                     │
+            │                                                     │
+     LinkedHashMap                                           Properties
+
+
+────────────────────────────────────────────────────────────────────────────
+
+KEY POINTS:
+
+• Iterable → Root interface for traversing collections.
+• Collection → Root interface of List, Set, and Queue.
+• List → Ordered collection, allows duplicates.
+• Set → Unordered collection, no duplicates.
+• Queue → Used for processing elements in FIFO/Priority order.
+• Map → Stores key-value pairs (not part of Collection hierarchy).
+
+COMMON IMPLEMENTATIONS:
+
+• ArrayList      → Fast random access
+• LinkedList     → Fast insertion/deletion
+• Vector         → Synchronized dynamic array
+• Stack          → LIFO data structure
+• HashSet        → Unique unordered elements
+• LinkedHashSet  → Maintains insertion order
+• TreeSet        → Sorted set
+• PriorityQueue  → Priority-based queue
+• ArrayDeque     → Double-ended queue
+• HashMap        → Key-value storage, fast lookup
+• LinkedHashMap  → Maintains insertion order
+• TreeMap        → Sorted key-value pairs
+• Hashtable      → Thread-safe map
+• Properties     → Used for configuration properties
+
+
+
