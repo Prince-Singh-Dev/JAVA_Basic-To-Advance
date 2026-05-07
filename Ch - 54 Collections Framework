@@ -1,1 +1,15 @@
+👉 Collections Framework
 
+A collection represents a group of object Java Collections provide classes and interfaces for us to be able to write code 
+quickly and efficiently.
+
+👉 Why do we need Collections ?
+
+We need Collections for effiecient storage and better manipulation of data in Java. 
+For ex : We use arrays to store integers but what if we want to
+(1)Resize the array
+(2)Insert an element in between
+(3)Delete an element in Array
+(14)Apply certain operations to change this array
+
+👉 
