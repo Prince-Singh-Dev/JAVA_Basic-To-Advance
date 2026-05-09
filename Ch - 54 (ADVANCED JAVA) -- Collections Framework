@@ -140,3 +140,48 @@ public class collections {
     }
 }
 
+👉 ArrayList vs LinkedList
+
+1. Internal Data Structure
+ArrayList
+          Backed by a dynamic array
+          Elements stored in contiguous memory
+LinkedList
+          Backed by a doubly linked list
+          Each element (node) contains:
+                                        Data
+                                        Reference to next node
+                                        Reference to previous node
+
+
+2. Performance Comparison
+
++----------------------------+------------------+----------------------------+
+| Operation                  | ArrayList        | LinkedList                 |
++ -------------------------- + ---------------- + -------------------------- +
+| Access by index (`get(i)`) | Fast – O(1)      | Slow – O(n)                |
+| Add at end                 | O(1) (amortized) | O(1)                       |
+| Add at beginning           | O(n)             | O(1)                       |
+| Insert in middle           | O(n)             | O(n) (need traversal)      |
+| Remove by index            | O(n)             | O(n)                       |
+| Memory usage               | Less             | More (extra node pointers) |
++----------------------------+------------------+----------------------------+
+
+3. When to Use
+
+Use ArrayList when:
+                  You need fast random access
+                  You mostly read data
+                  You add/remove at the end
+Use LinkedList when:
+                  You frequently insert/remove at beginning
+                  You are implementing queue or deque
+                  Random access is not important
+
+4. Memory Difference
+
+ArrayList → Stores only data.
+LinkedList → Stores data + 2 references per node (more memory).
+
+👉 LinkedList Code
+
