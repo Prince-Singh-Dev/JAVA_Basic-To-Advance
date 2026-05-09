@@ -103,5 +103,40 @@ COMMON IMPLEMENTATIONS:
 • Hashtable      → Thread-safe map
 • Properties     → Used for configuration properties
 
+👉 ArrayList Code 
 
+import java.util.*;
+
+public class collections {
+    public static void main(String[] args) {
+        // Generics Syntax : Supplying a class on the basis of parameters
+        // Specifying this ArrayList of datatype Integers
+        ArrayList<Integer> l1 = new ArrayList<>();
+        // Methods on this ArrayList
+        l1.add(6);  // adding element in the ArrayList
+        l1.add(7);
+        l1.add(8);
+        System.out.println("After adding elements in ArrayList l1 : ");
+        for(int i=0 ; i<l1.size() ; i++){       // to find the size of l1 using .size() operation.
+            System.out.println(l1.get(i));      // to get the elements of ArrayList using .get() operation.
+        }
+        l1.add(2,5); // adding element at particular index
+        System.out.println("After adding elements in mid of ArrayList l1 : ");
+        for(int i=0 ; i<l1.size() ; i++){
+            System.out.println(l1.get(i));
+        }
+        // Creating one more ArrayList
+        ArrayList<Integer> l2 = new ArrayList<>();
+        l2.add(49);
+        l2.add(79);
+        // Adding L2 in L1
+        l1.addAll(3,l2);
+        System.out.println("After adding elements of ArrayList l2 : ");
+        for(int i=0 ; i<l1.size() ; i++){
+            System.out.println(l1.get(i));
+        }
+        // Clearing complete list 
+        // l1.clear();
+    }
+}
 
