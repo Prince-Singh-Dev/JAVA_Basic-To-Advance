@@ -185,3 +185,51 @@ LinkedList → Stores data + 2 references per node (more memory).
 
 👉 LinkedList Code
 
+import java.util.*;
+
+public class collections {
+    public static void main(String[] args) {
+
+        // Creating LinkedList of Integer type
+        LinkedList<Integer> l1 = new LinkedList<>();
+
+        // Adding elements in LinkedList
+        l1.add(6);
+        l1.add(7);
+        l1.add(8);
+
+        System.out.println("After adding elements in LinkedList l1 : ");
+
+        // Printing elements
+        for(int i = 0; i < l1.size(); i++){
+            System.out.println(l1.get(i));
+        }
+
+        // Adding element at particular index
+        l1.add(2, 5);
+
+        System.out.println("After adding element in middle of LinkedList l1 : ");
+
+        for(int i = 0; i < l1.size(); i++){
+            System.out.println(l1.get(i));
+        }
+
+        // Creating another LinkedList
+        LinkedList<Integer> l2 = new LinkedList<>();
+
+        l2.add(49);
+        l2.add(79);
+
+        // Adding l2 into l1
+        l1.addAll(3, l2);
+
+        System.out.println("After adding elements of LinkedList l2 : ");
+
+        for(int i = 0; i < l1.size(); i++){
+            System.out.println(l1.get(i));
+        }
+
+        // Clearing complete list
+        // l1.clear();
+    }
+}
