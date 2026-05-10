@@ -1,0 +1,148 @@
+👉 Hashing is a technique used to:
+
+Store data quickly
+Search data quickly
+Access data using a key
+
+Instead of searching element one by one, Java uses a hash function to directly find the location of data.
+
+👉 Real Life Example
+
+Imagine a library:
+  Every book has a unique code
+  Using that code, librarian directly finds the book location
+That code system is similar to hashing.
+
+👉 What is Hash Function?
+
+A hash function converts data into a unique integer value called:
+                                                                  Hash Code
+Java uses this hash code to store data internally.
+
+Formula Idea :
+            Index = hashCode % Size
+This index tells where data will be stored.
+
+👉 Hashing in Java Collections
+
+Java provides hashing through:
+    HashMap
+    HashSet
+    Hashtable
+These are part of the Java Collections Framework.
+
+1. HashMap
+
+Stores data in:
+            Key → Value
+
+Example :
+
+import java.util.*;
+
+public class HashMapDemo {
+    public static void main(String[] args) {
+
+        HashMap<Integer, String> map = new HashMap<>();
+
+        map.put(1, "Rahul");
+        map.put(2, "Aman");
+        map.put(3, "Karan");
+
+        System.out.println(map);
+
+        System.out.println(map.get(2));
+
+        map.remove(1);
+
+        System.out.println(map);
+    }
+}
+
+Output :
+
+{1=Rahul, 2=Aman, 3=Karan}
+Aman
+{2=Aman, 3=Karan}
+
+👉 Important Methods of HashMap
+
+| Method          | Work               |
+| --------------- | ------------------ |
+| put()           | Insert data        |
+| get()           | Access value       |
+| remove()        | Delete element     |
+| containsKey()   | Check key exists   |
+| containsValue() | Check value exists |
+| size()          | Returns size       |
+| clear()         | Removes all data   |
+
+
+2. HashSet
+
+Used to store:
+      Unique elements only
+      No duplicate values
+
+Example:
+
+import java.util.*;
+
+public class HashSetDemo {
+    public static void main(String[] args) {
+
+        HashSet<Integer> set = new HashSet<>();
+
+        set.add(10);
+        set.add(20);
+        set.add(10);
+
+        System.out.println(set);
+    }
+}
+
+OUTPUT : 
+
+[10, 20]
+Duplicate 10 is removed automatically.
+
+👉 Collision in Hashing
+
+Sometimes two values generate same hash code.
+
+This problem is called: Collision
+
+Java handles collisions using:
+                            Linked List
+                            Balanced Trees (in newer versions)
+
+Internal Working of HashMap
+
+Step 1 Key generates hash code
+Step 2 Java calculates index.
+Step 3 Data stored at that bucket/index.
+
+Time Complexity
+
+| Operation | Average Time |
+| --------- | ------------ |
+| Insert    | O(1)         |
+| Search    | O(1)         |
+| Delete    | O(1)         |
+
+👉 Difference: HashMap vs Hashtable
+
+| HashMap          | Hashtable       |
+| ---------------- | --------------- |
+| Not synchronized | Synchronized    |
+| Faster           | Slower          |
+| Allows null      | No null allowed |
+| Modern           | Legacy class    |
+
+👉 Difference: HashSet vs HashMap
+
+| HashSet                 | HashMap                |
+| ----------------------- | ---------------------- |
+| Stores only values      | Stores key-value pairs |
+| No duplicates           | Keys unique            |
+| Uses HashMap internally | Direct implementation  |
