@@ -233,3 +233,95 @@ public class collections {
         // l1.clear();
     }
 }
+
+
+👉 Array Dequeue
+
+Java Collections Framework ArrayDeque is a class in Java used to implement a Double Ended Queue (Deque).
+
+It allows insertion and deletion from:
+    Front
+    Rear (Last)
+
+That means it can work like:
+    Queue → FIFO (First In First Out)
+    Stack → LIFO (Last In First Out)
+
+Important Features of ArrayDeque
+
+1. Fast Insertion and Deletion
+Insertion and deletion at both ends are very fast.
+
+2. No Size Limit
+Unlike normal arrays, size grows dynamically.
+
+3. Better than Stack Class
+ArrayDeque is faster than old Stack class.
+
+4. No Null Values Allowed
+You cannot store null inside ArrayDeque.
+
+Common Methods
+
+| Method        | Work                        |
+| ------------- | --------------------------- |
+| add()         | Add element at end          |
+| addFirst()    | Add at front                |
+| addLast()     | Add at rear                 |
+| remove()      | Remove first element        |
+| removeFirst() | Remove from front           |
+| removeLast()  | Remove from rear            |
+| getFirst()    | Get first element           |
+| getLast()     | Get last element            |
+| contains()    | Check element exists or not |
+| size()        | Returns size                |
+| clear()       | Removes all elements        |
+
+Code Example :
+
+import java.util.*;
+
+public class ArrayDequeueDemo {
+    public static void main(String[] args) {
+
+        // Creating ArrayDeque
+        ArrayDeque<Integer> dq = new ArrayDeque<>();
+
+        // Adding elements
+        dq.add(10);
+        dq.add(20);
+        dq.add(30);
+
+        System.out.println("ArrayDeque elements : ");
+        System.out.println(dq);
+
+        // Adding element at first
+        dq.addFirst(5);
+
+        // Adding element at last
+        dq.addLast(40);
+
+        System.out.println("After addFirst and addLast : ");
+        System.out.println(dq);
+
+        // Getting first and last element
+        System.out.println("First element : " + dq.getFirst());
+        System.out.println("Last element : " + dq.getLast());
+
+        // Removing first and last element
+        dq.removeFirst();
+        dq.removeLast();
+
+        System.out.println("After removeFirst and removeLast : ");
+        System.out.println(dq);
+
+        // Checking size
+        System.out.println("Size of deque : " + dq.size());
+
+        // Checking if element exists
+        System.out.println("Contains 20 ? " + dq.contains(20));
+
+        // Clearing deque
+        // dq.clear();
+    }
+}
