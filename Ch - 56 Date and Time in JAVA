@@ -13,9 +13,24 @@ Code :
 
 public class dateTime{
     public static void main(String[] args){
-        System.out.println(System.currentTimeMillis());                 // giving number of milliseconds passed since 1900s
-        System.out.println(System.currentTimeMillis()/1000);            // to find out seconds passed since 1900s
-        System.out.println(System.currentTimeMillis()/1000/3600);       // to find out hours passed since 1900s
-        System.out.println(System.currentTimeMillis()/1000/3600/24);    // to find out days passed since 1900s
+        System.out.println(System.currentTimeMillis());                 // giving number of milliseconds passed since 1970s
+        System.out.println(System.currentTimeMillis()/1000);            // to find out seconds passed since 1970s
+        System.out.println(System.currentTimeMillis()/1000/3600);       // to find out hours passed since 1970s
+        System.out.println(System.currentTimeMillis()/1000/3600/24);    // to find out days passed since 1970s
     }
 }
+
+👉 The Date class in Java
+
+import java.util.Date;
+
+public class dateTime{
+    public static void main(String[] args){
+        Date d = new Date();
+        System.out.println(d);
+    }
+}
+
+Output : Mon May 11 11:49:35 IST 2026
+
+Note : There are Multiple functions avaliable in Date class that you can see from JAVA DOCS ...
