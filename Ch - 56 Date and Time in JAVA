@@ -1,1 +1,10 @@
-DATE & TIME in JAVA
+👉 DATE & TIME in JAVA
+Java.time => package for Date & Time in Java --- from Java 8 onwards
+Before Java 8 , java.util package used to hold the date and time classes, Now the classes are deprecated.
+
+👉 How Java stores a Date ?
+Date in Java is stored in the form of a long number. This long number holds the number of milli seconds passed since 1 Jan 1970.
+Java assures that 1900 is the start year which means it calculates years passed since 1900 whenever , We ask it for years passed.
+
+System.currentTimeMillis() returns number of seconds passed. once number of ms are calculated, we can calculate minutes, seconds & year
+passed.
