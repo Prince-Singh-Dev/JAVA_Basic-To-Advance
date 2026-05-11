@@ -6,5 +6,16 @@ Before Java 8 , java.util package used to hold the date and time classes, Now th
 Date in Java is stored in the form of a long number. This long number holds the number of milli seconds passed since 1 Jan 1970.
 Java assures that 1900 is the start year which means it calculates years passed since 1900 whenever , We ask it for years passed.
 
-System.currentTimeMillis() returns number of seconds passed. once number of ms are calculated, we can calculate minutes, seconds & year
-passed.
+System.currentTimeMillis() returns number of milliseconds passed. once number of ms are calculated, we can calculate minutes, seconds
+& year passed.
+
+Code :
+
+public class dateTime{
+    public static void main(String[] args){
+        System.out.println(System.currentTimeMillis());                 // giving number of milliseconds passed since 1900s
+        System.out.println(System.currentTimeMillis()/1000);            // to find out seconds passed since 1900s
+        System.out.println(System.currentTimeMillis()/1000/3600);       // to find out hours passed since 1900s
+        System.out.println(System.currentTimeMillis()/1000/3600/24);    // to find out days passed since 1900s
+    }
+}
