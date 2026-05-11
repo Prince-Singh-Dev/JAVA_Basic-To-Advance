@@ -1,1 +1,69 @@
+👉 Calendar class in Java
+The Calendar class in Java is used to handle date and time operations like:
+    Getting current date/time
+    Adding or subtracting days/months/years
+    Finding day, month, year separately
+    Comparing dates
 
+It belongs to the package:  import java.util.Calendar;
+
+👉 Why Use Calendar?
+Before Java introduced the modern Date-Time API (LocalDate, LocalTime), Calendar was commonly used because:
+    Date class had many limitations
+    Calendar allows modification of dates and times
+
+👉 Creating a Calendar Object
+Calendar is an abstract class, so object is created using:  Calendar c = Calendar.getInstance();
+
+👉 Example :
+
+import java.util.Calendar;
+
+public class Main {
+    public static void main(String[] args) {
+        Calendar c = Calendar.getInstance();
+        System.out.println(c);
+    }
+}
+
+👉 Getting Current Date & Time
+
+import java.util.Calendar;
+
+public class Main {
+    public static void main(String[] args) {
+        Calendar c = Calendar.getInstance();
+        System.out.println("Current Date : " + c.getTime());
+    }
+}
+
+Output : Current Date : Sun May 11 10:30:45 IST 2026
+
+👉 Important Methods of Calendar
+
+| Method      | Work                       |
+| ----------- | -------------------------- |
+| `get()`     | Gets specific value        |
+| `set()`     | Sets value                 |
+| `add()`     | Adds value                 |
+| `getTime()` | Returns complete date/time |
+| `clear()`   | Clears values              |
+
+👉 Getting Day, Month, Year
+
+import java.util.Calendar;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Calendar c = Calendar.getInstance();
+
+        int day = c.get(Calendar.DATE);
+        int month = c.get(Calendar.MONTH);
+        int year = c.get(Calendar.YEAR);
+
+        System.out.println("Day : " + day);
+        System.out.println("Month : " + (month + 1));
+        System.out.println("Year : " + year);
+    }
+}
