@@ -9,3 +9,28 @@ LocalDate -> Represents a Date
 LocalTime -> Represents a Time
 LocalDateTime -> Represents a Date+Time
 DateTimeFormatter -> Formatter for displaying & parsing date-time objects
+
+Sample Code :
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
+
+public class javaTime {
+    public static void main() {
+        LocalDate l = LocalDate.now();
+        System.out.println(l);
+        LocalTime t = LocalTime.now();
+        System.out.println(t);
+        LocalDateTime D = LocalDateTime.now();
+        System.out.println(D);
+    }
+}
+
+Output :
+
+2026-05-12
+12:39:44.705077500
+2026-05-12T12:39:44.705077500
+
+Process finished with exit code 0
