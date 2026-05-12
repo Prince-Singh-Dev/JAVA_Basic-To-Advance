@@ -1,0 +1,134 @@
+👉 File Handling in Java
+
+Reading from & Writing to files is an important aspect of any programming language.
+We can use the file class in java to crteate a file object
+
+=> CreateNewFile() method -> creates a file object
+=> for reading files we can use the same Scanner cvlass and supply it a file object
+=> to delete a file in java we can use file object delete()
+
+File Handling in Java is used to:
+
+(1) create files
+(2) read files
+(3) write files
+(4) update files
+(5) delete files
+
+Java provides the java.io package for file handling operations.
+
+Important Classes in File Handling
+
+| Class            | Purpose                 |
+| ---------------- | ----------------------- |
+| `File`           | Create and manage files |
+| `FileWriter`     | Write data into file    |
+| `FileReader`     | Read data from file     |
+| `BufferedReader` | Read text efficiently   |
+| `BufferedWriter` | Write text efficiently  |
+| `Scanner`        | Read file data easily   |
+| `PrintWriter`    | Write formatted data    |
+
+👉 Import Statement
+
+        import java.io.*;
+        or
+        import java.io.File;
+
+👉 Creating a File
+
+Using File class : Example
+
+import java.io.File;
+import java.io.IOException;
+
+public class Main {
+    public static void main(String[] args) {
+        try{
+            File myFile = new File("sample.txt");
+            if(myFile.createNewFile()){
+                System.out.println("File created successfully");
+            }
+            else{
+                System.out.println("File already exists");
+            }
+        }
+        catch(IOException e){
+            System.out.println("Error occurred");
+            e.printStackTrace();
+        }
+    }
+}
+
+Output : 
+File created successfully
+
+👉 Writing into a File : Using FileWriter.
+
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class Main {
+    public static void main(String[] args) {
+        try{
+            FileWriter writer = new FileWriter("sample.txt");
+            writer.write("Hello, Welcome to Java File Handling");
+            writer.close();
+            System.out.println("Successfully written into file");
+        }
+
+        catch(IOException e){
+            e.printStackTrace();
+        }
+    }
+}
+
+👉 Reading from a File : Using Scanner.
+
+import java.io.File;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        try{
+            File myFile = new File("sample.txt");
+            Scanner sc = new Scanner(myFile);
+            while(sc.hasNextLine()){
+                String line = sc.nextLine();
+                System.out.println(line);
+            }
+            sc.close();
+        }
+        catch(Exception e){
+            e.printStackTrace();
+        }
+    }
+}
+
+👉 Deleting a File
+
+import java.io.File;
+
+public class Main {
+    public static void main(String[] args) {
+        File myFile = new File("sample.txt");
+        if(myFile.delete()){
+            System.out.println("File deleted");
+        }
+        else{
+            System.out.println("Failed to delete");
+        }
+    }
+}
+
+👉 Methods of File Class
+| Method              | Work                    |
+| ------------------- | ----------------------- |
+| `createNewFile()`   | Creates file            |
+| `exists()`          | Checks file existence   |
+| `delete()`          | Deletes file            |
+| `getName()`         | Returns file name       |
+| `getAbsolutePath()` | Returns full path       |
+| `length()`          | Returns file size       |
+| `canRead()`         | Checks read permission  |
+| `canWrite()`        | Checks write permission |
