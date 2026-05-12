@@ -9,4 +9,77 @@ JavaDoc tool
 javadoc command allows us to create documentation in HTML format for our own package.
 Java provides tags for class or package to assist with the java doc generation
 
-👉 Tags for class or a package
+👉 Tags for class or a package : ©️
+
+@author : Used to specify author name. 
+@version : Adds the version
+@Since : to add when this version written
+@param : Describes method parameters.
+
+👉 Example
+
+/**
+ * This class demonstrates JavaDoc tags
+ * @author Rahul
+ * @version 1.0
+ * @since 2025
+ */
+
+public class Demo {
+
+    /**
+     * Adds two integers
+     * @param a first number
+     * @param b second number
+     * @return sum of a and b
+     */
+
+    public int add(int a, int b){
+        return a + b;
+    }
+
+    /**
+     * Divides two numbers
+     * @param a numerator
+     * @param b denominator
+     * @return division result
+     * @throws ArithmeticException when b = 0
+     */
+
+    public int divide(int a, int b){
+        return a / b;
+    }
+}
+
+👉 How to Generate Documentation
+
+Step 1: Save file
+                  Demo.java
+Step 2: Open Terminal / CMD
+                  Run command : javadoc Demo.java                
+Step 3: Generated Files
+Java creates multiple HTML files including:
+                  index.html
+                  package pages
+                  class pages
+
+👉 How to Open Documentation
+
+Open  :  index.html in browser.
+
+You will see professional documentation similar to official Java docs.
+
+👉 Advantages of JavaDoc
+
+✔ Easy to understand code
+✔ Professional documentation
+✔ Helps other developers
+✔ Useful for APIs and libraries
+✔ Automatically generated HTML pages
+
+👉 Difference Between Comments and JavaDoc
+| Comments                | JavaDoc             |
+| ----------------------- | ------------------- |
+| For programmers         | For documentation   |
+| Not generated into HTML | Converted into HTML |
+| Uses `//` or `/* */`    | Uses `/** */`       |
