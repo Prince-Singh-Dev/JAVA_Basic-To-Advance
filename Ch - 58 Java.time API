@@ -1,0 +1,11 @@
+👉 JAVA tine package
+
+=> available from Java 8 onwards
+=> capable of string even nano seconds
+
+Following as some of the most commonly used chases from time package.
+
+LocalDate -> Represents a Date
+LocalTime -> Represents a Time
+LocalDateTime -> Represents a Date+Time
+DateTimeFormatter -> Formatter for displaying & parsing date-time objects
