@@ -1,1 +1,12 @@
- Creating Your Own Docs
+👉 Creating Your Own Java Documentation
+
+Java Documentation is great!
+It helps us get info about what method/class/Entity to use when.
+
+We can create our own package i.e. Documentation in Java
+
+JavaDoc tool
+javadoc command allows us to create documentation in HTML format for our own package.
+Java provides tags for class or package to assist with the java doc generation
+
+👉 Tags for class or a package
