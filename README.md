@@ -175,14 +175,6 @@ A **structured, practical, and powerful Java learning system** designed for:
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=Prince-Singh-Dev&theme=tokyonight&hide_border=true" width="48%"/>
 </p>
 
-<!-- ===================== ACTIVITY GRAPH ===================== -->
-
-<h2 align="center">📈 Coding Activity</h2>
-
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Prince-Singh-Dev&theme=tokyo-night&hide_border=true&area=true&custom_title=My%20Coding%20Journey&cache_seconds=1800"/>
-</p>
-
 # 🚀 Live Coding Energy
 
 <p align="center">
