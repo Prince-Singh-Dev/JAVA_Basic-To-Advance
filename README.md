@@ -74,22 +74,75 @@ A **structured, practical, and powerful Java learning system** designed for:
 # 📂 Repository Structure
 
 ```bash
-📦 Java-Notes
- ┣ 📜 01-introduction.md
- ┣ 📜 02-jdk-jre-jvm.md
- ┣ 📜 03-variables-datatypes.md
- ┣ 📜 04-operators.md
- ┣ 📜 05-control-statements.md
- ┣ 📜 06-oops.md
- ┣ 📜 07-inheritance.md
- ┣ 📜 08-polymorphism.md
- ┣ 📜 09-abstraction.md
- ┣ 📜 10-interfaces.md
- ┣ 📜 11-exception-handling.md
- ┣ 📜 12-collections.md
- ┣ 📜 13-strings.md
- ┣ 📜 14-multithreading.md
- ┗ 📜 15-file-handling.md
+📦 JAVA-NOTES
+│
+├── 📁 Ch - 01 Introduction + Installation
+├── 📁 Ch - 02 Understanding Our First Java Program
+├── 📁 Ch - 03 Java Variables and DataTypes
+├── 📁 Ch - 04 Literals in Java
+├── 📁 Ch - 05 Getting User Input in JAVA
+├── 📁 Ch - 06 Exercise 1 : Board Calculator
+├── 📁 Ch - 07 Operators & Types & Expressions
+├── 📁 Ch - 08 Practice Set (JPQ)
+├── 📁 Ch - 09 Strings
+├── 📁 Ch - 10 Strings Practice Set (JPQ)
+├── 📁 Ch - 11 Java Conditionals
+├── 📁 Ch - 12 Conditionals Practice Set (JPQ)
+├── 📁 Ch - 13 Exercise 2 : Rock Paper Scissors
+├── 📁 Ch - 14 Loops in JAVA
+├── 📁 Ch - 15 Break and Continue in JAVA
+├── 📁 Ch - 16 Loops Practice Set (JPQ)
+├── 📁 Ch - 17 Arrays in JAVA
+├── 📁 Ch - 18 Arrays Practice Set (JPQ)
+├── 📁 Ch - 19 Methods in JAVA
+├── 📁 Ch - 20 Method Overloading in JAVA
+├── 📁 Ch - 21 Variable Arguments (VarArgs) in JAVA
+├── 📁 Ch - 22 Recursion in JAVA
+├── 📁 Ch - 23 Practice Set on JAVA methods
+│
+├── 🟦 OOPs SECTION
+│   ├── 📁 Ch - 24 OOPs Concept in JAVA
+│   ├── 📁 Ch - 25 OOPs Basic Practice Set (JPQ)
+│   ├── 📁 Ch - 26 Access Modifiers and Constructors
+│   ├── 📁 Ch - 27 Exercise 3 : Guess the Number ( OOPs Edition )
+│   ├── 📁 Ch - 28 Constructors Practice Set (JPQ)
+│   ├── 📁 Ch - 29 Inheritance in JAVA
+│   ├── 📁 Ch - 30 THIS & SUPER in JAVA
+│   ├── 📁 Ch - 31 Method Overriding in JAVA
+│   ├── 📁 Ch - 32 Exercise 4 : Library Management System
+│   ├── 📁 Ch - 33 Practice Set on Inheritance (JPQ)
+│   ├── 📁 Ch - 34 Abstract Classes and Methods
+│   ├── 📁 Ch - 35 Interfaces in JAVA
+│   ├── 📁 Ch - 36 Practice Set on Abstract Classes & Interfaces (JPQ)
+│   ├── 📁 Ch - 36 Why Multiple Inheritance Not ?
+│   ├── 📁 Ch - 37 Inheritance in Interfaces
+│   └── 📁 Ch - 38 Practice Set on Abstract Classes & Interfaces (JPQ)
+│
+├── 🟪 ADVANCED JAVA SECTION
+│   ├── 📁 Ch - 39 Interpreter VS compiler better ?
+│   ├── 📁 Ch - 40 Java Packages
+│   ├── 📁 Ch - 41 Access Modifiers in JAVA
+│   ├── 📁 Ch - 42 Access Modifiers Practice Set (JPQ)
+│   ├── 📁 Ch - 43 Exercise 5 : Create a Custom Package
+│   ├── 📁 Ch - 44 Multi-Threading in JAVA
+│   ├── 📁 Ch - 45 Constructors from Thread class
+│   ├── 📁 Ch - 46 Thread Priorities
+│   ├── 📁 Ch - 47 Thread Methods
+│   ├── 📁 Ch - 48 Practice set on Threads (JPQ)
+│   ├── 📁 Ch - 49 Errors & Exceptions in JAVA
+│   ├── 📁 Ch - 50 Exception class in Java
+│   ├── 📁 Ch - 51 Finally Block in JAVA & Why needed ?
+│   ├── 📁 Ch - 52 Errors Practice Set
+│   ├── 📁 Ch - 53 Exercise 6 : Custom Calculator
+│   ├── 📁 Ch - 54 (ADVANCED JAVA) -- Collections Framework
+│   ├── 📁 Ch - 55 (ADVANCED JAVA) -- Hashing in Java
+│   ├── 📁 Ch - 56 Date and Time in JAVA
+│   ├── 📁 Ch - 57 Calendar Class in JAVA
+│   ├── 📁 Ch - 58 Java.time API
+│   ├── 📁 Ch - 59 (ADVANCED JAVA 2) Creating Your Own Docs
+│   └── 📁 Ch - 60 File Handling in Java
+│
+└── 📄 README.md
 ```
 
 # ⚙️ Tech Stack
@@ -106,7 +159,7 @@ A **structured, practical, and powerful Java learning system** designed for:
 
 + Step 1 → Open topic <br>
 + Step 2 → Understand <br>
-+ Step 3 → Run code <br>
++ Step 3 → Run code while writing yourself <br>
 + Step 4 → Revise <br>
 
 # 🌌 Features
@@ -154,6 +207,7 @@ If this helps you:
 # 📈 Progress
 
 Start Date : 03 Feb 2026 <br>
+Completion Date : 12 May 2026 <br>
 Goal       : Java Mastery + Backend Development <br>
 
 # 🧑‍💻 Author
