@@ -13,3 +13,91 @@ which throws the following exceptions
 2. Cannot Divide by 0 exception
 3. Max Input Exception if any of the inputs is greater than 100000
 4. Max Multiplier reached exception - don't allow any multiplication input to be greater then 7000
+
+CODE :
+
+// Custom Calculator Program in Java
+class InvalidInputException extends Exception {
+    public InvalidInputException(String message) {
+        super(message);
+    }
+}
+class CannotDivideByZeroException extends Exception {
+    public CannotDivideByZeroException(String message) {
+        super(message);
+    }
+}
+class MaxInputException extends Exception {
+    public MaxInputException(String message) {
+        super(message);
+    }
+}
+class MaxMultiplierReachedException extends Exception {
+    public MaxMultiplierReachedException(String message) {
+        super(message);
+    }
+}
+class CustomCalculator {
+    // Method to check maximum input limit
+    void checkInput(int a, int b) throws MaxInputException {
+        if (a > 100000 || b > 100000) {
+            throw new MaxInputException("Input cannot be greater than 100000");
+        }
+    }
+    // Addition
+    int add(int a, int b) throws MaxInputException {
+        checkInput(a, b);
+        return a + b;
+    }
+    // Subtraction
+    int subtract(int a, int b) throws MaxInputException {
+        checkInput(a, b);
+        return a - b;
+    }
+    // Multiplication
+    int multiply(int a, int b)
+            throws MaxInputException, MaxMultiplierReachedException {
+        checkInput(a, b);
+        if (a > 7000 || b > 7000) {
+            throw new MaxMultiplierReachedException(
+                    "Multiplication input cannot be greater than 7000");
+        }
+        return a * b;
+    }
+    // Division
+    double divide(int a, int b)
+            throws MaxInputException, CannotDivideByZeroException {
+        checkInput(a, b);
+        if (b == 0) {
+            throw new CannotDivideByZeroException(
+                    "Cannot divide by zero");
+        }
+        return (double) a / b;
+    }
+}
+public class CustomCalculatorDemo {
+    public static void main(String[] args) {
+        CustomCalculator calc = new CustomCalculator();
+        try {
+            System.out.println("Addition: " + calc.add(5000, 2000));
+            System.out.println("Subtraction: " + calc.subtract(9000, 3000));
+            System.out.println("Multiplication: " + calc.multiply(6000, 2));
+            System.out.println("Division: " + calc.divide(100, 5));
+            // Uncomment these lines one by one to test exceptions
+            // calc.divide(10, 0);
+            // calc.add(200000, 5);
+            // calc.multiply(8000, 2);
+        }
+        catch (MaxInputException e) {
+            System.out.println("MaxInputException: " + e.getMessage());
+        }
+        catch (CannotDivideByZeroException e) {
+            System.out.println("CannotDivideByZeroException: " + e.getMessage());
+        }
+        catch (MaxMultiplierReachedException e) {
+            System.out.println("MaxMultiplierReachedException: " + e.getMessage());
+        }
+        catch (Exception e) {
+            System.out.println("InvalidInputException: " + e.getMessage());
+        }
+}
